@@ -99,13 +99,13 @@
 		244E5BA22BDC59C700E541D3 /* AmatorTelsiz */ = {
 			isa = PBXGroup;
 			children = (
-				244E5BA32BDC59C700E541D3 /* AppDelegate.swift */,
-				244E5BA52BDC59C700E541D3 /* SceneDelegate.swift */,
-				244E5BA72BDC59C700E541D3 /* ViewController.swift */,
-				244E5BA92BDC59C700E541D3 /* Main.storyboard */,
-				244E5BAC2BDC59C800E541D3 /* Assets.xcassets */,
-				244E5BAE2BDC59C800E541D3 /* LaunchScreen.storyboard */,
-				244E5BB12BDC59C800E541D3 /* Info.plist */,
+				A57312422BDC5CA5008A2955 /* View */,
+				A573123F2BDC5C4C008A2955 /* Controller */,
+				A573123D2BDC5C39008A2955 /* Cells */,
+				A57312402BDC5C5D008A2955 /* Constants */,
+				A573123C2BDC5BFF008A2955 /* Model */,
+				A57312412BDC5C65008A2955 /* Sevices */,
+				A573123E2BDC5C43008A2955 /* Support */,
 			);
 			path = AmatorTelsiz;
 			sourceTree = "<group>";
@@ -125,6 +125,62 @@
 				244E5BC62BDC59C800E541D3 /* AmatorTelsizUITestsLaunchTests.swift */,
 			);
 			path = AmatorTelsizUITests;
+			sourceTree = "<group>";
+		};
+		A573123C2BDC5BFF008A2955 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A573123D2BDC5C39008A2955 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		A573123E2BDC5C43008A2955 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				244E5BB12BDC59C800E541D3 /* Info.plist */,
+				244E5BAC2BDC59C800E541D3 /* Assets.xcassets */,
+				244E5BA52BDC59C700E541D3 /* SceneDelegate.swift */,
+				244E5BA32BDC59C700E541D3 /* AppDelegate.swift */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		A573123F2BDC5C4C008A2955 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				244E5BA72BDC59C700E541D3 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A57312402BDC5C5D008A2955 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		A57312412BDC5C65008A2955 /* Sevices */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sevices;
+			sourceTree = "<group>";
+		};
+		A57312422BDC5CA5008A2955 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				244E5BA92BDC59C700E541D3 /* Main.storyboard */,
+				244E5BAE2BDC59C800E541D3 /* LaunchScreen.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -445,6 +501,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -473,6 +530,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
