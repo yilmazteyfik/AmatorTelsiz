@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xG8-bm-KGk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xG8-bm-KGk">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -77,7 +77,7 @@
         <scene sceneID="scj-RX-zlT">
             <objects>
                 <navigationController id="CDm-XF-bQY" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" selectedImage="house.circle.fill" catalog="system" id="FVu-hv-N3r"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="house.circle.fill" catalog="system" selectedImage="house.circle.fill" id="FVu-hv-N3r"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="X1e-Pq-Ojx">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -94,7 +94,7 @@
         <scene sceneID="97x-ZI-Mpu">
             <objects>
                 <tabBarController id="xG8-bm-KGk" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JKy-WB-TOu">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" backgroundImage="house.circle.fill" catalog="system" id="JKy-WB-TOu">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.8699776785714286" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -116,7 +116,7 @@
         <scene sceneID="V44-zX-5z7">
             <objects>
                 <navigationController id="SGH-zf-0Et" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Settings" selectedImage="gear" catalog="system" id="Y1e-Yg-QBU"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="gear" catalog="system" selectedImage="gear" id="Y1e-Yg-QBU"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="i69-Na-RkU">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -133,7 +133,7 @@
         <scene sceneID="j8F-4I-JNy">
             <objects>
                 <navigationController id="jcz-33-gjm" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Questions" selectedImage="square.and.pencil.circle.fill" catalog="system" id="HWD-os-3jH"/>
+                    <tabBarItem key="tabBarItem" title="Questions" image="square.and.pencil.circle.fill" catalog="system" selectedImage="square.and.pencil.circle.fill" id="HWD-os-3jH"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qaj-v5-zL7">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -150,7 +150,7 @@
         <scene sceneID="QdC-Bb-LBw">
             <objects>
                 <navigationController id="uYV-Cb-RQc" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Tools" selectedImage="safari.fill" catalog="system" id="gP8-w8-HiB"/>
+                    <tabBarItem key="tabBarItem" title="Tools" image="safari.fill" catalog="system" selectedImage="safari.fill" id="gP8-w8-HiB"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1fe-QH-85t">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
