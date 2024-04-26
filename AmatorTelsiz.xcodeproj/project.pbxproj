@@ -104,7 +104,7 @@
 				A573123D2BDC5C39008A2955 /* Cells */,
 				A57312402BDC5C5D008A2955 /* Constants */,
 				A573123C2BDC5BFF008A2955 /* Model */,
-				A57312412BDC5C65008A2955 /* Sevices */,
+				A57312412BDC5C65008A2955 /* Services */,
 				A573123E2BDC5C43008A2955 /* Support */,
 			);
 			path = AmatorTelsiz;
@@ -167,11 +167,11 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
-		A57312412BDC5C65008A2955 /* Sevices */ = {
+		A57312412BDC5C65008A2955 /* Services */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Sevices;
+			path = Services;
 			sourceTree = "<group>";
 		};
 		A57312422BDC5CA5008A2955 /* View */ = {
