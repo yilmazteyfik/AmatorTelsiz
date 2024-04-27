@@ -8,9 +8,13 @@ class RoleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // WKWebView oluşturma
-        webView = WKWebView(frame: view.bounds)
-        webView.autoresizingMask = [.flexibleWidth, .flexibleHeight] // WebView boyutunu otomatik olarak ayarla
+        // Arka plan UIView oluşturma ve beyaz arka plan rengi
+        let backgroundView = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 400))
+        backgroundView.backgroundColor = UIColor.white
+        view.addSubview(backgroundView)
+
+        // WKWebView oluşturma ve arka plan UIView üzerine yerleştirme
+        webView = WKWebView(frame: CGRect(x: 0, y: 120, width: self.view.frame.width, height: self.view.frame.height - 120))
         view.addSubview(webView)
 
         // Gömülü harita URL'sini yükleme
@@ -19,15 +23,7 @@ class RoleViewController: UIViewController {
             webView.load(request)
         }
 
-     
-        self.tabBarController?.tabBar.isHidden = true
+        // UIScrollView özelliğini devre dışı bırakma
+        webView.scrollView.isScrollEnabled = false
     }
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        if isMovingFromParent {
-            // Arka tuşa basıldığında veya geri gidildiğinde
-            self.tabBarController?.tabBar.isHidden = false // Tab barı görünür yap
-        }
-    }
-
 }

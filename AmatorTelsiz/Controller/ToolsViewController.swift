@@ -110,11 +110,14 @@ class ToolsViewController: UIViewController, CLLocationManagerDelegate {
             let roleVC = RoleViewController()
             navigationController?.pushViewController(roleVC, animated: true)
         case 4:
-            let qcodeVC = QCodeViewController() // Değişiklik burada
-            navigationController?.pushViewController(qcodeVC, animated: true) // Değişiklik burada
+            let qcodeVC = QCodeViewController()
+            navigationController?.pushViewController(qcodeVC, animated: true)
+        case 5:
+            let aprsVC = APRSViewController() // Değişiklik burada
+            navigationController?.pushViewController(aprsVC, animated: true) // Değişiklik burada
         default:
             break
         }
-
     }
+
 }
