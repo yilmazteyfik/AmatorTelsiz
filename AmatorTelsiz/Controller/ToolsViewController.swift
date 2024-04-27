@@ -94,9 +94,4 @@ class ToolsViewController: UIViewController, CLLocationManagerDelegate {
         }
         
     }
-    
-    
-    
-    
-    
     }
