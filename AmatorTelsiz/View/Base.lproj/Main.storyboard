@@ -18,12 +18,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="23f-m0-rgy"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ncv-Lm-Dm6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6mB-Zg-FOb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1028" y="899"/>
+            <point key="canvasLocation" x="-1028.2442748091603" y="898.59154929577471"/>
         </scene>
         <!--Questions View Controller-->
         <scene sceneID="1bJ-r5-10W">

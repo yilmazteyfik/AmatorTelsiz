@@ -7,63 +7,55 @@
 
 import Foundation
 import UIKit
+struct CustomData {
+    var title: String
+    var backgroundImage: UIImage
+}
+class MainViewController: UIViewController {
 
-class MainViewController : UIViewController {
-  
-    
-    let views: [UIView] = [
-            // Your existing view definitions here:
-            {
-                let viewUI = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 0)) // Placeholder for view1
-                viewUI.layer.cornerRadius = 15
-                viewUI.backgroundColor = .blue
-                return viewUI
-            }(),
-            {
-                let viewUI = UIView(frame: CGRect.zero) // Placeholder for view2
-                viewUI.layer.cornerRadius = 15
-                viewUI.backgroundColor = .systemPink
-                return viewUI
-            }(),
-            {
-                let viewUI = UIView(frame: CGRect.zero) // Placeholder for view3
-                viewUI.layer.cornerRadius = 15
-                viewUI.backgroundColor = .systemRed
-                return viewUI
-            }()
-        ]
-    
-    
-    //MARK: - Properties
-    let abButton = {
-        let button = UIButton(frame: CGRect(x: 40, y: 50, width: 130, height: 40))
-        button.setTitle("A/B", for: .normal)
-        button.backgroundColor = .purple
-        button.layer.cornerRadius = 20
-        return button
-    }()
-   
-    private var collectionView: UICollectionView!
-    let cButton = {
-        let button = UIButton(frame: CGRect(x: UIScreen.main.bounds.width - 170, y: 50, width: 130, height: 40))
-        button.setTitle("C", for: .normal)
-        button.backgroundColor = .purple
-        button.layer.cornerRadius = 20
-        return button
-    }()
-    //MARK: - Lifecycles
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        style()
-        layout()
-        
-    }
+  fileprivate let data = [
+    CustomData(title: "The Islands!", backgroundImage: UIImage(named: "pembekare")!),
+    CustomData(title: "Collection Views!", backgroundImage: UIImage(named: "pembekare 1")!),
+    CustomData(title: "MapKit!", backgroundImage: UIImage(named: "pembekare")!),
+  ]
+
+  fileprivate let collectionView: UICollectionView = {
+    let layout = UICollectionViewFlowLayout()
+    layout.scrollDirection = .horizontal
+    let cv = UICollectionView(frame: CGRect(x: 40, y: 170, width: UIScreen.main.bounds.width, height: 150), collectionViewLayout: layout)
+    cv.translatesAutoresizingMaskIntoConstraints = false
+    cv.register(CustomCell.self, forCellWithReuseIdentifier: "cell")
+    return cv
+  }()
+
+  //MARK: - Properties
+  let abButton = {
+    let button = UIButton(frame: CGRect(x: 40, y: 70, width: 130, height: 40))
+    button.setTitle("A/B", for: .normal)
+    button.backgroundColor = .purple
+    button.layer.cornerRadius = 20
+    return button
+  }()
+
+  let cButton = {
+    let button = UIButton(frame: CGRect(x: UIScreen.main.bounds.width - 170, y: 70, width: 130, height: 40))
+    button.setTitle("C", for: .normal)
+    button.backgroundColor = .purple
+    button.layer.cornerRadius = 20
+    return button
+  }()
+
+  //MARK: - Lifecycles
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    style()
+    layout()
+  }
 }
 
 // MARK: - Helpers
 extension  MainViewController{
     private func style(){
-        view.backgroundColor = .gray
         abButton.addTarget(self, action: #selector(abButtonTapped), for: .touchUpInside)
         view.addSubview(abButton)
         
@@ -71,27 +63,10 @@ extension  MainViewController{
         view.addSubview(cButton)
         
         //MARK: - Collection View Style
-        
-        let layout = UICollectionViewFlowLayout()
-                layout.scrollDirection = .horizontal
-                layout.itemSize = CGSize(width: UIScreen.main.bounds.width * 0.7, height: UIScreen.main.bounds.width * 0.40)
-                layout.minimumLineSpacing = 10 // Optional spacing between cells
-
-                collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: layout)
-                collectionView.backgroundColor = .clear // Optional background color for collection view
-                collectionView.dataSource = self
-                collectionView.delegate = self
-                collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell") // Generic cell
-                view.addSubview(collectionView)
-
-                // Optional: Add constraints for the collection view (if needed)
-                collectionView.translatesAutoresizingMaskIntoConstraints = false
-                NSLayoutConstraint.activate([
-                    collectionView.topAnchor.constraint(equalTo: abButton.bottomAnchor, constant: 20),
-                    collectionView.leftAnchor.constraint(equalTo: view.leftAnchor),
-                    collectionView.rightAnchor.constraint(equalTo: view.rightAnchor),
-                    collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
-                ])
+        view.addSubview(collectionView)
+        collectionView.backgroundColor = .white
+        collectionView.delegate = self
+        collectionView.dataSource = self
 
 
 
@@ -99,7 +74,9 @@ extension  MainViewController{
     
     
     private func layout(){
-
+        
+        
+    
     }
 }
 //MARK: - Functions
@@ -111,16 +88,36 @@ extension MainViewController {
         print("C button Tapped")
     }
 }
-extension MainViewController : UICollectionViewDataSource, UICollectionViewDelegate{
+extension MainViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: collectionView.frame.width*0.8, height: collectionView.frame.width * 0.8)
+    }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return views.count
-
+        return data.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
-                cell.contentView.backgroundColor = views[indexPath.row].backgroundColor
-                cell.contentView.layer.cornerRadius = 15
-                return cell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CustomCell
+           cell.data = self.data[indexPath.item]
+
+           // Apply rounded corners and shadow
+           cell.contentView.layer.cornerRadius = 15 // Set desired corner radius
+           cell.contentView.layer.masksToBounds = true // Clip content to rounded corners
+
+           cell.layer.shadowColor = UIColor.black.cgColor
+           cell.layer.shadowOffset = CGSize(width: 0, height: 2) // Adjust shadow offset
+           cell.layer.shadowOpacity = 0.25 // Adjust shadow opacity
+        return cell
     }
+    
 }
+
+
+
+
+
+
+
+
+
+
