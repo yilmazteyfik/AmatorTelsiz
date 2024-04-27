@@ -8,9 +8,9 @@ struct CustomData {
 class MainViewController: UIViewController {
 
     fileprivate let data = [
-        CustomData(title: "İşletme Sınav", backgroundImage: UIImage(named: "pembekare")!),
-        CustomData(title: "Teknik Sınav", backgroundImage: UIImage(named: "pembekare")!),
-        CustomData(title: "Ulusal ve Uluslararası Sınav", backgroundImage: UIImage(named: "pembekare")!)
+        CustomData(title: "İşletme ", backgroundImage: UIImage(named: "pembekare")!),
+        CustomData(title: "Teknik ", backgroundImage: UIImage(named: "pembekare")!),
+        CustomData(title: "Ulusal ve Uluslararası ", backgroundImage: UIImage(named: "pembekare")!)
     ]
 
     fileprivate let collectionView: UICollectionView = {
@@ -79,16 +79,42 @@ extension MainViewController {
     }
 
     private func layout() {
-        collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40).isActive = true
-        collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40).isActive = true
+        
+        let titleLabel = UILabel()
+        titleLabel.text = "Soru Bankaları"
+        titleLabel.textAlignment = .left
+        titleLabel.font = UIFont.systemFont(ofSize: 30, weight: .bold)
+        titleLabel.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(titleLabel)
+
+        titleLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 60).isActive = true
+        titleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
+        titleLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
+          
+        
+        collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
+        collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
         collectionView.topAnchor.constraint(equalTo: view.topAnchor, constant: 170).isActive = true
         collectionView.heightAnchor.constraint(equalToConstant: 300).isActive = true
-
-        secondCollectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40).isActive = true
-        secondCollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40).isActive = true
+       
+        let titleLabel1 = UILabel()
+        titleLabel1.text = "Deneme Sınavları"
+        titleLabel1.textAlignment = .left
+        titleLabel1.font = UIFont.systemFont(ofSize: 30, weight: .bold)
+        titleLabel1.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(titleLabel1)
+       
+        titleLabel1.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 380).isActive = true
+        titleLabel1.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
+        titleLabel1.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
+        
+        secondCollectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
+        secondCollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
         secondCollectionView.topAnchor.constraint(equalTo: collectionView.bottomAnchor, constant: 20).isActive = true
         secondCollectionView.heightAnchor.constraint(equalToConstant: 300).isActive = true
     }
+    
+
 }
 
 // MARK: - Functions
@@ -121,8 +147,8 @@ extension MainViewController: UICollectionViewDelegateFlowLayout, UICollectionVi
             cell.contentView.layer.cornerRadius = 15
             cell.contentView.layer.masksToBounds = true
             cell.layer.shadowColor = UIColor.red.cgColor
-            cell.layer.shadowOffset = CGSize(width: 1, height: 4)
-            cell.layer.shadowOpacity = 0.25
+            cell.layer.shadowOffset = CGSize(width: 1, height: 10)
+            cell.layer.shadowOpacity = 0.2
             cell.layer.shadowRadius = 4
 
             return cell
@@ -130,8 +156,8 @@ extension MainViewController: UICollectionViewDelegateFlowLayout, UICollectionVi
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell2", for: indexPath) as! CustomCell
             cell.data = data[indexPath.item] // İkinci collectionView için aynı veriyi kullanın
             cell.layer.shadowColor = UIColor.red.cgColor
-            cell.layer.shadowOffset = CGSize(width: 1, height: 4)
-            cell.layer.shadowOpacity = 0.25
+            cell.layer.shadowOffset = CGSize(width: 1, height: 10)
+            cell.layer.shadowOpacity = 0.2
             cell.layer.shadowRadius = 4
             return cell
         }

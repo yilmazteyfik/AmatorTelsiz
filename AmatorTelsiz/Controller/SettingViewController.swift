@@ -1,28 +1,46 @@
-//
-//  SettingViewController.swift
-//  AmatorTelsiz
-//
-//  Created by Teyfik Yılmaz on 27.04.2024.
-//
-
 import Foundation
 import UIKit
 
-class SettingViewController : UIViewController{
-    //MARK: - Properties
-    //MARK: - Lifecycles
+class SettingViewController: UIViewController {
+    
+    // MARK: - Properties
+    
+    // Example properties for settings data
+    private var notificationsEnabled = true
+    private var darkModeEnabled = false
+    
+    // UI Components
+    private var notificationsSwitch: UISwitch!
+    private var darkModeStackView: UIStackView!
+    
+    // MARK: - Lifecycles
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .red
-    }
-}
-
-// MARK: - Helpers
-extension  SettingViewController{
-    private func style(){
+        view.backgroundColor = .white
         
+        // Setup UI
+        setupNavigationBar()
+        setupViews()
+        layoutViews()
     }
-    private func layout(){
-        
+    
+    // MARK: - UI Setup
+    
+    private func setupNavigationBar() {
+        title = "Settings"
+        navigationController?.navigationBar.prefersLargeTitles = true
     }
+    
+    private func setupViews() {
+       
+    }
+    
+    private func layoutViews() {
+       
+    }
+    
+    // MARK: - Action Handlers
+    
+   
 }
