@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xG8-bm-KGk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xG8-bm-KGk">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -25,22 +25,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6mB-Zg-FOb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1028.2442748091603" y="898.59154929577471"/>
-        </scene>
-        <!--Questions View Controller-->
-        <scene sceneID="1bJ-r5-10W">
-            <objects>
-                <viewController id="BIh-lT-WPQ" customClass="QuestionsViewController" customModule="AmatorTelsiz" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="QgV-oc-dM0">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="YqV-pj-UNn"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="mF3-Lv-lHv"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UyA-2a-wgm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-182" y="1010"/>
         </scene>
         <!--Tools View Controller-->
         <scene sceneID="Uzo-bS-70L">
@@ -104,7 +88,6 @@
                     </tabBar>
                     <connections>
                         <segue destination="CDm-XF-bQY" kind="relationship" relationship="viewControllers" id="gX6-ty-S9v"/>
-                        <segue destination="jcz-33-gjm" kind="relationship" relationship="viewControllers" id="gQ7-DH-IwL"/>
                         <segue destination="uYV-Cb-RQc" kind="relationship" relationship="viewControllers" id="BPw-mY-WAA"/>
                         <segue destination="SGH-zf-0Et" kind="relationship" relationship="viewControllers" id="MpJ-24-GQI"/>
                     </connections>
@@ -130,23 +113,6 @@
             </objects>
             <point key="canvasLocation" x="1573" y="154"/>
         </scene>
-        <!--Questions-->
-        <scene sceneID="j8F-4I-JNy">
-            <objects>
-                <navigationController id="jcz-33-gjm" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Questions" image="square.and.pencil.circle.fill" catalog="system" selectedImage="square.and.pencil.circle.fill" id="HWD-os-3jH"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qaj-v5-zL7">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="BIh-lT-WPQ" kind="relationship" relationship="rootViewController" id="hJJ-BK-YMw"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jQF-qo-62n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-181" y="273"/>
-        </scene>
         <!--Tools-->
         <scene sceneID="QdC-Bb-LBw">
             <objects>
@@ -169,7 +135,6 @@
         <image name="gear" catalog="system" width="128" height="122"/>
         <image name="house.circle.fill" catalog="system" width="128" height="123"/>
         <image name="safari.fill" catalog="system" width="128" height="123"/>
-        <image name="square.and.pencil.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
