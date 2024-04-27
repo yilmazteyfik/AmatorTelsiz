@@ -24,6 +24,15 @@
 		247EFE8C2BDD8A3D00AEB766 /* RoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247EFE8B2BDD8A3D00AEB766 /* RoleViewController.swift */; };
 		247EFE8E2BDD91B000AEB766 /* QCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247EFE8D2BDD91B000AEB766 /* QCodeViewController.swift */; };
 		247EFE902BDD9A8B00AEB766 /* AprsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247EFE8F2BDD9A8B00AEB766 /* AprsViewController.swift */; };
+		A55476A82BDDA9F900D71E8D /* QuestionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55476A72BDDA9F900D71E8D /* QuestionManager.swift */; };
+		A55476AA2BDDAB0400D71E8D /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55476A92BDDAB0400D71E8D /* Question.swift */; };
+		A55476AD2BDDACA700D71E8D /* ab_question.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55476AC2BDDACA700D71E8D /* ab_question.swift */; };
+		A55476B42BDDAD0300D71E8D /* ab_tec.json in Resources */ = {isa = PBXBuildFile; fileRef = A55476AE2BDDAD0300D71E8D /* ab_tec.json */; };
+		A55476B52BDDAD0300D71E8D /* c_isletme.json in Resources */ = {isa = PBXBuildFile; fileRef = A55476AF2BDDAD0300D71E8D /* c_isletme.json */; };
+		A55476B62BDDAD0300D71E8D /* c_IR.json in Resources */ = {isa = PBXBuildFile; fileRef = A55476B02BDDAD0300D71E8D /* c_IR.json */; };
+		A55476B72BDDAD0300D71E8D /* c_tec.json in Resources */ = {isa = PBXBuildFile; fileRef = A55476B12BDDAD0300D71E8D /* c_tec.json */; };
+		A55476B82BDDAD0300D71E8D /* ab_IR.json in Resources */ = {isa = PBXBuildFile; fileRef = A55476B22BDDAD0300D71E8D /* ab_IR.json */; };
+		A55476B92BDDAD0300D71E8D /* ab_isletme.json in Resources */ = {isa = PBXBuildFile; fileRef = A55476B32BDDAD0300D71E8D /* ab_isletme.json */; };
 		A57312442BDC6165008A2955 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57312432BDC6165008A2955 /* MainViewController.swift */; };
 		A57312482BDC61BC008A2955 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57312472BDC61BC008A2955 /* SettingViewController.swift */; };
 		A573124A2BDC64C5008A2955 /* ToolsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57312492BDC64C5008A2955 /* ToolsViewController.swift */; };
@@ -70,6 +79,15 @@
 		247EFE8B2BDD8A3D00AEB766 /* RoleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleViewController.swift; sourceTree = "<group>"; };
 		247EFE8D2BDD91B000AEB766 /* QCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QCodeViewController.swift; sourceTree = "<group>"; };
 		247EFE8F2BDD9A8B00AEB766 /* AprsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AprsViewController.swift; sourceTree = "<group>"; };
+		A55476A72BDDA9F900D71E8D /* QuestionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QuestionManager.swift; path = AmatorTelsiz/Controller/QuestionManager.swift; sourceTree = SOURCE_ROOT; };
+		A55476A92BDDAB0400D71E8D /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Question.swift; path = AmatorTelsiz/Controller/Question.swift; sourceTree = SOURCE_ROOT; };
+		A55476AC2BDDACA700D71E8D /* ab_question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ab_question.swift; path = AmatorTelsiz/Controller/ab_question.swift; sourceTree = SOURCE_ROOT; };
+		A55476AE2BDDAD0300D71E8D /* ab_tec.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ab_tec.json; sourceTree = "<group>"; };
+		A55476AF2BDDAD0300D71E8D /* c_isletme.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = c_isletme.json; sourceTree = "<group>"; };
+		A55476B02BDDAD0300D71E8D /* c_IR.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = c_IR.json; sourceTree = "<group>"; };
+		A55476B12BDDAD0300D71E8D /* c_tec.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = c_tec.json; sourceTree = "<group>"; };
+		A55476B22BDDAD0300D71E8D /* ab_IR.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ab_IR.json; sourceTree = "<group>"; };
+		A55476B32BDDAD0300D71E8D /* ab_isletme.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ab_isletme.json; sourceTree = "<group>"; };
 		A57312432BDC6165008A2955 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A57312472BDC61BC008A2955 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		A57312492BDC64C5008A2955 /* ToolsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsViewController.swift; sourceTree = "<group>"; };
@@ -124,6 +142,7 @@
 		244E5BA22BDC59C700E541D3 /* AmatorTelsiz */ = {
 			isa = PBXGroup;
 			children = (
+				A55476AB2BDDAB3E00D71E8D /* Data Source */,
 				A57312422BDC5CA5008A2955 /* View */,
 				A573123F2BDC5C4C008A2955 /* Controller */,
 				A573123D2BDC5C39008A2955 /* Cells */,
@@ -152,9 +171,24 @@
 			path = AmatorTelsizUITests;
 			sourceTree = "<group>";
 		};
+		A55476AB2BDDAB3E00D71E8D /* Data Source */ = {
+			isa = PBXGroup;
+			children = (
+				A55476B22BDDAD0300D71E8D /* ab_IR.json */,
+				A55476B32BDDAD0300D71E8D /* ab_isletme.json */,
+				A55476AE2BDDAD0300D71E8D /* ab_tec.json */,
+				A55476B02BDDAD0300D71E8D /* c_IR.json */,
+				A55476AF2BDDAD0300D71E8D /* c_isletme.json */,
+				A55476B12BDDAD0300D71E8D /* c_tec.json */,
+			);
+			path = "Data Source";
+			sourceTree = "<group>";
+		};
 		A573123C2BDC5BFF008A2955 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A55476A92BDDAB0400D71E8D /* Question.swift */,
+				A55476AC2BDDACA700D71E8D /* ab_question.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -208,6 +242,7 @@
 		A57312412BDC5C65008A2955 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				A55476A72BDDA9F900D71E8D /* QuestionManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -325,11 +360,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A55476B52BDDAD0300D71E8D /* c_isletme.json in Resources */,
 				247EFE852BDD773700AEB766 /* dot.mp3 in Resources */,
 				247EFE872BDD777F00AEB766 /* dash.mp3 in Resources */,
+				A55476B72BDDAD0300D71E8D /* c_tec.json in Resources */,
 				244E5BB02BDC59C800E541D3 /* LaunchScreen.storyboard in Resources */,
+				A55476B42BDDAD0300D71E8D /* ab_tec.json in Resources */,
 				244E5BAD2BDC59C800E541D3 /* Assets.xcassets in Resources */,
+				A55476B62BDDAD0300D71E8D /* c_IR.json in Resources */,
+				A55476B92BDDAD0300D71E8D /* ab_isletme.json in Resources */,
 				244E5BAB2BDC59C700E541D3 /* Main.storyboard in Resources */,
+				A55476B82BDDAD0300D71E8D /* ab_IR.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,14 +395,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A55476AA2BDDAB0400D71E8D /* Question.swift in Sources */,
 				247EFE8C2BDD8A3D00AEB766 /* RoleViewController.swift in Sources */,
 				A573124A2BDC64C5008A2955 /* ToolsViewController.swift in Sources */,
 				A573124E2BDC7FD0008A2955 /* MainQuestionBankFlowCell.swift in Sources */,
 				244E5BA42BDC59C700E541D3 /* AppDelegate.swift in Sources */,
 				247EFE812BDD746300AEB766 /* CompassViewController.swift in Sources */,
+				A55476AD2BDDACA700D71E8D /* ab_question.swift in Sources */,
 				244E5BA62BDC59C700E541D3 /* SceneDelegate.swift in Sources */,
 				247EFE7B2BDD685100AEB766 /* ExamViewController.swift in Sources */,
 				247EFE892BDD7BD200AEB766 /* PhoneticMorseAlphabetViewController.swift in Sources */,
+				A55476A82BDDA9F900D71E8D /* QuestionManager.swift in Sources */,
 				247EFE832BDD758100AEB766 /* MorseAlphabetViewController.swift in Sources */,
 				247EFE902BDD9A8B00AEB766 /* AprsViewController.swift in Sources */,
 				A57312442BDC6165008A2955 /* MainViewController.swift in Sources */,

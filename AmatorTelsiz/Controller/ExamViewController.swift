@@ -3,32 +3,9 @@ import UIKit
 class ExamViewController: UIViewController {
     var examTitle: String?
     var currentQuestionIndex = 0
-    var questions: [String] = [
-        "Sample question ?",
-        "Sample question ?",
-        "Sample question ?",
-        "Sample question ?",
-        "Sample question ?",
-        "Sample question ?",
-        "Sample question ?",
-        "Sample question ?",
-        "Sample question ?",
-        "Sample question ?"
-        
-        
-    ]
-    var options: [[String]] = [
-        ["Option A", "Option B", "Option C", "Option D"],
-        ["Option A", "Option B", "Option C", "Option D"],
-        ["Option A", "Option B", "Option C", "Option D"],
-        ["Option A", "Option B", "Option C", "Option D"],
-        ["Option A", "Option B", "Option C", "Option D"],
-        ["Option A", "Option B", "Option C", "Option D"],
-        ["Option A", "Option B", "Option C", "Option D"],
-        ["Option A", "Option B", "Option C", "Option D"],
-        ["Option A", "Option B", "Option C", "Option D"],
-        ["Option A", "Option B", "Option C", "Option D"]
-    ]
+
+    var questions = ab_questions().getABIsletmeQuestions()
+
     
     // UI Elements
     var questionLabel: UILabel!
@@ -99,11 +76,11 @@ class ExamViewController: UIViewController {
     }
     
     func displayQuestion() {
-        let currentQuestion = questions[currentQuestionIndex]
+        let currentQuestion = questions[currentQuestionIndex].question
         let questionNumber = currentQuestionIndex + 1
         questionLabel.text = "\(questionNumber). \(currentQuestion)"
         
-        let currentOptions = options[currentQuestionIndex]
+        let currentOptions = questions[currentQuestionIndex].options
         for (index, option) in currentOptions.enumerated() {
             optionButtons[index].setTitle(option, for: .normal)
         }
