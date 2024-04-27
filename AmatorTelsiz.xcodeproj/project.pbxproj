@@ -19,6 +19,7 @@
 		A57312462BDC6179008A2955 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57312452BDC6179008A2955 /* QuestionsViewController.swift */; };
 		A57312482BDC61BC008A2955 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57312472BDC61BC008A2955 /* SettingViewController.swift */; };
 		A573124A2BDC64C5008A2955 /* ToolsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57312492BDC64C5008A2955 /* ToolsViewController.swift */; };
+		A573124E2BDC7FD0008A2955 /* MainQuestionBankFlowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A573124D2BDC7FD0008A2955 /* MainQuestionBankFlowCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		A57312452BDC6179008A2955 /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
 		A57312472BDC61BC008A2955 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		A57312492BDC64C5008A2955 /* ToolsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsViewController.swift; sourceTree = "<group>"; };
+		A573124D2BDC7FD0008A2955 /* MainQuestionBankFlowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainQuestionBankFlowCell.swift; path = AmatorTelsiz/Controller/MainQuestionBankFlowCell.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 		A573123D2BDC5C39008A2955 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				A573124D2BDC7FD0008A2955 /* MainQuestionBankFlowCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -256,7 +259,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1530;
 				TargetAttributes = {
 					244E5B9F2BDC59C700E541D3 = {
 						CreatedOnToolsVersion = 14.3;
@@ -325,6 +328,7 @@
 			files = (
 				A573124A2BDC64C5008A2955 /* ToolsViewController.swift in Sources */,
 				A57312462BDC6179008A2955 /* QuestionsViewController.swift in Sources */,
+				A573124E2BDC7FD0008A2955 /* MainQuestionBankFlowCell.swift in Sources */,
 				244E5BA42BDC59C700E541D3 /* AppDelegate.swift in Sources */,
 				244E5BA62BDC59C700E541D3 /* SceneDelegate.swift in Sources */,
 				A57312442BDC6165008A2955 /* MainViewController.swift in Sources */,
@@ -420,6 +424,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -434,7 +439,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -480,6 +485,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -488,7 +494,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -513,7 +519,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -542,7 +548,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
