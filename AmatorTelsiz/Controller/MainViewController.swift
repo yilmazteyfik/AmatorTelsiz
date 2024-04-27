@@ -14,19 +14,30 @@ struct CustomData {
 class MainViewController: UIViewController {
 
   fileprivate let data = [
-    CustomData(title: "The Islands!", backgroundImage: UIImage(named: "pembekare")!),
-    CustomData(title: "Collection Views!", backgroundImage: UIImage(named: "pembekare 1")!),
-    CustomData(title: "MapKit!", backgroundImage: UIImage(named: "pembekare")!),
+    CustomData(title: "İşletme Sınav", backgroundImage: UIImage(named: "pembekare")!),
+    CustomData(title: "Teknik Sınav", backgroundImage: UIImage(named: "pembekare")!),
+    CustomData(title: "Ulusal ve Uluslararası Sınav", backgroundImage: UIImage(named: "pembekare")!),
   ]
 
   fileprivate let collectionView: UICollectionView = {
     let layout = UICollectionViewFlowLayout()
     layout.scrollDirection = .horizontal
-    let cv = UICollectionView(frame: CGRect(x: 40, y: 170, width: UIScreen.main.bounds.width, height: 150), collectionViewLayout: layout)
+    let cv = UICollectionView(frame: CGRect(x: 40, y: 170, width: UIScreen.main.bounds.width, height: 300), collectionViewLayout: layout)
     cv.translatesAutoresizingMaskIntoConstraints = false
     cv.register(CustomCell.self, forCellWithReuseIdentifier: "cell")
     return cv
   }()
+    
+    private let secondCollectionView: UICollectionView = {
+      let layout = UICollectionViewFlowLayout()
+      layout.scrollDirection = .horizontal
+      let cv = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout) // Frame will be set later
+      cv.translatesAutoresizingMaskIntoConstraints = false
+      cv.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell2") // Use a different identifier
+      cv.backgroundColor = .purple
+      cv.showsHorizontalScrollIndicator = false // Hide scroll bar if needed
+      return cv
+    }()
 
   //MARK: - Properties
   let abButton = {
@@ -67,16 +78,14 @@ extension  MainViewController{
         collectionView.backgroundColor = .white
         collectionView.delegate = self
         collectionView.dataSource = self
-
-
+        collectionView.showsHorizontalScrollIndicator = false
 
     }
-    
     
     private func layout(){
         
         
-    
+
     }
 }
 //MARK: - Functions
@@ -90,7 +99,7 @@ extension MainViewController {
 }
 extension MainViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.width*0.8, height: collectionView.frame.width * 0.8)
+        return CGSize(width: collectionView.frame.width*0.8, height: collectionView.frame.width * 0.6)
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return data.count
