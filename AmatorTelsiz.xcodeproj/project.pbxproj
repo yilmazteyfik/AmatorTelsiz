@@ -21,6 +21,9 @@
 		247EFE852BDD773700AEB766 /* dot.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 247EFE842BDD773700AEB766 /* dot.mp3 */; };
 		247EFE872BDD777F00AEB766 /* dash.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 247EFE862BDD777F00AEB766 /* dash.mp3 */; };
 		247EFE892BDD7BD200AEB766 /* PhoneticMorseAlphabetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247EFE882BDD7BD200AEB766 /* PhoneticMorseAlphabetViewController.swift */; };
+		247EFE8C2BDD8A3D00AEB766 /* RoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247EFE8B2BDD8A3D00AEB766 /* RoleViewController.swift */; };
+		247EFE8E2BDD91B000AEB766 /* QCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247EFE8D2BDD91B000AEB766 /* QCodeViewController.swift */; };
+		247EFE902BDD9A8B00AEB766 /* AprsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247EFE8F2BDD9A8B00AEB766 /* AprsViewController.swift */; };
 		A57312442BDC6165008A2955 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57312432BDC6165008A2955 /* MainViewController.swift */; };
 		A57312482BDC61BC008A2955 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57312472BDC61BC008A2955 /* SettingViewController.swift */; };
 		A573124A2BDC64C5008A2955 /* ToolsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57312492BDC64C5008A2955 /* ToolsViewController.swift */; };
@@ -64,6 +67,9 @@
 		247EFE862BDD777F00AEB766 /* dash.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = dash.mp3; path = ../../../../../Downloads/dash.mp3; sourceTree = "<group>"; };
 		247EFE882BDD7BD200AEB766 /* PhoneticMorseAlphabetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneticMorseAlphabetViewController.swift; sourceTree = "<group>"; };
 		247EFE8A2BDD7EE000AEB766 /* question.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = question.geojson; sourceTree = "<group>"; };
+		247EFE8B2BDD8A3D00AEB766 /* RoleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleViewController.swift; sourceTree = "<group>"; };
+		247EFE8D2BDD91B000AEB766 /* QCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QCodeViewController.swift; sourceTree = "<group>"; };
+		247EFE8F2BDD9A8B00AEB766 /* AprsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AprsViewController.swift; sourceTree = "<group>"; };
 		A57312432BDC6165008A2955 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A57312472BDC61BC008A2955 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		A57312492BDC64C5008A2955 /* ToolsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsViewController.swift; sourceTree = "<group>"; };
@@ -185,6 +191,9 @@
 				247EFE822BDD758100AEB766 /* MorseAlphabetViewController.swift */,
 				247EFE882BDD7BD200AEB766 /* PhoneticMorseAlphabetViewController.swift */,
 				247EFE8A2BDD7EE000AEB766 /* question.geojson */,
+				247EFE8B2BDD8A3D00AEB766 /* RoleViewController.swift */,
+				247EFE8D2BDD91B000AEB766 /* QCodeViewController.swift */,
+				247EFE8F2BDD9A8B00AEB766 /* AprsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -345,6 +354,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				247EFE8C2BDD8A3D00AEB766 /* RoleViewController.swift in Sources */,
 				A573124A2BDC64C5008A2955 /* ToolsViewController.swift in Sources */,
 				A573124E2BDC7FD0008A2955 /* MainQuestionBankFlowCell.swift in Sources */,
 				244E5BA42BDC59C700E541D3 /* AppDelegate.swift in Sources */,
@@ -353,8 +363,10 @@
 				247EFE7B2BDD685100AEB766 /* ExamViewController.swift in Sources */,
 				247EFE892BDD7BD200AEB766 /* PhoneticMorseAlphabetViewController.swift in Sources */,
 				247EFE832BDD758100AEB766 /* MorseAlphabetViewController.swift in Sources */,
+				247EFE902BDD9A8B00AEB766 /* AprsViewController.swift in Sources */,
 				A57312442BDC6165008A2955 /* MainViewController.swift in Sources */,
 				A57312482BDC61BC008A2955 /* SettingViewController.swift in Sources */,
+				247EFE8E2BDD91B000AEB766 /* QCodeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

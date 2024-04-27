@@ -104,10 +104,17 @@ class ToolsViewController: UIViewController, CLLocationManagerDelegate {
             let morseAlphabetVC = MorseAlphabetViewController()
             navigationController?.pushViewController(morseAlphabetVC, animated: true)
         case 2:
-            let phoneticAlphabetVC = PhoneticAlphabetViewController() // Değişiklik burada
-            navigationController?.pushViewController(phoneticAlphabetVC, animated: true) // Değişiklik burada
+            let phoneticAlphabetVC = PhoneticAlphabetViewController()
+            navigationController?.pushViewController(phoneticAlphabetVC, animated: true)
+        case 3:
+            let roleVC = RoleViewController()
+            navigationController?.pushViewController(roleVC, animated: true)
+        case 4:
+            let qcodeVC = QCodeViewController() // Değişiklik burada
+            navigationController?.pushViewController(qcodeVC, animated: true) // Değişiklik burada
         default:
             break
         }
+
     }
 }
