@@ -4,35 +4,35 @@ import AVFoundation
 class PhoneticAlphabetViewController: UIViewController {
     // MARK: - Properties
     let phoneticAlphabet = [
-        "Alpha",
-        "Bravo",
-        "Charlie",
-        "Delta",
-        "Echo",
-        "Foxtrot",
-        "Golf",
-        "Hotel",
-        "India",
-        "Juliett",
-        "Kilo",
-        "Lima",
-        "Mike",
-        "November",
-        "Oscar",
-        "Papa",
-        "Quebec",
-        "Romeo",
-        "Sierra",
-        "Tango",
-        "Uniform",
-        "Victor",
-        "Whiskey",
-        "X-ray",
-        "Yankee",
-        "Zulu"
+        "Alpha": "Al-fuh",
+        "Bravo": "Brah-voh",
+        "Charlie": "Char-lee",
+        "Delta": "Dell-tah",
+        "Echo": "Eck-oh",
+        "Foxtrot": "Foks-trot",
+        "Golf": "Golf",
+        "Hotel": "Hoh-tel",
+        "India": "In-dee-ah",
+        "Juliett": "Jew-lee-ett",
+        "Kilo": "Key-loh",
+        "Lima": "Lee-mah",
+        "Mike": "Mike",
+        "November": "No-vem-ber",
+        "Oscar": "Oss-cah",
+        "Papa": "Pah-pah",
+        "Quebec": "Keh-beck",
+        "Romeo": "Row-me-oh",
+        "Sierra": "See-air-rah",
+        "Tango": "Tang-goh",
+        "Uniform": "You-nee-form",
+        "Victor": "Vik-tah",
+        "Whiskey": "Wiss-key",
+        "X-ray": "Ecks-ray",
+        "Yankee": "Yang-key",
+        "Zulu": "Zoo-loo"
     ]
     
-    let player = PhoneticAlphabetPlayer()
+    let speechSynthesizer = AVSpeechSynthesizer()
     
     let stackView: UIStackView = {
         let stackView = UIStackView()
@@ -53,15 +53,14 @@ class PhoneticAlphabetViewController: UIViewController {
     
     // MARK: - UI Setup
     private func setupUI() {
-        let sortedAlphabet = phoneticAlphabet.sorted(by: { $0.key < $1.key })
         var rowStackView: UIStackView?
-        for (index, (word, phonetic)) in sortedAlphabet.enumerated() {
-            if index % 4 == 0 {
+        for (index, (word, _)) in phoneticAlphabet.enumerated() {
+            if index % 3 == 0 {
                 rowStackView = createRowStackView()
                 stackView.addArrangedSubview(rowStackView!)
             }
             
-            let cardView = createCardView(for: "\(word): \(phonetic)")
+            let cardView = createCardView(for: "\(word)")
             rowStackView?.addArrangedSubview(cardView)
         }
         
@@ -74,7 +73,6 @@ class PhoneticAlphabetViewController: UIViewController {
             stackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20)
         ])
     }
-
 
     private func createRowStackView() -> UIStackView {
         let rowStackView = UIStackView()
@@ -113,18 +111,12 @@ class PhoneticAlphabetViewController: UIViewController {
     // MARK: - Button Actions
     @objc private func wordButtonTapped(_ sender: UIButton) {
         guard let title = sender.titleLabel?.text else { return }
-        let word = title.split(separator: ":").first ?? ""
-        if let phonetic = phoneticAlphabet[String(word)] {
-            player.speak(phonetic)
+        if let phonetic = phoneticAlphabet[title] {
+            speak(phonetic)
         }
     }
-}
-
-// MARK: - Helper Classes
-class PhoneticAlphabetPlayer {
-    let speechSynthesizer = AVSpeechSynthesizer()
     
-    func speak(_ text: String) {
+    private func speak(_ text: String) {
         let utterance = AVSpeechUtterance(string: text)
         utterance.voice = AVSpeechSynthesisVoice(language: "en-US")
         speechSynthesizer.speak(utterance)

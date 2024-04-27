@@ -38,8 +38,9 @@ class MorseAlphabetViewController: UIViewController {
     
     // MARK: - UI Setup
     private func setupUI() {
+        let sortedAlphabet = morseAlphabet.sorted(by: { $0.key < $1.key })
         var rowStackView: UIStackView?
-        for (index, (letter, morseCode)) in morseAlphabet.enumerated() {
+        for (index, (letter, morseCode)) in sortedAlphabet.enumerated() {
             if index % 4 == 0 {
                 rowStackView = createRowStackView()
                 stackView.addArrangedSubview(rowStackView!)
@@ -113,7 +114,6 @@ class MorseAlphabetViewController: UIViewController {
             }
         }
     }
-
 }
 
 // MARK: - Helper Classes
