@@ -18,10 +18,10 @@ class ExamViewController: UIViewController {
         
     ]
     var options: [[String]] = [
-        ["Option A", "Option B", "Option C", "Option D"], // Options for question 1
-        ["Option A", "Option B", "Option C", "Option D"], // Options for question 2
+        ["Option A", "Option B", "Option C", "Option D"], 
         ["Option A", "Option B", "Option C", "Option D"],
-        ["Option A", "Option B", "Option C", "Option D"],// Options for question 20
+        ["Option A", "Option B", "Option C", "Option D"],
+        ["Option A", "Option B", "Option C", "Option D"],
         ["Option A", "Option B", "Option C", "Option D"],
         ["Option A", "Option B", "Option C", "Option D"],
         ["Option A", "Option B", "Option C", "Option D"],
