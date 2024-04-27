@@ -8,14 +8,31 @@
 import Foundation
 import UIKit
 
-class MainViewController : UIViewController{
-    let view1 = {
-        let viewUI = UIView(frame: CGRect(x: 40, y: 110, width: 150, height: 120))
-        viewUI.layer.cornerRadius = 15
-        viewUI.backgroundColor = .blue
-        return viewUI
-        
-    }()
+class MainViewController : UIViewController {
+  
+    
+    let views: [UIView] = [
+            // Your existing view definitions here:
+            {
+                let viewUI = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 0)) // Placeholder for view1
+                viewUI.layer.cornerRadius = 15
+                viewUI.backgroundColor = .blue
+                return viewUI
+            }(),
+            {
+                let viewUI = UIView(frame: CGRect.zero) // Placeholder for view2
+                viewUI.layer.cornerRadius = 15
+                viewUI.backgroundColor = .systemPink
+                return viewUI
+            }(),
+            {
+                let viewUI = UIView(frame: CGRect.zero) // Placeholder for view3
+                viewUI.layer.cornerRadius = 15
+                viewUI.backgroundColor = .systemRed
+                return viewUI
+            }()
+        ]
+    
     
     //MARK: - Properties
     let abButton = {
@@ -55,7 +72,26 @@ extension  MainViewController{
         
         //MARK: - Collection View Style
         
-        view.addSubview(view1)
+        let layout = UICollectionViewFlowLayout()
+                layout.scrollDirection = .horizontal
+                layout.itemSize = CGSize(width: UIScreen.main.bounds.width * 0.7, height: UIScreen.main.bounds.width * 0.40)
+                layout.minimumLineSpacing = 10 // Optional spacing between cells
+
+                collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: layout)
+                collectionView.backgroundColor = .clear // Optional background color for collection view
+                collectionView.dataSource = self
+                collectionView.delegate = self
+                collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell") // Generic cell
+                view.addSubview(collectionView)
+
+                // Optional: Add constraints for the collection view (if needed)
+                collectionView.translatesAutoresizingMaskIntoConstraints = false
+                NSLayoutConstraint.activate([
+                    collectionView.topAnchor.constraint(equalTo: abButton.bottomAnchor, constant: 20),
+                    collectionView.leftAnchor.constraint(equalTo: view.leftAnchor),
+                    collectionView.rightAnchor.constraint(equalTo: view.rightAnchor),
+                    collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+                ])
 
 
 
@@ -73,5 +109,18 @@ extension MainViewController {
     }
     @objc func cButtonTapped(){
         print("C button Tapped")
+    }
+}
+extension MainViewController : UICollectionViewDataSource, UICollectionViewDelegate{
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return views.count
+
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
+                cell.contentView.backgroundColor = views[indexPath.row].backgroundColor
+                cell.contentView.layer.cornerRadius = 15
+                return cell
     }
 }
