@@ -28,7 +28,7 @@ class SettingViewController: UIViewController {
     // MARK: - UI Setup
     
     private func setupNavigationBar() {
-        title = "Settings"
+        title = "Ayarlar"
         navigationController?.navigationBar.prefersLargeTitles = true
     }
     

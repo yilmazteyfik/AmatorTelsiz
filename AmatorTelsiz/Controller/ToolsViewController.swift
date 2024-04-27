@@ -18,7 +18,7 @@ class ToolsViewController: UIViewController, CLLocationManagerDelegate {
        
        // MARK: - Helpers
     private func layoutTools() {
-        title = "Tools"
+        title = "Araçlar"
         navigationController?.navigationBar.prefersLargeTitles = true
         
         let toolNames = ["Pusula", "Mors Alfabesi", "Fonetik Alfabe", "Röle Bilgileri", "Q Kodları", "Aprs-Fi"]
@@ -34,7 +34,7 @@ class ToolsViewController: UIViewController, CLLocationManagerDelegate {
             cardView.layer.cornerRadius = cornerRadius
             cardView.layer.shadowColor = UIColor.black.cgColor
             cardView.layer.shadowOpacity = 0.1
-            cardView.layer.shadowOffset = CGSize(width: 0, height: 2)
+            cardView.layer.shadowOffset = CGSize(width: 0, height: 4)
             cardView.layer.shadowRadius = 4
             view.addSubview(cardView)
             cardView.translatesAutoresizingMaskIntoConstraints = false

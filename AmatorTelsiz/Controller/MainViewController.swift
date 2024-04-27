@@ -8,9 +8,12 @@ struct CustomData {
 class MainViewController: UIViewController {
 
     fileprivate let data = [
-        CustomData(title: "İşletme ", backgroundImage: UIImage(named: "pembekare")!),
-        CustomData(title: "Teknik ", backgroundImage: UIImage(named: "pembekare")!),
-        CustomData(title: "Ulusal ve Uluslararası ", backgroundImage: UIImage(named: "pembekare")!)
+        CustomData(title: "A/B Sınıfı İşletme ", backgroundImage: UIImage(named: "6016915")!),
+        CustomData(title: "A/B Sınıfı Teknik ", backgroundImage: UIImage(named: "8808136")!),
+        CustomData(title: "A/B Sınıfı Ulusal ve Uluslararası", backgroundImage: UIImage(named: "6488972")!),
+        CustomData(title: "C Sınıfı İşletme ", backgroundImage: UIImage(named: "5617266")!),
+        CustomData(title: "C Sınıfı Teknik", backgroundImage: UIImage(named: "6488972")!),
+        CustomData(title: "C Sınıfı Ulusal ve Uluslararası", backgroundImage: UIImage(named: "5617266")!)
     ]
 
     fileprivate let collectionView: UICollectionView = {
@@ -33,22 +36,7 @@ class MainViewController: UIViewController {
         return cv
     }()
 
-    let abButton: UIButton = {
-        let button = UIButton(frame: CGRect(x: 40, y: 70, width: 130, height: 40))
-        button.setTitle("A/B", for: .normal)
-        button.backgroundColor = .purple
-        button.layer.cornerRadius = 20
-        return button
-    }()
-
-    let cButton: UIButton = {
-        let button = UIButton(frame: CGRect(x: UIScreen.main.bounds.width - 170, y: 70, width: 130, height: 40))
-        button.setTitle("C", for: .normal)
-        button.backgroundColor = .purple
-        button.layer.cornerRadius = 20
-        return button
-    }()
-
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         style()
@@ -59,12 +47,7 @@ class MainViewController: UIViewController {
 // MARK: - Helpers
 extension MainViewController {
     private func style() {
-        abButton.addTarget(self, action: #selector(abButtonTapped), for: .touchUpInside)
-        view.addSubview(abButton)
-
-        cButton.addTarget(self, action: #selector(cButtonTapped), for: .touchUpInside)
-        view.addSubview(cButton)
-
+       
         view.addSubview(collectionView)
         collectionView.backgroundColor = .white
         collectionView.delegate = self
