@@ -63,6 +63,7 @@
 		247EFE842BDD773700AEB766 /* dot.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = dot.mp3; path = ../../../../../Downloads/dot.mp3; sourceTree = "<group>"; };
 		247EFE862BDD777F00AEB766 /* dash.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = dash.mp3; path = ../../../../../Downloads/dash.mp3; sourceTree = "<group>"; };
 		247EFE882BDD7BD200AEB766 /* PhoneticMorseAlphabetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneticMorseAlphabetViewController.swift; sourceTree = "<group>"; };
+		247EFE8A2BDD7EE000AEB766 /* question.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = question.geojson; sourceTree = "<group>"; };
 		A57312432BDC6165008A2955 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A57312472BDC61BC008A2955 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		A57312492BDC64C5008A2955 /* ToolsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsViewController.swift; sourceTree = "<group>"; };
@@ -183,6 +184,7 @@
 				247EFE802BDD746300AEB766 /* CompassViewController.swift */,
 				247EFE822BDD758100AEB766 /* MorseAlphabetViewController.swift */,
 				247EFE882BDD7BD200AEB766 /* PhoneticMorseAlphabetViewController.swift */,
+				247EFE8A2BDD7EE000AEB766 /* question.geojson */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
