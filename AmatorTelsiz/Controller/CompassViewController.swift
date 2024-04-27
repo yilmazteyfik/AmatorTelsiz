@@ -1,108 +1,82 @@
+//
+//  CompassViewController.swift
+//  AmatorTelsiz
+//
+//  Created by Melik Bilyay on 27.04.2024.
+//
+
+import Foundation
 import UIKit
 import CoreLocation
 
 class CompassViewController: UIViewController, CLLocationManagerDelegate {
-    // MARK: - Properties
-    private var locationManager = CLLocationManager()
-    private var arrowImageView = UIImageView()
-    private var lastHeadingAngle: CGFloat = 0.0
+    // Compass UI Elements
+    var compassImageView: UIImageView!
+    var degreeLabel: UILabel!
     
-    // MARK: - Lifecycles
+    // Location Manager
+    var locationManager: CLLocationManager!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
+        setupLocationManager()
+    }
+    
+    func setupUI() {
+        // Set background color to white
         view.backgroundColor = .white
         
-        configureNavigationBar()
-        configureArrowImageView()
-        configureLocationManager()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        startUpdatingLocation()
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        stopUpdatingLocation()
-    }
-    
-    // MARK: - Helpers
-    private func configureNavigationBar() {
-        let backButton = UIBarButtonItem(title: "Geri", style: .plain, target: self, action: #selector(backButtonTapped))
-        navigationItem.leftBarButtonItem = backButton
-    }
-    
-    private func configureArrowImageView() {
-        arrowImageView.image = UIImage(named: "arrow")
-        arrowImageView.contentMode = .scaleAspectFit
-        view.addSubview(arrowImageView)
+        // Compass Image View
+        compassImageView = UIImageView(image: UIImage(named: "compass"))
+        compassImageView.contentMode = .scaleAspectFit
+        compassImageView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(compassImageView)
         
-        arrowImageView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            arrowImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            arrowImageView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            arrowImageView.widthAnchor.constraint(equalToConstant: 100),
-            arrowImageView.heightAnchor.constraint(equalToConstant: 100)
+            compassImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            compassImageView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            compassImageView.widthAnchor.constraint(equalToConstant: 300),
+            compassImageView.heightAnchor.constraint(equalToConstant: 300)
+        ])
+        
+        // Degree Label
+        degreeLabel = UILabel()
+        degreeLabel.font = UIFont.systemFont(ofSize: 20, weight: .bold)
+        degreeLabel.textColor = .black
+        degreeLabel.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(degreeLabel)
+        
+        NSLayoutConstraint.activate([
+            degreeLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            degreeLabel.topAnchor.constraint(equalTo: compassImageView.bottomAnchor, constant: 20)
         ])
     }
     
-    private func configureLocationManager() {
-        if CLLocationManager.headingAvailable() {
-            locationManager.delegate = self
-            locationManager.startUpdatingHeading()
-        } else {
-            showAlert(title: "Hata", message: "Cihaz pusula desteği sağlamıyor.")
-        }
+    func setupLocationManager() {
+        locationManager = CLLocationManager()
+        locationManager.delegate = self
+        locationManager.startUpdatingHeading()
     }
     
-    private func startUpdatingLocation() {
-        if CLLocationManager.locationServicesEnabled() {
-            locationManager.startUpdatingLocation()
-        } else {
-            showAlert(title: "Hata", message: "Konum servisleri kapalı.")
-        }
-    }
-    
-    private func stopUpdatingLocation() {
-        locationManager.stopUpdatingLocation()
-    }
-    
-    // MARK: - CLLocationManagerDelegate
     func locationManager(_ manager: CLLocationManager, didUpdateHeading newHeading: CLHeading) {
-        let newAngle = CGFloat(newHeading.trueHeading).toRadians
-        let delta = angleDifference(from: lastHeadingAngle, to: newAngle)
+        let heading = newHeading.magneticHeading
+        let rotationAngle = CGFloat(-heading).toRadians // Convert heading to radians and negate for UIImageView rotation
+        compassImageView.transform = CGAffineTransform(rotationAngle: rotationAngle)
         
-        UIView.animate(withDuration: 0.2) {
-            self.arrowImageView.transform = self.arrowImageView.transform.rotated(by: delta)
-        }
-        
-        lastHeadingAngle = newAngle
+        let roundedHeading = Int(heading)
+        let direction = getDirection(heading: roundedHeading)
+        degreeLabel.text = "\(roundedHeading)° \(direction)"
     }
     
-    // MARK: - Actions
-    @objc private func backButtonTapped() {
-        dismiss(animated: true, completion: nil)
-    }
-    
-    // MARK: - Utility
-    private func angleDifference(from: CGFloat, to: CGFloat) -> CGFloat {
-        var delta = to - from
-        if delta > .pi {
-            delta -= 2 * .pi
-        } else if delta < -.pi {
-            delta += 2 * .pi
-        }
-        return delta
-    }
-    
-    private func showAlert(title: String, message: String) {
-        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        alertController.addAction(UIAlertAction(title: "Tamam", style: .default, handler: nil))
-        present(alertController, animated: true, completion: nil)
+    func getDirection(heading: Int) -> String {
+        let directions = ["K", "KKB", "KB", "DBK", "D", "DKG", "KG", "KGD", "GD", "GKGD", "GKG", "BGD", "B"]
+        let index = Int((Double(heading) / 360.0) * 12) % 12
+        return directions[index]
     }
 }
 
 extension CGFloat {
     var toRadians: CGFloat { return self * .pi / 180 }
 }
+

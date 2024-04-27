@@ -7,16 +7,16 @@ class ToolsViewController: UIViewController, CLLocationManagerDelegate {
     private let toolIcons: [UIImage] = ["pngegg", "pngegg-1", "pngegg-2", "pngegg-4", "pngegg-3","pngegg-5","pngegg-6"].compactMap { UIImage(named: $0) }
     
     // MARK: - Lifecycles
-       override func viewDidLoad() {
-           super.viewDidLoad()
-           view.backgroundColor = .white
-           layoutTools()
-           
-           locationManager.delegate = self
-           locationManager.startUpdatingHeading()
-       }
-       
-       // MARK: - Helpers
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .white
+        layoutTools()
+        
+        locationManager.delegate = self
+        locationManager.startUpdatingHeading()
+    }
+    
+    // MARK: - Helpers
     private func layoutTools() {
         title = "Araçlar"
         navigationController?.navigationBar.prefersLargeTitles = true
@@ -42,6 +42,7 @@ class ToolsViewController: UIViewController, CLLocationManagerDelegate {
             let button = UIButton(type: .system)
             button.setTitle("", for: .normal)
             button.tag = index
+            button.addTarget(self, action: #selector(toolButtonTapped(_:)), for: .touchUpInside)
             cardView.addSubview(button)
             button.translatesAutoresizingMaskIntoConstraints = false
             
@@ -92,6 +93,21 @@ class ToolsViewController: UIViewController, CLLocationManagerDelegate {
             
             previousTool = cardView
         }
-        
     }
+    
+    @objc private func toolButtonTapped(_ sender: UIButton) {
+        switch sender.tag {
+        case 0:
+            let compassVC = CompassViewController()
+            navigationController?.pushViewController(compassVC, animated: true)
+        case 1:
+            let morseAlphabetVC = MorseAlphabetViewController()
+            navigationController?.pushViewController(morseAlphabetVC, animated: true)
+        case 2:
+            let phoneticAlphabetVC = PhoneticAlphabetViewController() // Değişiklik burada
+            navigationController?.pushViewController(phoneticAlphabetVC, animated: true) // Değişiklik burada
+        default:
+            break
+        }
     }
+}

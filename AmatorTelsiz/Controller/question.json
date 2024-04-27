@@ -1,0 +1,42 @@
+[
+    {
+        "question": "What is the capital of Country 1?",
+        "options": ["Option A", "Option B", "Option C", "Option D"]
+    },
+    {
+        "question": "What is the capital of Country 2?",
+        "options": ["Option A", "Option B", "Option C", "Option D"]
+    },
+    {
+        "question": "What is the capital of Country 3?",
+        "options": ["Option A", "Option B", "Option C", "Option D"]
+    },
+    {
+        "question": "What is the capital of Country 4?",
+        "options": ["Option A", "Option B", "Option C", "Option D"]
+    },
+    {
+        "question": "What is the capital of Country 5?",
+        "options": ["Option A", "Option B", "Option C", "Option D"]
+    },
+    {
+        "question": "What is the capital of Country 6?",
+        "options": ["Option A", "Option B", "Option C", "Option D"]
+    },
+    {
+        "question": "What is the capital of Country 7?",
+        "options": ["Option A", "Option B", "Option C", "Option D"]
+    },
+    {
+        "question": "What is the capital of Country 8?",
+        "options": ["Option A", "Option B", "Option C", "Option D"]
+    },
+    {
+        "question": "What is the capital of Country 9?",
+        "options": ["Option A", "Option B", "Option C", "Option D"]
+    },
+    {
+        "question": "What is the capital of Country 10?",
+        "options": ["Option A", "Option B", "Option C", "Option D"]
+    }
+]
