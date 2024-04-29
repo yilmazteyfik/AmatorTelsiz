@@ -75,7 +75,7 @@ extension MainViewController {
 
         firstCollectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0).isActive = true
         firstCollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0).isActive = true
-        firstCollectionView.topAnchor.constraint(equalTo: view.topAnchor, constant: 120).isActive = true
+        firstCollectionView.topAnchor.constraint(equalTo: view.topAnchor, constant: view.frame.height * 0.15).isActive = true
         firstCollectionView.heightAnchor.constraint(equalToConstant: 300).isActive = true
 
         let titleLabel1 = UILabel()
@@ -91,7 +91,7 @@ extension MainViewController {
 
         secondCollectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0).isActive = true
         secondCollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0).isActive = true
-        secondCollectionView.topAnchor.constraint(equalTo: firstCollectionView.bottomAnchor, constant: 40).isActive = true
+        secondCollectionView.topAnchor.constraint(equalTo: firstCollectionView.bottomAnchor, constant: view.frame.height * 0.04).isActive = true
         secondCollectionView.heightAnchor.constraint(equalToConstant: 200).isActive = true
     }
 }

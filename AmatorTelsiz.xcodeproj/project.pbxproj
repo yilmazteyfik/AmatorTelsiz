@@ -22,8 +22,6 @@
 		247EFE8E2BDD91B000AEB766 /* QCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247EFE8D2BDD91B000AEB766 /* QCodeViewController.swift */; };
 		247EFE902BDD9A8B00AEB766 /* AprsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247EFE8F2BDD9A8B00AEB766 /* AprsViewController.swift */; };
 		247EFE922BDEFCB300AEB766 /* DarkModeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247EFE912BDEFCB300AEB766 /* DarkModeManager.swift */; };
-		24DA49D02BE049EF002474CA /* dot.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 24DA49CF2BE049EF002474CA /* dot.mp3 */; };
-		24DA49D22BE049F4002474CA /* dash.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 24DA49D12BE049F4002474CA /* dash.mp3 */; };
 		24DA49E52BE04ADE002474CA /* ab_isletme.json in Resources */ = {isa = PBXBuildFile; fileRef = 24DA49DF2BE04ADE002474CA /* ab_isletme.json */; };
 		24DA49E62BE04ADE002474CA /* ab_tec.json in Resources */ = {isa = PBXBuildFile; fileRef = 24DA49E02BE04ADE002474CA /* ab_tec.json */; };
 		24DA49E72BE04ADE002474CA /* c_IR.json in Resources */ = {isa = PBXBuildFile; fileRef = 24DA49E12BE04ADE002474CA /* c_IR.json */; };
@@ -45,6 +43,8 @@
 		A5E6E1AA2BE022C6001C7469 /* C_IRExamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E6E1A92BE022C6001C7469 /* C_IRExamViewController.swift */; };
 		A5E6E1AC2BE022DE001C7469 /* C_TecViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E6E1AB2BE022DE001C7469 /* C_TecViewController.swift */; };
 		A5E6E1AF2BE02E25001C7469 /* CustomCellBottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E6E1AE2BE02E25001C7469 /* CustomCellBottom.swift */; };
+		A5E6E1B22BE04CB6001C7469 /* dash.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A5E6E1B02BE04CB6001C7469 /* dash.mp3 */; };
+		A5E6E1B32BE04CB6001C7469 /* dot.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A5E6E1B12BE04CB6001C7469 /* dot.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,8 +84,6 @@
 		247EFE8D2BDD91B000AEB766 /* QCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QCodeViewController.swift; sourceTree = "<group>"; };
 		247EFE8F2BDD9A8B00AEB766 /* AprsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AprsViewController.swift; sourceTree = "<group>"; };
 		247EFE912BDEFCB300AEB766 /* DarkModeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModeManager.swift; sourceTree = "<group>"; };
-		24DA49CF2BE049EF002474CA /* dot.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = dot.mp3; path = ../../../../../Downloads/dot.mp3; sourceTree = "<group>"; };
-		24DA49D12BE049F4002474CA /* dash.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = dash.mp3; path = ../../../../../Downloads/dash.mp3; sourceTree = "<group>"; };
 		24DA49DF2BE04ADE002474CA /* ab_isletme.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ab_isletme.json; sourceTree = "<group>"; };
 		24DA49E02BE04ADE002474CA /* ab_tec.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ab_tec.json; sourceTree = "<group>"; };
 		24DA49E12BE04ADE002474CA /* c_IR.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = c_IR.json; sourceTree = "<group>"; };
@@ -107,6 +105,8 @@
 		A5E6E1A92BE022C6001C7469 /* C_IRExamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C_IRExamViewController.swift; sourceTree = "<group>"; };
 		A5E6E1AB2BE022DE001C7469 /* C_TecViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C_TecViewController.swift; sourceTree = "<group>"; };
 		A5E6E1AE2BE02E25001C7469 /* CustomCellBottom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellBottom.swift; sourceTree = "<group>"; };
+		A5E6E1B02BE04CB6001C7469 /* dash.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = dash.mp3; path = ../../../../Desktop/dash.mp3; sourceTree = "<group>"; };
+		A5E6E1B12BE04CB6001C7469 /* dot.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = dot.mp3; path = ../../../../Desktop/dot.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,8 +221,8 @@
 		A573123E2BDC5C43008A2955 /* Support */ = {
 			isa = PBXGroup;
 			children = (
-				24DA49CF2BE049EF002474CA /* dot.mp3 */,
-				24DA49D12BE049F4002474CA /* dash.mp3 */,
+				A5E6E1B02BE04CB6001C7469 /* dash.mp3 */,
+				A5E6E1B12BE04CB6001C7469 /* dot.mp3 */,
 				244E5BB12BDC59C800E541D3 /* Info.plist */,
 				244E5BAC2BDC59C800E541D3 /* Assets.xcassets */,
 				244E5BA52BDC59C700E541D3 /* SceneDelegate.swift */,
@@ -401,14 +401,14 @@
 				244E5BB02BDC59C800E541D3 /* LaunchScreen.storyboard in Resources */,
 				244E5BAD2BDC59C800E541D3 /* Assets.xcassets in Resources */,
 				24DA49E52BE04ADE002474CA /* ab_isletme.json in Resources */,
-				24DA49D22BE049F4002474CA /* dash.mp3 in Resources */,
+				A5E6E1B32BE04CB6001C7469 /* dot.mp3 in Resources */,
 				244E5BAB2BDC59C700E541D3 /* Main.storyboard in Resources */,
 				24DA49E62BE04ADE002474CA /* ab_tec.json in Resources */,
 				24DA49E92BE04ADE002474CA /* c_tec.json in Resources */,
+				A5E6E1B22BE04CB6001C7469 /* dash.mp3 in Resources */,
 				24DA49EA2BE04ADE002474CA /* c_isletme.json in Resources */,
 				24DA49E82BE04ADE002474CA /* ab_IR.json in Resources */,
 				24DA49E72BE04ADE002474CA /* c_IR.json in Resources */,
-				24DA49D02BE049EF002474CA /* dot.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
