@@ -1,6 +1,6 @@
 import UIKit
 
-class ExamViewController: UIViewController {
+class AB_IExamViewController: UIViewController {
     var examTitle: String?
     var currentQuestionIndex = 0
 

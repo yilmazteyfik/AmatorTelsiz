@@ -26,11 +26,13 @@ class ab_questions: NSObject {
 
             for jsonObject in jsonArray {
                 guard let questionText = jsonObject["question"] as? String,
-                      let options = jsonObject["options"] as? [String] else {
+                      let options = jsonObject["options"] as? [String],
+                      let answer = jsonObject["answer"] as? String
+                else {
                     fatalError("Failed to parse JSON.")
                 }
 
-                let question = Question(question: questionText, options: options)
+                let question = Question(question: questionText, options: options, answer: answer)
                 questions.append(question)
             }
 
@@ -38,6 +40,7 @@ class ab_questions: NSObject {
             for (index, question) in questions.enumerated() {
                 print("Question \(index + 1): \(question.question)")
                 print("Options: \(question.options)")
+                print("Answer  \(question.answer)")
             }
         } catch {
             fatalError("Error while parsing JSON: \(error.localizedDescription)")
@@ -56,11 +59,13 @@ class ab_questions: NSObject {
 
             for jsonObject in jsonArray {
                 guard let questionText = jsonObject["question"] as? String,
-                      let options = jsonObject["options"] as? [String] else {
+                      let options = jsonObject["options"] as? [String],
+                      let answer = jsonObject["answer"] as? String
+                else {
                     fatalError("Failed to parse JSON.")
                 }
 
-                let question = Question(question: questionText, options: options)
+                let question = Question(question: questionText, options: options, answer: answer)
                 questions.append(question)
             }
 
@@ -68,6 +73,7 @@ class ab_questions: NSObject {
             for (index, question) in questions.enumerated() {
                 print("Question \(index + 1): \(question.question)")
                 print("Options: \(question.options)")
+                print("Answer  \(question.answer)")
             }
         } catch {
             fatalError("Error while parsing JSON: \(error.localizedDescription)")
@@ -86,11 +92,13 @@ class ab_questions: NSObject {
 
             for jsonObject in jsonArray {
                 guard let questionText = jsonObject["question"] as? String,
-                      let options = jsonObject["options"] as? [String] else {
+                      let options = jsonObject["options"] as? [String],
+                      let answer = jsonObject["answer"] as? String
+                else {
                     fatalError("Failed to parse JSON.")
                 }
 
-                let question = Question(question: questionText, options: options)
+                let question = Question(question: questionText, options: options, answer: answer)
                 questions.append(question)
             }
 
@@ -98,6 +106,7 @@ class ab_questions: NSObject {
             for (index, question) in questions.enumerated() {
                 print("Question \(index + 1): \(question.question)")
                 print("Options: \(question.options)")
+                print("Answer  \(question.answer)")
             }
         } catch {
             fatalError("Error while parsing JSON: \(error.localizedDescription)")

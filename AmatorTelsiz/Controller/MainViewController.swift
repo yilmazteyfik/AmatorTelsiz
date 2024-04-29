@@ -129,7 +129,7 @@ extension MainViewController: UICollectionViewDelegateFlowLayout, UICollectionVi
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let examVC = ExamViewController()
+        let examVC = AB_IExamViewController()
         examVC.examTitle = data[indexPath.item].title
         navigationController?.pushViewController(examVC, animated: true)
     }

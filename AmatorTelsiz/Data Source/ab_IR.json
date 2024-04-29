@@ -6,7 +6,7 @@
             "b) Haberleşme Komitesi",
             "c) Elektronik Haberleşme Komitesi",
             "d) Teknoloji Komitesi"
-        ]
+        ],
         "answer": "c) Elektronik Haberleşme Komitesi"
     },
     {
@@ -16,7 +16,7 @@
             "b) B sınıfı belgeye",
             "c) C sınıfı belgeye",
             "d) YM sınıfı belgeye"
-        ]
+        ],
         "answer": "a) A sınıfı belgeye"
     },
     {
@@ -26,7 +26,7 @@
             "b) Uluslararası Telsiz Haberleşme Ofisi",
             "c) Uluslararası Amatör Telsizciler Birliği",
             "d) Uluslararası Posta ve Telekomünikasyon İdaresi"
-        ]
+        ],
         "answer": "c) Uluslararası Amatör Telsizciler Birliği"
     },
     {
@@ -36,7 +36,7 @@
             "b) T/R 61-02",
             "c) ECC tavsiye kararı",
             "d) ERO tavsiye kararı"
-        ]
+        ],
         "answer":"a) T/R 61-01"
     },
     {
@@ -46,7 +46,7 @@
             "b) 2",
             "c) 3",
             "d) 4"
-        ]
+        ],
         "answer":"c) 3"
     },
     {
@@ -56,7 +56,7 @@
             "b) Sadece Deniz Mobil hizmetlerinde frekans tahsisi yapar",
             "c) Çağrı işaretlerinin planlamasını yapar",
             "d) Sadece Hava araçlarına frekans tahsisi yapar"
-        ]
+        ],
         "answer": "a) Frekans tahsislerinin yönetiminde yardımcı olur"
     },
     {
@@ -66,7 +66,7 @@
             "b) T/R 61-02 kararı",
             "c) T/R 61-01 kararı",
             "d) Hiçbiri"
-        ]
+        ],
         "answer": "b) T/R 61-02 kararı"
     },
     {
@@ -76,7 +76,7 @@
             "b) Yalnız İngilizce düzenlenmeli",
             "c) Yalnız Almanca düzenlenmeli",
             "d) Yalnız Fransızca düzenlenmeli"
-        ]
+        ],
         "answer":"a) Belgenin düzenlendiği ülkeye ait dilin yanısıra İngilizce, Fransızca ve Almanca olarak düzenlenmeli"
     },
     {
@@ -86,7 +86,7 @@
             "b) Doğum Tarihi",
             "c) Adresi",
             "d) Anne adı"
-        ]
+        ],
         "answer": "d) Anne adı"
     },
     {
@@ -96,7 +96,7 @@
             "b) 32.bölüm",
             "c) 40.bölüm",
             "d) 45.bölüm"
-        ]
+        ],
         "answer":"a) 25.bölüm"
     },
     {
@@ -106,7 +106,7 @@
             "b) Çıraklık sınıfı sınav seviyesini",
             "c) Giriş sınıfı sınav seviyesini",
             "d) Hiçbiri"
-        ]
+        ],
         "answer": "c) Giriş sınıfı sınav seviyesini"
     },
     {
@@ -116,7 +116,7 @@
             "b) Deniz Radyo Uydu Hizmetini",
             "c) Uçak Radyo Uydu Hizmetini",
             "d) Uydu Hizmetini"
-        ]
+        ],
         "answer":"a) Amatör Radyo Hizmeti ve Amatör Radyo Uydu Hizmetini"
     },
     {
@@ -126,7 +126,7 @@
             "b) Uluslararası Telekomünikasyon Birliği",
             "c) Uluslararası Teknoloji Birliği",
             "d) Uluslararası Telekomünikasyon Örgütü"
-        ]
+        ],
         "answer": "b) Uluslararası Telekomünikasyon Birliği"
     },
     {
@@ -136,7 +136,7 @@
             "b) Technician, General, Advanced",
             "c) Technician, General, Extra",
             "d) Technician, Tech Plus, General"
-        ]
+        ],
         "answer": "a) Harec, Novice, Entring"
     },
     {
@@ -146,7 +146,7 @@
             "b) Kendi çağrı işaretini kullanamaz",
             "c) Kendi çağrı işaretinin sonuna ülke kodunu eklemelidir",
             "d) Sadece kendi çağrı işaretini kullanır"
-        ]
+        ],
         "answer": "a) Kendi çağrı işareti önüne TA ve TB eklemelidir"
     },
     {
@@ -156,7 +156,7 @@
             "b) Posta Telekomünikasyon Birliği",
             "c) Avrupa Posta ve Telekomünikasyon İdareleri Birliği",
             "d) Posta İdareleri Birliği"
-        ]
+        ],
         "answer":  "c) Avrupa Posta ve Telekomünikasyon İdareleri Birliği"
     },
     {
@@ -166,7 +166,7 @@
             "b) Özel Telsiz Sistemleri Yönetmeliği",
             "c) Amatör Telsizcilik Sınav ve Belgelendirme Yönetmeliği",
             "d) Telsiz İşlemlerine İlişkin Usul ve Esaslar Hakkında Yönetmelik"
-        ]
+        ],
         "answer": "b) Özel Telsiz Sistemleri Yönetmeliği"
     },
     {
@@ -176,7 +176,7 @@
             "b) 2813 sayılı Telsiz kanunu",
             "c) Spektrum Yönetimi Yönetmeliği",
             "d) Kriptolu Telsiz yönetmeliği"
-        ]
+        ],
         "answer": "a) Amatör Telsiz Yönetmeliği"
     },
     {
@@ -186,7 +186,7 @@
             "b) Verici çıkış gücü",
             "c) Frekans bandı",
             "d) Çağrı işareti"
-        ]
+        ],
         "answer": "d) Çağrı işareti"
     },
     {
@@ -196,7 +196,7 @@
             "b) Tüm amatör frekanslarda çalışma yapabilirler",
             "c) 3520 -3610 Khz ve 21090 - 21150 Khz de çalışma yapabilirler",
             "d) 100 W çıkış gücünü aşmamak kaydıyla çalışma yapabilirler"
-        ]
+        ],
         "answer": "b) Tüm amatör frekanslarda çalışma yapabilirler"
     },
     {
@@ -206,7 +206,7 @@
             "b) Amatör Telsizci",
             "c) Geçici Amatör Telsizci",
             "d) Sorumlu Operatör"
-        ]
+        ],
         "answer": "b) Amatör Telsizci"
     },
     {
@@ -216,7 +216,7 @@
             "b) SWL Belgesi",
             "c) Amatör Telsizcilik Belgesi",
             "d) Geçici Amatör Telsizcilik Belgesi"
-        ]
+        ],
         "answer": "d) Geçici Amatör Telsizcilik Belgesi"
     },
     {
@@ -226,7 +226,7 @@
             "b) Amatör Radyo Band Planı",
             "c) VHF Frekans Band Planı",
             "d) HF Teleks Frekans Planı"
-        ]
+        ],
         "answer":  "b) Amatör Radyo Band Planı"
     },
     {
@@ -236,7 +236,7 @@
                 "b) Haberleşme kayıt defteri",
                 "c) Nöbet defteri",
                 "d) Hiçbiri"
-            ]
+            ],
             "answer":  "b) Haberleşme kayıt defteri"
         },
         {
@@ -246,7 +246,7 @@
                 "b) Organizasyonlar tarafından kurulan istasyonlardan sorumlu, B sınıfı belgeye sahip amatör telsizci",
                 "c) Organizasyonlar tarafından kurulan istasyonlardan sorumlu, A sınıfı belgeye sahip amatör telsizci",
                 "d) Hiçbiri"
-            ]
+            ],
             "answer":"c) Organizasyonlar tarafından kurulan istasyonlardan sorumlu, A sınıfı belgeye sahip amatör telsizci"
         },
         {
@@ -256,7 +256,7 @@
                 "b) Telsiz Sistem",
                 "c) Teleks Sistem",
                 "d) Telgraf Sistem"
-            ]
+            ],
             "answer":  "b) Telsiz Sistem"
         },
         {
@@ -266,7 +266,7 @@
                 "b)Organizasyonlar tarafından kurulan istasyonlardan sorumlu, A sınıfı belgeye sahip amatör telsizciyi",
                 "c) Türkiye’ de 3 aydan az faaliyette bulunmak isteyen amatör telsizciyi",
                 "d) Amatör Telsizcilik Belgesine sahip gerçek kişileri"
-            ]
+            ],
             "answer": "a) 3-30 Mhz frekans bandı arasında ulusal ve uluslararası yayın yapan istasyonları dinleyen kısa dalga dinleyicisi"
         },
         {
@@ -276,7 +276,7 @@
                 "b) Amatör Telsizci",
                 "c) Amatör Telsiz İstasyonu",
                 "d) Organizasyon"
-            ]
+            ],
             "answer":  "d) Organizasyon"
         },
         {
@@ -286,7 +286,7 @@
                 "b) Avrupa Telgraf Ofisi",
                 "c) Avrupa Radyo Haberleşme Ofisi",
                 "d) Avrupa Telefon Ofisi"
-            ]
+            ],
             "answer": "c) Avrupa Radyo Haberleşme Ofisi"
         },
         {
@@ -296,7 +296,7 @@
                 "b) TB",
                 "c) TC",
                 "d) YM"
-            ]
+            ],
             "answer": "d) YM"
         },
         {
@@ -306,7 +306,7 @@
                 "b) 8",
                 "c) 10",
                 "d) 12"
-            ]
+            ],
             "answer": "c) 10"
         },
         {
@@ -316,7 +316,7 @@
                 "b) X",
                 "c) E",
                 "d) S"
-            ]
+            ],
             "answer": "a) K"
         },
         {
@@ -326,7 +326,7 @@
                 "b) TB",
                 "c) TC",
                 "d) YM"
-            ]
+            ],
             "answer":"b) TB"
         },
         {
@@ -336,7 +336,7 @@
                 "b) Z",
                 "c) E",
                 "d) X"
-            ]
+            ],
             "answer": "a) Q"
         },
         {
@@ -346,7 +346,7 @@
                 "b) 2 ay",
                 "c) 3 ay",
                 "d) 4 ay"
-            ]
+            ],
             "answer": "c) 3 ay"
         },
         {
@@ -356,7 +356,7 @@
                 "b) X",
                 "c) E",
                 "d) S"
-            ]
+            ],
             "answer":"c) E"
         },
         {
@@ -366,7 +366,7 @@
                     "b) 10 yıl",
                     "c) 15 yıl",
                     "d) 20 yıl"
-                ]
+                ],
                 "answer": "b) 10 yıl"
             },
             {
@@ -376,7 +376,7 @@
                     "b) 30 gün",
                     "c) 40 gün",
                     "d) 60 gün"
-                ]
+                ],
                 "answer": "d) 60 gün"
             },
             {
@@ -386,7 +386,7 @@
                     "b) 12 yaş",
                     "c) 16 yaş",
                     "d) 18 yaş"
-                ]
+                ],
                 "answer":   "b) 12 yaş"
             },
             {
@@ -396,7 +396,7 @@
                     "b) Biyoloji",
                     "c) Kimya",
                     "d) İnşaat"
-                ]
+                ],
                 "answer": "a) Fizik"
             },
             {
@@ -406,7 +406,7 @@
                     "b) 70 puan",
                     "c) 75 puan",
                     "d) 80 puan"
-                ]
+                ],
                 "answer":  "c) 75 puan"
             },
             {
@@ -416,7 +416,7 @@
                     "b) Amatör Telsiz Yönetmeliği",
                     "c) 2813 sayılı Telsiz Kanunu",
                     "d) Spektrum Yönetimi Yönetmeliği"
-                ]
+                ],
                 "answer": "a) Özel Telsiz Sistemleri Yönetmeliği"
             },
             {
@@ -426,7 +426,7 @@
                     "b) Mütekabiliyet anlaşması olan ülkelerden Amatör Telsizcilik Belgesi olan T.C. vatandaşlarına",
                     "c) Mütekabiliyet anlaşması olan ülkelerden Amatör Telsizcilik Belgesi olan yabancılara",
                     "d) Kamu hizmetinden yasaklananlara"
-                ]
+                ],
                 "answer": "d) Kamu hizmetinden yasaklananlara"
             },
             {
@@ -436,7 +436,7 @@
                     "b) T.C. kimlik numarası beyanı",
                     "c) Sabıka kaydı olmadığına dair beyan",
                     "d) Oturma belgesi"
-                ]
+                ],
                 "answer": "d) Oturma belgesi"
             },
             {
@@ -446,7 +446,7 @@
                     "b) Oturma belgesi",
                     "c) Pasaport fotokopisi",
                     "d) Fotoğraf"
-                ]
+                ],
                 "answer": "a) Vekâletname"
             },
             {
@@ -456,7 +456,7 @@
                     "b) 6 ay",
                     "c) Oturma belge süresi kadar",
                     "d) 9 ay"
-                ]
+                ],
                 "answer": "c) Oturma belge süresi kadar"
             },
             {
@@ -466,7 +466,7 @@
                     "b) Fotoğraf",
                     "c) Yenileme ücretinin ödendiğine dair belge aslı",
                     "d) Oturma belgesi"
-                ]
+                ],
                 "answer": "d) Oturma belgesi"
             },
             {
@@ -476,7 +476,7 @@
                     "b) 5 yıl",
                     "c) 10 yıl",
                     "d) Süresiz"
-                ]
+                ],
                 "answer": "d) Süresiz"
             },
             {
@@ -486,7 +486,7 @@
                     "b) 3 rakamlı sıra numarası",
                     "c) Bulunduğu ilin trafik kodu numarası",
                     "d) Hiçbiri"
-                ]
+                ],
                 "answer": "c) Bulunduğu ilin trafik kodu numarası"
             },
             {
@@ -496,7 +496,7 @@
                        "b) Amatörlere ayrılan frekans bandlarında radyo ve televizyon yayınlarının yapılması",
                        "c) Üçüncü şahıs mesajların para, ücret, veya maddi çıkar karşılığında aktarılması",
                        "d) İşletme kurallarına uyulması"
-                   ]
+                   ],
                    "answer": "d) İşletme kurallarına uyulması"
                },
                {
@@ -506,7 +506,7 @@
                        "b) Amatör Telsizcilik Haberleşmesine ilişkin usul ve esaslarda belirtilen aykırı davranışların tespiti halinde",
                        "c) Türk ceza kanununun 216. maddesinde yazılı halkı, sınıf, din, mezhep veya bölge farklılığı gözeterek kin ve düşmanlığa açıkça tahrik etmek suçlarından mahkûm olanlar",
                        "d) Amatör Telsizcinin ölümü veya vesayet altına alınması"
-                   ]
+                   ],
                    "answer": "d) Amatör Telsizcinin ölümü veya vesayet altına alınması"
                },
                {
@@ -516,7 +516,7 @@
                        "b) 2 sınav dönemi sonra",
                        "c) 3 sınav dönemi sonra",
                        "d) 1 yıl sonra"
-                   ]
+                   ],
                    "answer":"a) 1 sınav dönemi sonra"
                },
                {
@@ -526,7 +526,7 @@
                        "b) Uluslararası Telsiz Birliğini",
                        "c) Hızlı Taramalı Televizyon Sistemini",
                        "d) Yavaş Taramalı Televizyon Sistemini"
-                   ]
+                   ],
                    "answer": "a) Amatör Paket Radyo Sistemini"
                },
                {
@@ -536,7 +536,7 @@
                        "b) Posta ve Telgraf İdaresi",
                        "c) Kıyı Emniyeti Genel Müdürlüğü",
                        "d) Türkiye Radyo ve Televizyon Kurumu"
-                   ]
+                   ],
                    "answer":  "c) Kıyı Emniyeti Genel Müdürlüğü"
                },
                {
@@ -546,7 +546,7 @@
                        "b) Amatör Telsiz Derneklerine",
                        "c) Eğitim ve Öğretim Kurumlarına",
                        "d) İzcilik Kuruluşlarına"
-                   ]
+                   ],
                    "answer":  "b) Amatör Telsiz Derneklerine"
                },
                {
@@ -556,7 +556,7 @@
                        "b) Araştırma Kurumlarına",
                        "c) İzcilik Kuruluşlarına",
                        "d) Afet ve Acil Durum haberleşmesinde görev alanlara"
-                   ]
+                   ],
                    "answer":"c) İzcilik Kuruluşlarına"
                },
                {
@@ -566,7 +566,7 @@
                        "b) 2 kez",
                        "c) 3 kez",
                        "d) 4 kez"
-                   ]
+                   ],
                    "answer":  "b) 2 kez"
                },
                {
@@ -576,7 +576,7 @@
                        "b) 10 yıl",
                        "c) 3 yıl",
                        "d) Süresiz"
-                   ]
+                   ],
                    "answer": "b) 10 yıl"
                },
                {
@@ -586,7 +586,7 @@
                        "b) Silahlı Kuvvetler personeli",
                        "c) 12 yaşından küçük ve kamu hizmetlerinden yasaklı olanlar",
                        "d) Telsiz ithalatçı ve imalatçı firma sahipleri"
-                   ]
+                   ],
                    "answer": "c) 12 yaşından küçük ve kamu hizmetlerinden yasaklı olanlar"
                },
                {
@@ -596,7 +596,7 @@
                        "b) 20",
                        "c) 3",
                        "d) 1"
-                   ]
+                   ],
                    "answer":  "b) 20"
                },
                {
@@ -606,7 +606,7 @@
                        "b) Emisyon",
                        "c) Enterferans",
                        "d) Vibrasyon"
-                   ]
+                   ],
                    "answer":  "c) Enterferans"
                },
                {
@@ -616,7 +616,7 @@
                            "b) Q kodlarının anlam ve kullanımlarını",
                            "c) Telsiz telefon ücret hesaplaması",
                            "d) Telsiz işletme kuralları"
-                       ]
+                       ],
                        "answer": "c) Telsiz telefon ücret hesaplaması"
                    },
                    {
@@ -626,7 +626,7 @@
                            "b) TA7EQ",
                            "c) TA7KA",
                            "d) YM7EQ"
-                       ]
+                       ],
                        "answer": "a) TA9EQ"
                    },
                    {
@@ -636,7 +636,7 @@
                            "b) TA4 / DL5YCQ",
                            "c) TA4YCQ",
                            "d) YM4 / DL5YCQ"
-                       ]
+                       ],
                        "answer":  "b) TA4 / DL5YCQ"
                    },
                    {
@@ -646,7 +646,7 @@
                            "b) TR - YL - TC",
                            "c) YM - TA - TB - TC",
                            "d) TU - YL - TR"
-                       ]
+                       ],
                        "answer": "c) YM - TA - TB - TC"
                    },
                    {
@@ -656,7 +656,7 @@
                            "b) B sınıfı",
                            "c) A ve B sınıfı",
                            "d) Hiçbiri"
-                       ]
+                       ],
                        "answer":"c) A ve B sınıfı"
                    },
                    {
@@ -666,7 +666,7 @@
                            "b) Radyo ve Televizyon yayınlarının doğrudan veya banttan yayınlanması",
                            "c) Olağanüstü hallerde yanlış veya yanıltıcı yayın yapılması",
                            "d) Amatör Telsiz Haberleşmesi"
-                       ]
+                       ],
                        "answer":  "d) Amatör Telsiz Haberleşmesi"
                    }
 ]
