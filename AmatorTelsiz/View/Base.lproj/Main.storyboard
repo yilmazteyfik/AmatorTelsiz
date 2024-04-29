@@ -79,7 +79,7 @@
         <scene sceneID="97x-ZI-Mpu">
             <objects>
                 <tabBarController id="xG8-bm-KGk" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" backgroundImage="house.circle.fill" catalog="system" id="JKy-WB-TOu">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JKy-WB-TOu">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" systemColor="systemGray5Color"/>

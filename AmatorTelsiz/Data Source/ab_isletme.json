@@ -1,44 +1,1516 @@
 [
     {
-        "question": "İşletme What is the capital of Country?",
-        "options": ["Option A 0", "Option B 0", "Option C 0", "Option D 0"]
+        "question": "Greenwich‟te tarih 12 Haziran 2006 Salı ve saat 23:30 iken 25 derece doğu boylamında bir yerde tarih ve saat nedir?",
+        "options": [
+            "a) 12 Haziran 2006 Salı, saat 21:30",
+            "b) 11 Haziran 2006 Salı, saat 20:30",
+            "c) 13 Haziran 2006 Çarşamba, saat 01:10",
+            "d) 12 Haziran 2006 Salı, saat 01:20"
+        ]
+        "answer": "c) 13 Haziran 2006 Çarşamba, saat 01:10"
     },
     {
-        "question": "What is the capital of Country 2?",
-        "options": ["Option A 1", "Option B 1", "Option C 1", "Option D 1"]
+        "question": "RST raporunda okunabilirlik karşı istasyona 5 olarak bildirildiğinde ne anlam ifade eder?",
+        "options": [
+            "a) Kısmen okunuyor.",
+            "b) Zor okunuyor",
+            "c) Mükemmel okunuyor",
+            "d) Hiçbiri"
+        ]
+        "answer":"c) Mükemmel okunuyor"
     },
     {
-        "question": "What is the capital of Country 3?",
-        "options": ["Option A", "Option B", "Option C", "Option D"]
+        "question": "Herhangi bir amatör bantta dinleme yaparken karşı taraftan “Burası TA2CP” gibi bir çağrı duyduğunuzda bu çağrının aşağıdaki merkezlerden hangisinden yapıldığını anlarsınız?",
+        "options": [
+            "a) Ankara",
+            "b) Aydın",
+            "c) Adana",
+            "d) Artvin"
+        ]
+        "answer": "a) Ankara"
+        
     },
     {
-        "question": "What is the capital of Country 4?",
-        "options": ["Option A", "Option B", "Option C", "Option D"]
+        "question": "Telsiz-telgraf haberleşmesinde QTR kısaltması aşağıdaki sorulardan hangisini ifade eder?",
+        "options": [
+            "a) Hangi bölgedensiniz?",
+            "b) Saatiniz tam olarak kaçtır?",
+            "c) Bana çağrı adınızı verir misiniz?",
+            "d) Nasıl anten kullanıyorsunuz?"
+        ]
+        "answer": "b) Saatiniz tam olarak kaçtır?"
     },
     {
-        "question": "What is the capital of Country 5?",
-        "options": ["Option A", "Option B", "Option C", "Option D"]
+        "question": "Amatörlerin belirli zamanlarda yaptıkları yarışmaların (CONTEST) gayesi nedir?",
+        "options": [
+            "a) Amatörlerin hoşça vakit geçirmeleri",
+            "b) En kısa zamanda mümkün olduğu kadar çok istasyonla QSO yapmak",
+            "c) Amatörlerin cihazları ile ilgili bilgi alışverişi",
+            "d) QTH locater saptaması"
+        ]
+        "answer": "b) En kısa zamanda mümkün olduğu kadar çok istasyonla QSO yapmak"
     },
     {
-        "question": "What is the capital of Country 6?",
-        "options": ["Option A", "Option B", "Option C", "Option D"]
+        "question": "Amatör telsiz çalışmalarında CW kısaltmasının anlamı nedir?",
+        "options": [
+            "a) Frekansın dalga boyu",
+            "b) Geriye dönen güç",
+            "c) Çıkıştaki kazanç",
+            "d) Devamlı dalga"
+        ]
+        "answer": "d) Devamlı dalga"
     },
     {
-        "question": "What is the capital of Country 7?",
-        "options": ["Option A", "Option B", "Option C", "Option D"]
+          "question": "Pile-up (yığılma) terimi radyo amatörlüğünde ne anlama gelir?",
+          "options": [
+              "a) Radyo amatörünün çıkış yaptığı yerin iyi durumda olduğu",
+              "b) Çağrı yapan bir amatörün o frekanstaki diğer amatörler tarafından QSO yağmuruna tutulması",
+              "c) Çağrıyı alan istasyonun karşı istasyona cevap vermeme durumu",
+              "d) Hiçbiri"
+          ]
+          "answer":"b) Çağrı yapan bir amatörün o frekanstaki diğer amatörler tarafından QSO yağmuruna tutulması"
     },
     {
-        "question": "What is the capital of Country 8?",
-        "options": ["Option A", "Option B", "Option C", "Option D"]
+          "question": "Radyo haberleşmesi yapılırken kullanılan kısaltmalardan AR kısaltması neyi ifade eder?",
+          "options": [
+              "a) Yayın tekrarı",
+              "b) Yayın başlangıcı",
+              "c) Yayın sonu",
+              "d) Genel yayın"
+          ]
+          "answer": "c) Yayın sonu"
     },
     {
-        "question": "What is the capital of Country 9?",
-        "options": ["Option A", "Option B", "Option C", "Option D"]
+          "question": "Radyo haberleşmesi yapılırken kullanılan kısaltmalardan CQ kısaltması ne amaçla kullanılır?",
+          "options": [
+              "a) Yakında bulunabilecek istasyonları uyarmak için",
+              "b) Bütün istasyonlara genel çağrı yapmak için",
+              "c) Yalnızca bir istasyona çağrı için",
+              "d) Karşıdaki istasyonla görüşmeyi tekrarlamak için"
+          ]
+          "answer": "b) Bütün istasyonlara genel çağrı yapmak için"
     },
     {
-        "question": "What is the capital of Country 10?",
-        "options": ["Option A", "Option B", "Option C", "Option D"]
-    }
+          "question": "IARU Region-1 düzenlemesine göre aşağıdaki frekanslardan hangisinde FM modunda haberleşme yapılması hatalı olur?",
+          "options": [
+              "a) 144.425 Mhz",
+              "b) 144.010 Mhz",
+              "c) 145.775 Mhz",
+              "d) 145.250 Mhz"
+          ]
+          "answer":  "b) 144.010 Mhz"
+    },
+    {
+          "question": "Amatör tekrarlayıcı (Repeater / Röle) istasyonları ne amaçla kullanılır?",
+          "options": [
+              "a) İyonosferik açılımların izlenmesine olanak sağlamak amacıyla",
+              "b) Direkt haberleşme yapabilen istasyonların haberleşmesi için",
+              "c) İki ayrı frekans kullanımının haberleşmeye getirdiği esneklikten faydalanmak amacıyla",
+              "d) Doğrudan haberleşme sağlayamayan istasyonların haberleşmesini sağlamak amacıyla"
+          ]
+          "answer": "d) Doğrudan haberleşme sağlayamayan istasyonların haberleşmesini sağlamak amacıyla"
+    },
+    {
+          "question": "Genel olarak herhangi bir frekans üzerinde göndermeye geçmeden önce hangi Q kodu kullanılır?",
+          "options": [
+              "a) QRU",
+              "b) QRV",
+              "c) QRT",
+              "d) QRZ"
+          ]
+          "answer":"b) QRV"
+    },
+    {
+              "question": "144.0 – 144.1 Mhz‟ de sınırlandırılmış bantta hangi yayın modlarına izin verilir?",
+              "options": [
+                  "a) Yalnızca CW",
+                  "b) CW ve RTTY",
+                  "c) Yalnızca SSB",
+                  "d) CW ve SSB"
+              ]
+              "answer": "a) Yalnızca CW"
+    },
+    {
+              "question": "Bir telsiz operatörü CW modunda gönderme yaparken aşağıdakilerden hangisine dikkat etmelidir?",
+              "options": [
+                  "a) Haberi kendi becerisine göre bir hızla gönderir",
+                  "b) Uluslar arası kurala göre 18 grup üzerinden gönderir",
+                  "c) Ortalama 12 grup üzerinden gönderir",
+                  "d) Karşısındaki operatörün alma becerisine göre gönderir"
+              ]
+              "answer":"d) Karşısındaki operatörün alma becerisine göre gönderir"
+    },
+    {
+              "question": "QRS kodunun anlamı nedir?",
+              "options": [
+                  "a) Daha yavaş gönderiniz",
+                  "b) Daha hızlı gönderiniz",
+                  "c) RST raporu gönderiniz",
+                  "d) İstediğiniz şekilde gönderiniz"
+              ]
+              "answer": "a) Daha yavaş gönderiniz"
+    },
+    {
+              "question": "Uluslararası fonetik alfabeye göre AE6JTK‟nın hecelemesi ne şekilde yapılır?",
+              "options": [
+                  "a) Alpha, Echo, Six, Juliet, Ticket, Kilo",
+                  "b) Alpha, Echo, Seven, January, Tango, Kilo",
+                  "c) Alpha, Echo, Six, Juliet, Tango, Kilo",
+                  "d) Alpha, Echo, Six, January, Ticket, Kilo"
+              ]
+              "answer": "c) Alpha, Echo, Six, Juliet, Tango, Kilo"
+    },
+    {
+              "question": "Telsiz telefon haberleşmesinde uluslararası kurallara göre tehlike anında yapılan çağrı aşağıdakilerden hangisi ile başlamaktadır?",
+              "options": [
+                  "a) Mayday",
+                  "b) SOS",
+                  "c) Help",
+                  "d) CQ"
+              ]
+              "answer": "a) Mayday"
+    },
+    {
+              "question": "Uluslararası amatör radyo haberleşmelerinde hangi uluslararası saat sistemi kullanılır?",
+              "options": [
+                  "a) USC",
+                  "b) EST",
+                  "c) UTC",
+                  "d) Yerel saat"
+              ]
+              "answer": "c) UTC"
+    },
+    {
+                 "question": "Simplex çalışma sisteminde, aynı anda:",
+                 "options": [
+                     "a) Tek frekans kullanılır, haberleşme çift yönlüdür",
+                     "b) Tek frekans kullanılır, haberleşme tek yönlüdür",
+                     "c) Çift frekans kullanılır, haberleşme tek yönlüdür",
+                     "d) Çift frekans kullanılır, haberleşme çift yönlüdür"
+                 ]
+                 "answer": "b) Tek frekans kullanılır, haberleşme tek yönlüdür"
+    },
+    {
+                 "question": "Yaklaşık 5000 mil uzaklıkta radyo iletişimi yapmadan önce anten yönünün bulunmasında hangi harita türü kullanılmaktadır?",
+                 "options": [
+                     "a) Dünya haritası",
+                     "b) Azimut haritası",
+                     "c) Topografik harita",
+                     "d) Merkatör haritası"
+                 ]
+                 "answer": "b) Azimut haritası"
+    },
+    {
+                 "question": "Verici çıkış test ve kontrolleri sırasında, havada gereksiz karıştırmalara sebep olmamak için ne kullanılır?",
+                 "options": [
+                     "a) Rezonanslı anten",
+                     "b) Rezonanssız anten",
+                     "c) Suni anten (Dummy Load)",
+                     "d) Kullanılmayan bir frekans"
+                 ]
+                 "answer": "c) Suni anten (Dummy Load)"
+    },
+    {
+                 "question": "Türkiye’deki amatörlere ait QSL kartlarında yazılı bulunan “IARU ZONE 20” ifadesi ne anlama gelmektedir?",
+                 "options": [
+                     "a) Türkiye’nin üyelik sırasını",
+                     "b) Türkiye’nin başarı sıralamasındaki yerini",
+                     "c) Türkiye’nin bölge numarasını",
+                     "d) Türkiye’nin üyelik kodunu"
+                 ]
+                 "answer": "c) Türkiye’nin bölge numarasını"
+    },
+    {
+                 "question": "Telsiz telgraf haberleşmesinde QRX kısaltması aşağıdaki sorulardan hangisini anlatır?",
+                 "options": [
+                     "a) Göndermeye başlayabilir miyim",
+                     "b) Mesajınız var mı",
+                     "c) Meşgul müsünüz",
+                     "d) Beni tekrar ne zaman arayacaksınız"
+                 ]
+                 "answer": "d) Beni tekrar ne zaman arayacaksınız"
+    },
+    {
+                 "question": "TA2EX/3 çağrı işareti aşağıdakilerden hangisini ifade eder?",
+                 "options": [
+                     "a) Adalarda çalışan bir amatörün çağrı işaretini",
+                     "b) 2.Bölgeden 3.Bölgeye geçen amatör telsizcinin çağrı işaretidir",
+                     "c) B lisansı ile A lisanslı istasyonda çalışan amatörün çağrı işaretini",
+                     "d) Hiçbiri"
+                 ]
+                 "answer": "b) 2.Bölgeden 3.Bölgeye geçen amatör telsizcinin çağrı işaretidir"
+    },
+    {
+                     "question": "Telsiz telgraf haberleşmesinde “beni duyabiliyor musunuz?” sorusu aşağıdaki kısaltmalardan hangisiyle ifade edilir?",
+                     "options": [
+                         "a) QSK",
+                         "b) QRK",
+                         "c) QBD",
+                         "d) QSA"
+                     ]
+                     "answer": "a) QSK"
+    },
+    {
+                     "question": "Broadcast teriminin anlamı aşağıdakilerden hangisidir?",
+                     "options": [
+                         "a) Tek yönlü radyo yayınıdır",
+                         "b) Sayısal veri iletişimi ile telsiz telgraf haberleşmesidir",
+                         "c) İki radyo istasyonunun karşılıklı konuşması ile ilgili radyo yayınıdır",
+                         "d) İstasyon programlarının otomatik olarak yeniden gönderilmesi olayıdır"
+                     ]
+                     "answer": "a) Tek yönlü radyo yayınıdır"
+     },
+     {
+                     "question": "Radyo sinyallerinin yayılmasında kullanılan kritik açı aşağıdakilerden hangisidir?",
+                     "options": [
+                         "a) Belirli iyonosfer şartlarında bir radyo dalgasının dünyaya dönen en alçak açısıdır",
+                         "b) Belirli iyonosfer şartlarında bir radyo dalgasının dünyaya dönen en yüksek açısıdır",
+                         "c) Temas sağlanması istenen DX istasyonun pusula yönünden 180 derece ters yönüdür",
+                         "d) Temas sağlanması istenen DX istasyonun pusula yönündeki açısıdır"
+                     ]
+                     "answer":"b) Belirli iyonosfer şartlarında bir radyo dalgasının dünyaya dönen en yüksek açısıdır"
+    },
+    {
+                     "question": "Çağrı işaretinin başında DL olan bir istasyon hangi ülkeye aittir?",
+                     "options": [
+                         "a) Danimarka",
+                         "b) Dominik",
+                         "c) Almanya",
+                         "d) Arjantin"
+                     ]
+                     "answer":  "c) Almanya"
+    },
+    {
+                     "question": "Amatör telsiz telgraf haberleşmesi için istasyon açıldığında yapılacak ilk işlem:",
+                     "options": [
+                         "a) Amatör bandda hemen çağrı yapmaktır",
+                         "b) Bir süre mors alma pratiği yaparak göndermeye geçmektir",
+                         "c) Çalışılacak bandda kısa bir süre dinleme yaparak haberleşme koşullarının uygun olup olmadığını tespit etmek ve bandda çalışan istasyon bulunup bulunmadığına bakmaktır",
+                         "d) Bir seri V harfi göndererek karşı istasyonun alıcısını ayarlamasını sağlamaktır"
+                     ]
+                     "answer":"c) Çalışılacak bandda kısa bir süre dinleme yaparak haberleşme koşullarının uygun olup olmadığını tespit etmek ve bandda çalışan istasyon bulunup bulunmadığına bakmaktır"
+    },
+    {
+                         "question": "Bir telsiz telefon konuşmasında SEVEN ( yedi rakamı) kelimesinin hecelenmesi nasıldır?",
+                         "options": [
+                             "a) Sierra - Echo - Victor - Echo - November",
+                             "b) Spain - Europa - Victor - Europa - November",
+                             "c) Sugar - Europa - Very - Europa - November",
+                             "d) Sierra - Echo - Very - Echo - November"
+                         ]
+                         "answer": "a) Sierra - Echo - Victor - Echo - November"
+    },
+    {
+                         "question": "Telsiz haberleşmesinde kullanılan kısaltmalardan biri olan CL neyi ifade eder?",
+                         "options": [
+                             "a) İstasyon haberleşmeye hazır",
+                             "b) Görüşmeyi onaylıyorum",
+                             "c) Görüşmeyi kesiyorum",
+                             "d) İstasyonumu kapatıyorum"
+                         ]
+                         "answer": "d) İstasyonumu kapatıyorum"
+    },
+    {
+                         "question": "Telsiz telgraf haberleşmesinde “istasyonunuzun tam olarak yeri neresidir” sorusu aşağıdaki kısaltmalardan hangisi ile sorulur?",
+                         "options": [
+                             "a) QSB",
+                             "b) QSO",
+                             "c) QTH",
+                             "d) QRO"
+                         ]
+                         "answer": "c) QTH"
+                     },
+                     {
+                         "question": "RTTY kısaltması neyi ifade eder?",
+                         "options": [
+                             "a) Telsiz telefonu",
+                             "b) Radyo televizyonu",
+                             "c) Radyo teletype‟e",
+                             "d) Hiçbiri"
+                         ]
+                         "answer": "b) Radyo televizyonu"
+                     },
+                     {
+                         "question": "QSL kartları ne için kullanılır?",
+                         "options": [
+                             "a) Amatörün ülkesindeki doğal güzellikleri tanıtmak için",
+                             "b) Amatör istasyonun reklamı amacı ile",
+                             "c) Karşı taraftaki amatöre jest için",
+                             "d) Yapılan bir görüşme (QSO) sonunda görüşmeyi onaylamak amacı ile"
+                         ]
+                         "answer": "d) Yapılan bir görüşme (QSO) sonunda görüşmeyi onaylamak amacı ile"
+                     },
+                     {
+                         "question": "Amatör telsizciler tarafından kullanılan telgraf kodu hangisidir?",
+                         "options": [
+                             "a) AMTOR telgraf kodu",
+                             "b) BAUD",
+                             "c) Uluslararası mors kodu",
+                             "d) ASCII kodu"
+                         ]
+                         "answer":  "c) Uluslararası mors kodu"
+                     },
+                     {
+                             "question": "Aşağıdakilerden hangisi bir transmisyon hattı çeşididir?",
+                             "options": [
+                                 "a) Tek telli hatlar",
+                                 "b) İki telli paralel hatlar",
+                                 "c) Koaksiyel hatlar",
+                                 "d) Hepsi"
+                             ]
+                             "answer": "d) Hepsi"
+                         },
+                         {
+                             "question": "20 m amatör bandı hangi frekans aralığındadır?",
+                             "options": [
+                                 "a) 21.300 - 21.700 Mhz",
+                                 "b) 21.000 - 21.450 Mhz",
+                                 "c) 14.000 - 14.350 Mhz",
+                                 "d) 14.050 - 14.225 Mhz"
+                             ]
+                             "answer":  "c) 14.000 - 14.350 Mhz"
+                         },
+                         {
+                             "question": "Herhangi bir alıcının S metre‟sinde okunan değer neyi belirler?",
+                             "options": [
+                                 "a) VFO voltajını",
+                                 "b) Süperheterodin çalışma seviyesini",
+                                 "c) Alıcı antenine gelen sinyal seviyesini",
+                                 "d) Squelch ayarını"
+                             ]
+                             "answer":"c) Alıcı antenine gelen sinyal seviyesini"
+                         },
+                         {
+                             "question": "Bir elektromanyetik dalganın polarizasyonu aşağıdakilerden hangisine bağlıdır?",
+                             "options": [
+                                 "a) Vericinin yönüne",
+                                 "b) Propagasyon yönüne",
+                                 "c) Verici anteninin toprağa göre açısına",
+                                 "d) Hiçbiri"
+                             ]
+                             "answer": "c) Verici anteninin toprağa göre açısına"
+                         },
+                         {
+                             "question": "İstenmeyen radyasyonların ayarlanmış bir antenden yayılma riskini minimum yapabilmek için ne yapılmalıdır?",
+                             "options": [
+                                 "a) Yüksek SWR oranı sağlamak",
+                                 "b) Filtre veya zayıflatıcı kullanmak",
+                                 "c) Besleme kaynağı voltajını denetlemek",
+                                 "d) Çok bandlı anten kullanmak"
+                             ]
+                             "answer":  "b) Filtre veya zayıflatıcı kullanmak"
+                         },
+                         {
+                             "question": "435 Mhz de bir yagi anten, UHF TV antenine doğru çevrilmiştir. Bunun neticesinde TV de:",
+                             "options": [
+                                 "a) 435 Mhz de alma güçlüğü doğar",
+                                 "b) RF giriş katında aşırı yükleme olur",
+                                 "c) 435 Mhz de osilasyon başlar",
+                                 "d) TV anteninin elemanları hasar görür"
+                             ]
+                             "answer": "b) RF giriş katında aşırı yükleme olur"
+                         },
+                         {
+                                 "question": "HF çalışması, yakınındaki bir TV alıcısını enterfere edebilir. Enterferansa neden olan sinyaller aşağıdakilerden hangisiyle TV'ye ulaşır?",
+                                 "options": [
+                                     "a) Toprak yoluyla",
+                                     "b) Vericinin besleme kaynağı vasıtasıyla",
+                                     "c) Verici frekansının polarizasyonu yoluyla",
+                                     "d) TV anteni kablosunun ekranı ve/veya IF katı yoluyla"
+                                 ]
+                                 "answer": "d) TV anteni kablosunun ekranı ve/veya IF katı yoluyla"
+                             },
+                             {
+                                 "question": "CQ Çağrısı yapılırken aşağıdakilerden hangisi uygulanır?",
+                                 "options": [
+                                     "a) Zayıf bir istasyonun çalıştığı frekansta çağrı yapmak",
+                                     "b) Daima CW kullanmak",
+                                     "c) Sadece uzak istasyonlara çağrı yapmak",
+                                     "d) Çağrıya başlamadan önce frekansın boş olup olmadığını kontrol etmek"
+                                 ]
+                                 "answer": "b) Daima CW kullanmak"
+                             },
+                             {
+                                 "question": "Aşağıdakilerden hangisi rahat ve net okunabilen bir sinyal seviyesini ifade eder?",
+                                 "options": [
+                                     "a) R1",
+                                     "b) R5",
+                                     "c) S9",
+                                     "d) T9"
+                                 ]
+                                 "answer":  "b) R5"
+                             },
+                             {
+                                 "question": "Enterferans riskini azaltmak için, bir UHF TV anteni, kısa dalga verici anteninden ne kadar uzakta yerleştirilmelidir?",
+                                 "options": [
+                                     "a) Mümkün olduğunca uzağa",
+                                     "b) Mümkün olduğunca yakına",
+                                     "c) 1.098 m uzaklığa",
+                                     "d) 432 Mhz'in yarım dalga boyu uzağına"
+                                 ]
+                                 "answer": "a) Mümkün olduğunca uzağa"
+                             },
+                             {
+                                 "question": "Amatör bandda dinleme halinde iken karşıdan TA5A gibi bir çağrı işareti duyulduğunda, bu çağrı işareti aşağıdaki illerin hangisinden yapılmış olabilir?",
+                                 "options": [
+                                     "a) Ankara",
+                                     "b) Adana",
+                                     "c) Mardin",
+                                     "d) Trabzon"
+                                 ]
+                                 "answer":"b) Adana"
+                             },
+                             {
+                                 "question": "Amatör bandda dinleme halinde iken karşıdan TA7AC gibi bir çağrı işareti duyulduğunda bu çağrı işareti aşağıdaki illerin hangisinden yapılmış olabilir?",
+                                 "options": [
+                                     "a) Şırnak",
+                                     "b) Erzincan",
+                                     "c) Bingöl",
+                                     "d) Denizli"
+                                 ]
+                                 "answer": "b) Erzincan"
+                             },
+                             {
+                                    "question": "Greenwich‟te 20 Ekim saat 23:00 iken 40 derece doğu boylamında tarih ve saat kaçtır?",
+                                    "options": [
+                                        "a) 20 Ekim saat 11:10",
+                                        "b) 20 Ekim saat 00:40",
+                                        "c) 21 Ekim saat 01:40",
+                                        "d) 21 Ekim saat 11:10"
+                                    ]
+                                    "answer": "c) 21 Ekim saat 01:40"
+                                },
+                                {
+                                    "question": "30 derece doğu boylamında bulunan bir ülkede saat 22:00 iken 30 derece batı boylamında bulunan bir başka ülkede saat kaç olur?",
+                                    "options": [
+                                        "a) Aynı gün 14:00",
+                                        "b) Aynı gün 18:00",
+                                        "c) Ertesi gün 06:00",
+                                        "d) Ertesi gün 14:00"
+                                    ]
+                                    "answer": "b) Aynı gün 18:00"
+                                },
+                                {
+                                    "question": "Aşağıdaki frekanslardan hangisinde SSB haberleşmesi yapılabilir?",
+                                    "options": [
+                                        "a) 14010 Khz",
+                                        "b) 7010 Khz",
+                                        "c) 14250 Khz",
+                                        "d) 21035 Khz"
+                                    ]
+                                    "answer": "c) 14250 Khz"
+                                },
+                                {
+                                    "question": "Frekansı değiştirdiğinizi belirtmek için kullanılan “Q” sinyali hangisidir?",
+                                    "options": [
+                                        "a) QRU",
+                                        "b) QSY",
+                                        "c) QSL",
+                                        "d) QRZ"
+                                    ]
+                                    "answer": "b) QSY"
+                                },
+                                {
+                                    "question": "Eğer başka bir istasyonla konuşuyorken bir acil durum çağrısı duymuşsanız, ne yapmalısınız?",
+                                    "options": [
+                                        "a) Frekansın kullanımda olduğunu çağrı istasyonuna söyleyiniz",
+                                        "b) Çağrı istasyonunu en yakın acil durum ağ frekansına yönlendiriniz",
+                                        "c) Çağrıyı görmezden geliniz ve konuşmanıza devam ediniz",
+                                        "d) Derhal konuşmayı bırakınız ve acil duruma cevap veriniz"
+                                    ]
+                                    "answer": "d) Derhal konuşmayı bırakınız ve acil duruma cevap veriniz"
+                                },
+                                {
+                                    "question": "Aşağıdakilerden hangisi sadece uzak mesafe istasyonlarında genel bir çağrıdır?",
+                                    "options": [
+                                        "a) CQ CQ CQ de TA2KA TA2KA TA2KA k",
+                                        "b) TA2R de TA2KA TA2KA kn",
+                                        "c) CQ DL CQ DL CQ DL de TA2KA TA2KA TA2KA k",
+                                        "d) CQ DX CQ DX CQ DX de TA2KA TA2KA TA2KA"
+                                    ]
+                                    "answer": "d) CQ DX CQ DX CQ DX de TA2KA TA2KA TA2KA"
+                                },
+                                {
+                                        "question": "“CQ contest CQ contest this is TA2KA” gibi bir çağrı hangi anlama gelir?",
+                                        "options": [
+                                            "a) TA2KA genel çağrı yapıyor",
+                                            "b) TA2KA test yapıyor",
+                                            "c) TA2KA yarışma istasyonlarına genel çağrı yapıyor",
+                                            "d) TA2KA deprem duyurusu yapıyor"
+                                        ]
+                                        "answer":"c) TA2KA yarışma istasyonlarına genel çağrı yapıyor"
+                                    },
+                                    {
+                                        "question": "TB3CTR‟nin milli fonetik alfabeye göre hecelemesi ne şekilde yapılır?",
+                                        "options": [
+                                            "a) Tokat - Bolu - Üç - Çankırı - Tekirdağ - Rize",
+                                            "b) Trabzon - Bursa - Üç - Ceyhan - Trabzon - Rize",
+                                            "c) Tekirdağ - Bolu - Üç - Çankırı - Tekirdağ - Rize",
+                                            "d) Tunceli - Bursa - Üç - Ceyhan - Trabzon - Rize"
+                                        ]
+                                        "answer": "b) Trabzon - Bursa - Üç - Ceyhan - Trabzon - Rize"
+                                    },
+                                    {
+                                        "question": "YM2ZIP milli fonetik alfabeye göre hecelenmesi nasıl olur?",
+                                        "options": [
+                                            "a) Yalova - Manisa - İki - Zonguldak - İzmir - Pazar",
+                                            "b) Yankee - Muğla - Two - Zulu - India - Papa",
+                                            "c) Yozgat - Mardin - İki - Zonguldak - İzmir - Papa",
+                                            "d) Yalova - Muş - İki - Zonguldak - İzmir - Pazar"
+                                        ]
+                                        "answer": "a) Yalova - Manisa - İki - Zonguldak - İzmir - Pazar"
+                                    },
+                                    {
+                                        "question": "VHF bandında haberleşme için elektromanyetik dalgaların yayılımı hangi şekilde gerçekleşir?",
+                                        "options": [
+                                            "a) Yer dalgaları ile",
+                                            "b) İyonosfer yansıma ile",
+                                            "c) Direkt dalgalar ile",
+                                            "d) Troposferik yansıma ile"
+                                        ]
+                                        "answer": "c) Direkt dalgalar ile"
+                                    },
+                                    {
+                                        "question": "Crossband ne anlama gelir?",
+                                        "options": [
+                                            "a) Ayrı bandlarda almak ve göndermek",
+                                            "b) Aynı bandda hem CW hem de SSB çalışmak",
+                                            "c) Bandın bir tarafında alma, bir tarafında gönderme yapmak",
+                                            "d) Bandın uygun yerinde çalışmak"
+                                        ]
+                                        "answer":"a) Ayrı bandlarda almak ve göndermek"
+                                    },
+                                    {
+                                        "question": "Aşağıdakilerden hangisi ara frekans anlamına gelir?",
+                                        "options": [
+                                            "a) TVI",
+                                            "b) BCI",
+                                            "c) RI",
+                                            "d) IF"
+                                        ]
+                                        "answer": "d) IF"
+                                    },
+                                    {
+                                           "question": "VK çağrı işareti ön eki aşağıdaki ülkelerden hangisine aittir?",
+                                           "options": [
+                                               "a) İngiltere",
+                                               "b) Kanada",
+                                               "c) Japonya",
+                                               "d) Avustralya"
+                                           ]
+                                           "answer":"d) Avustralya"
+                                       },
+                                       {
+                                           "question": "Aşağıdaki çağrı işareti ön eklerinden hangisi Belçika’ya aittir?",
+                                           "options": [
+                                               "a) OH",
+                                               "b) ON",
+                                               "c) OX",
+                                               "d) EA"
+                                           ]
+                                           "answer": "b) ON"
+                                       },
+                                       {
+                                           "question": "OSCAR kelimesinin uluslararası fonetik alfabeye göre hecelenmesi nasıldır?",
+                                           "options": [
+                                               "a) Oscar - Sierra - Charlie - Alpha - Radio",
+                                               "b) Oscar - Six - Charlie - Alabama - Romeo",
+                                               "c) Oscar - Sierra - Charlie - Alpha - Romeo",
+                                               "d) Otto - Sierra - Charlie - Alpha - Radio"
+                                           ]
+                                           "answer": "c) Oscar - Sierra - Charlie - Alpha - Romeo"
+                                       },
+                                       {
+                                           "question": "SK4UZ çağrı işaretinin uluslararası fonetik alfabeye göre hecelemesi nasıldır?",
+                                           "options": [
+                                               "a) Simon - Kilo - Four - Uniform - Zulu",
+                                               "b) Sierra - Kilo - Four - Ultra - Zulu",
+                                               "c) Seven - Kilo - Four - Ultra - Zulu",
+                                               "d) Sierra - Kilo - Four - Uniform - Zulu"
+                                           ]
+                                           "answer": "d) Sierra - Kilo - Four - Uniform - Zulu"
+                                       },
+                                       {
+                                           "question": "Aşağıdaki kısaltmalardan hangisi ulusal saati ifade eder?",
+                                           "options": [
+                                               "a) UTC",
+                                               "b) QST",
+                                               "c) QTC",
+                                               "d) MSA"
+                                           ]
+                                           "answer":  "d) MSA"
+                                       },
+                                       {
+                                           "question": "QST kodunun manası aşağıdakilerden hangisidir?",
+                                           "options": [
+                                               "a) Hava basıncı",
+                                               "b) Parazit",
+                                               "c) Bülten",
+                                               "d) Sinyal raporu"
+                                           ]
+                                           "answer": "c) Bülten"
+                                       },
+                                       {
+                                           "question": "Aşağıdakilerden hangisi telsiz haberleşmesinde “meşgulüm” ifadesinin Q kodu karşılığıdır?",
+                                           "options": [
+                                               "a) QRK",
+                                               "b) QRX",
+                                               "c) QRL",
+                                               "d) QSL"
+                                           ]
+                                           "answer":"c) QRL"
+                                       },
+                                       {
+                                               "question": "1810 -1850 Khz frekans bandı, hangi sınıf amatör telsizciler için verilmiştir?",
+                                               "options": [
+                                                   "a) A sınıfı",
+                                                   "b) B sınıfı",
+                                                   "c) A ve B sınıfı",
+                                                   "d) Hiçbiri"
+                                               ]
+                                               "answer":"a) A sınıfı"
+                                           },
+                                           {
+                                               "question": "Amatör bandda dinleme halinde iken karşıdan TA8YCA gibi bir çağrı işareti duyulduğunda bu çağrı işareti hangi ilden yapılmış olabilir?",
+                                               "options": [
+                                                   "a) Niğde",
+                                                   "b) Manisa",
+                                                   "c) Malatya",
+                                                   "d) Yozgat"
+                                               ]
+                                               "answer":  "c) Malatya"
+                                           },
+                                           {
+                                               "question": "Amatör bandda dinleme halinde iken karşıdan TA1BT gibi bir çağrı işareti duyulduğunda bu çağrı işareti hangi ilden yapılmış olabilir?",
+                                               "options": [
+                                                   "a) Konya",
+                                                   "b) Edirne",
+                                                   "c) Ordu",
+                                                   "d) Adana"
+                                               ]
+                                               "answer": "b) Edirne"
+                                           },
+                                           {
+                                               "question": "90 derece batı boylamında yerel saat 14:10 iken 90 derece doğu boylamında bulunan bir başka yerde saat kaç olacaktır?",
+                                               "options": [
+                                                   "a) 02:10",
+                                                   "b) 19:10",
+                                                   "c) 21:10",
+                                                   "d) 18:10"
+                                               ]
+                                               "answer":"a) 02:10"
+                                           },
+                                           {
+                                               "question": "31 Aralık 2001 pazartesi günü Londra’da saat 24:00 iken 90 derece doğu boylamında bulunan başka bir yerde saat kaç olacaktır?",
+                                               "options": [
+                                                   "a) 1 Ocak 2002 Salı, saat 06:00",
+                                                   "b) 31 Aralık 2001 Pazartesi, saat 06:00",
+                                                   "c) 31 Aralık 2001 Pazartesi, saat 18:00",
+                                                   "d) 1 Ocak 2002 Salı, saat 18:00"
+                                               ]
+                                               "answer":  "a) 1 Ocak 2002 Salı, saat 06:00"
+                                           },
+                                           {
+                                               "question": "14 Mhz amatör bandını tek başına kullanabilme izni, hangi sınıf amatör telsizcilik belgesi sahiplerine tanınmıştır?",
+                                               "options": [
+                                                   "a) A sınıfı",
+                                                   "b) B sınıfı",
+                                                   "c) C sınıfı",
+                                                   "d) Hiçbir"
+                                               ]
+                                               "answer":"a) A sınıfı"
+                                           },
+                                           {
+                                               "question": "B sınıfı amatör telsizcinin kullanamayacağı frekanslar aşağıdakilerden hangileridir?",
+                                               "options": [
+                                                   "a) 144 - 146 Mhz",
+                                                   "b) 1240 - 1300 Mhz",
+                                                   "c) 5650 - 5670 Mhz",
+                                                   "d) 1810 - 1840 Khz"
+                                               ]
+                                               "answer": "d) 1810 - 1840 Khz"
+                                           },
+                                           {
+                                               "question": "TA5BI/2 çağrı kodu için aşağıdaki ifadelerden hangisi doğrudur?",
+                                               "options": [
+                                                   "a) 2.Bölgede çalışan bir amatör istasyonun çağrı işaretidir",
+                                                   "b) C sınıfı amatör telsizciye ait bir istasyonun çağrı kodudur",
+                                                   "c) 5.Bölgeden 2.Bölgeye geçen amatör telsizcinin çağrı işaretidir",
+                                                   "d) Hiçbir"
+                                               ]
+                                               "answer": "c) 5.Bölgeden 2.Bölgeye geçen amatör telsizcinin çağrı işaretidir"
+                                           },
+                                           {
+                                               "question": "Amatör bandda dinleme halinde iken karşıdan TA6YCA gibi bir çağrı işareti duyulduğunda bu çağrı işareti hangi ilden yapılmış olabilir?",
+                                               "options": [
+                                                   "a) Giresun",
+                                                   "b) Manisa",
+                                                   "c) Kars",
+                                                   "d) Yozgat"
+                                               ]
+                                               "answer": "d) Yozgat"
+                                           },
+                                           {
+                                               "question": "AFET kelimesinin milli fonetik alfabeye göre hecelenmesi nasıl olur?",
+                                               "options": [
+                                                   "a) Afyon - Fatsa - Erzurum - Tekirdağ",
+                                                   "b) Ankara - Fatsa - Erzincan - Tokat",
+                                                   "c) Amasya - Fatsa - Edirne - Tire",
+                                                   "d) Ankara - Fatsa - Edirne - Trabzon"
+                                               ]
+                                               "answer": "d) Ankara - Fatsa - Edirne - Trabzon"
+                                           },
+                                           {
+                                               "question": "“Uplink” kavramı neyi ifade eder?",
+                                               "options": [
+                                                   "a) Röle giriş frekansını",
+                                                   "b) Radyolink giriş frekansını",
+                                                   "c) Uydudan yere olan frekansı (iniş)",
+                                                   "d) Yerden uyduya olan frekansı (çıkış)"
+                                               ]
+                                               "answer": "d) Yerden uyduya olan frekansı (çıkış)"
+                                           },
+                                           {
+                                               "question": "Aşağıdakilerden hangisi “Radyo yayın enterferansı” anlamına gelir?",
+                                               "options": [
+                                                   "a) TVI",
+                                                   "b) BCI",
+                                                   "c) RI",
+                                                   "d) IF"
+                                               ]
+                                               "answer":  "b) BCI"
+                                           },
+                                           {
+                                                   "question": "PY çağrı işareti ön eki aşağıdaki ülkelerden hangisine aittir?",
+                                                   "options": [
+                                                       "a) Brezilya",
+                                                       "b) Hollanda",
+                                                       "c) İsveç",
+                                                       "d) Almanya"
+                                                   ]
+                                                   "answer": "a) Brezilya"
+                                               },
+                                               {
+                                                   "question": "QSX‟in uluslararası fonetik alfabeye göre hecelenmesi nasıldır?",
+                                                   "options": [
+                                                       "a) Quebec - Six - X Ray",
+                                                       "b) Quebec - Sierra - X Ray",
+                                                       "c) Kilo - Sierra - X Ray",
+                                                       "d) Kilo - Seven - X Ray"
+                                                   ]
+                                                   "answer": "b) Quebec - Sierra - X Ray"
+                                               },
+                                               {
+                                                   "question": "QRT kodunun manası nedir?",
+                                                   "options": [
+                                                       "a) Dinlemede kalın veya dinliyorum",
+                                                       "b) Göndermeyi durdurayım mı",
+                                                       "c) Mevkiiniz neresidir?",
+                                                       "d) Mesajım var"
+                                                   ]
+                                                   "answer":"b) Göndermeyi durdurayım mı"
+                                               },
+                                               {
+                                                   "question": "QRZ kodunun manası nedir?",
+                                                   "options": [
+                                                       "a) V serisi göndereyim mi?",
+                                                       "b) Beni kim çağırıyor?",
+                                                       "c) Gücü azaltayım mı?",
+                                                       "d) Hazırım"
+                                                   ]
+                                                   "answer": "b) Beni kim çağırıyor?"
+                                               },
+                                               {
+                                                   "question": "73 kısaltması mors haberleşmesinde hangi anlama karşılık gelir?",
+                                                   "options": [
+                                                       "a) Göndermenin tam ve doğru olarak alındığını belirtmek",
+                                                       "b) CQ genel çağrısı",
+                                                       "c) Selamlar",
+                                                       "d) İstasyonumu kapatıyorum"
+                                                   ]
+                                                   "answer": "c) Selamlar"
+                                               },
+                                               {
+                                                   "question": "10100 - 10150 Khz frekans bandına müsaade edilen azami çıkış gücü (PEP) ne kadardır?",
+                                                   "options": [
+                                                       "a) 400 W",
+                                                       "b) 150 W",
+                                                       "c) 100 W",
+                                                       "d) 75 W"
+                                                   ]
+                                                   "answer":  "d) 75 W"
+                                               },
+                                               {
+                                                   "question": "Amatör bandda dinleme halinde iken karşıdan TA8UJ gibi bir çağrı işareti duyulduğunda bu çağrı işareti aşağıdaki illerin hangisinden yapılmış olabilir?",
+                                                   "options": [
+                                                       "a) Nevşehir",
+                                                       "b) Şanlıurfa",
+                                                       "c) Kars",
+                                                       "d) Bursa"
+                                                   ]
+                                                   "answer": "b) Şanlıurfa"
+                                               },
+                                               {
+                                                   "question": "Amatör bandda dinleme halinde iken karşıdan TB3CCW gibi bir çağrı işareti duyulduğunda bu çağrı işareti aşağıdaki illerin hangisinden yapılmış olabilir?",
+                                                   "options": [
+                                                       "a) Mersin",
+                                                       "b) Uşak",
+                                                       "c) Manisa",
+                                                       "d) Muğla"
+                                                   ]
+                                                   "answer": "c) Manisa"
+                                               },
+                                               {
+                                                   "question": "Aşağıdaki frekanslardan hangisinde SSB haberleşmesi yapılabilir?",
+                                                   "options": [
+                                                       "a) 14010 Khz",
+                                                       "b) 7010 Khz",
+                                                       "c) 14250 Khz",
+                                                       "d) 21035 Khz"
+                                                   ]
+                                                   "answer":"c) 14250 Khz"
+                                               },
+                                               {
+                                                   "question": "40 m bandı aşağıdakilerden hangisidir?",
+                                                   "options": [
+                                                       "a) 21000 - 21450 Khz",
+                                                       "b) 20 - 21 Ghz",
+                                                       "c) 7000 - 7100 Khz",
+                                                       "d) 14000 - 14350 Khz"
+                                                   ]
+                                                   "answer": "c) 7000 - 7100 Khz"
+                                               },
+                                               {
+                                                   "question": "TA2KA çağrı işaretinin özelliği nedir?",
+                                                   "options": [
+                                                       "a) 2. Bölgede bulunan bir amatöre ait istasyondur",
+                                                       "b) Dernek istasyonudur",
+                                                       "c) Eğitim ve öğretim kuruluşlarına ait istasyondur",
+                                                       "d) 2. bölgede geçici olarak çalışan bir istasyondur"
+                                                   ]
+                                                   "answer":  "b) Dernek istasyonudur"
+                                               },
+                                               {
+                                                   "question": "TA5ED nin milli fonetik alfabeye göre hecelenmesi nasıldır?",
+                                                   "options": [
+                                                       "a) Trabzon - Afyon - Beş - Edirne - Diyarbakır",
+                                                       "b) Tekirdağ - Ankara - Beş - Edirne - Denizli",
+                                                       "c) Trabzon - Ankara - Beş - Erzurum - Düzce",
+                                                       "d) Trabzon - Ankara - Beş - Edirne - Denizli"
+                                                   ]
+                                                   "answer": "d) Trabzon - Ankara - Beş - Edirne - Denizli"
+                                               },
+                                               {
+                                                   "question": "LA çağrı işareti ön eki hangi ülkeye aittir?",
+                                                   "options": [
+                                                       "a) Hollanda",
+                                                       "b) Haiti",
+                                                       "c) Norveç",
+                                                       "d) Lübnan"
+                                                   ]
+                                                   "answer": "c) Norveç"
+                                               },
+                                               {
+                                                   "question": "Aşağıdaki çağrı işareti ön eklerinden hangisi İspanya’ya aittir?",
+                                                   "options": [
+                                                       "a) EA",
+                                                       "b) EP",
+                                                       "c) ON",
+                                                       "d) SU"
+                                                   ]
+                                                   "answer":"a) EA"
+                                               },
+                                               {
+                                                   "question": "BTK’ nın uluslararası fonetik alfabeye göre hecelenmesi nasıldır?",
+                                                   "options": [
+                                                       "a) Bravo - Tango - Kilo",
+                                                       "b) Bravo - Tango - Kilowat",
+                                                       "c) Bravo - Toronto - Kilo",
+                                                       "d) Bravo - Tango - Golf - Mike"
+                                                   ]
+                                                   "answer": "a) Bravo - Tango - Kilo"
+                                               },
+                                               {
+                                                   "question": "İki istasyon arasında gönderilen test mesajlarının başına ve sonuna aşağıdaki kelimelerden hangisi ilave edilmelidir?",
+                                                   "options": [
+                                                       "a) Eğitim",
+                                                       "b) Deneme",
+                                                       "c) Test",
+                                                       "d) Tatbikat"
+                                                   ]
+                                                   "answer": "c) Test"
+                                               },
+                                               {
+                                                   "question": "Amatör istasyonunuzu bir “SOS” veya “MAYDAY” sinyali göndermek için ne zaman kullanabilirsiniz?",
+                                                   "options": [
+                                                       "a) Sadece denizde bir gemiden iletim yapıyorken",
+                                                       "b) Sadece bir saatin 15. ve 30. Dakikalarında",
+                                                       "c) İnsan yaşamına ve mala mevcut bir tehdit olması durumunda",
+                                                       "d) Ulusal Meteoroloji Dairesi bir meteoroloji uyarısı açıkladığı zaman"
+                                                   ]
+                                                   "answer": "c) İnsan yaşamına ve mala mevcut bir tehdit olması durumunda"
+                                               },
+                                               {
+                                                   "question": "Aşağıdakilerden hangisi “selamlar” anlamına gelmektedir?",
+                                                   "options": [
+                                                       "a) 73",
+                                                       "b) 88",
+                                                       "c) 66",
+                                                       "d) 55"
+                                                   ]
+                                                   "answer": "a) 73"
+                                               },
+                                               {
+                                                   "question": "Greenwich’de 20 Ekim saat 23:00 iken 25 derece doğu boylamında tarih ve saat kaçtır?",
+                                                   "options": [
+                                                       "a) 21 Ekim saat 00:40",
+                                                       "b) 20 Ekim saat 21:10",
+                                                       "c) 20 Ekim saat 00:40",
+                                                       "d) 21 Ekim saat 11:10"
+                                                   ]
+                                                   "answer":"a) 21 Ekim saat 00:40"
+                                               },
+                                               {
+                                                       "question": "Amatör telsiz istasyonunda bulunan mesaj kayıt defterinde bulunması gerek olmayan bilgi aşağıdakilerden hangisidir?",
+                                                       "options": [
+                                                           "a) Haberleşme tarihi ve UTC olarak zaman",
+                                                           "b) Haberleşme istasyonunun çağrı adı",
+                                                           "c) Haberleşmenin frekansı",
+                                                           "d) Kullanılan antenin cinsi"
+                                                       ]
+                                                       "answer": "d) Kullanılan antenin cinsi"
+                                                   },
+                                                   {
+                                                       "question": "Bir amatör telsiz istasyonu hangi hallerde şifreli haberleşme yapabilir?",
+                                                       "options": [
+                                                           "a) Sadece yüksek frekanslarda görüşme yaparken",
+                                                           "b) Yarışmalarda (contest)",
+                                                           "c) Olağanüstü haberleşme şartlarında",
+                                                           "d) Amatör telsizciler şifreli haberleşme yapamaz"
+                                                       ]
+                                                       "answer":  "d) Amatör telsizciler şifreli haberleşme yapamaz"
+                                                   },
+                                                   {
+                                                       "question": "Amatör telsizciler arasında yapılan haberleşmenin alındığını veya anlaşıldığını belirten ve birbirlerine bu durumu onaylatmak için gönderilen belgeye ne ad verilir?",
+                                                       "options": [
+                                                           "a) QSO kartı",
+                                                           "b) QSL kartı",
+                                                           "c) QTH kartı",
+                                                           "d) QRU kartı"
+                                                       ]
+                                                       "answer": "b) QSL kartı"
+                                                   },
+                                                   {
+                                                       "question": "Bir amatör telsiz istasyonunda bulunan mesaj kayıt defterine (log-book) aşağıda belirtilen bilgilerden hangisinin kayıt edilme zorunluluğu yoktur?",
+                                                       "options": [
+                                                           "a) Hava durumu",
+                                                           "b) Haberleşme sıra numarası",
+                                                           "c) Çalışma frekansı",
+                                                           "d) Emisyon tipi"
+                                                       ]
+                                                       "answer": "a) Hava durumu"
+                                                   },
+                                                   {
+                                                       "question": "QRV kelimesinin anlamı aşağıdakilerden hangisidir?",
+                                                       "options": [
+                                                           "a) Hazır mısın?",
+                                                           "b) Bulunduğun yer neresidir?",
+                                                           "c) Saat kaç?",
+                                                           "d) Başka bir konu var mı?"
+                                                       ]
+                                                       "answer": "a) Hazır mısın?"
+                                                   },
+                                                   {
+                                                       "question": "CALL SIGN kelimesinin anlamı nedir?",
+                                                       "options": [
+                                                           "a) Güç",
+                                                           "b) Kontrol",
+                                                           "c) Çağrı işareti",
+                                                           "d) Alındı"
+                                                       ]
+                                                       "answer":  "c) Çağrı işareti"
+                                                   },
+                                                   {
+                                                       "question": "QSV kelimesinin anlamı nedir?",
+                                                       "options": [
+                                                           "a) Hazır mısın?",
+                                                           "b) Frekansımı değiştireyim mi?",
+                                                           "c) Bir dizi V harfi göndereyim mi?",
+                                                           "d) Daha hızlı göndereyim mi?"
+                                                       ]
+                                                       "answer":"c) Bir dizi V harfi göndereyim mi?"
+                                                   },
+                                                   {
+                                                       "question": "QRZ kelimesinin anlamı nedir?",
+                                                       "options": [
+                                                           "a) Sinyal şiddetim ne?",
+                                                           "b) Frekansım değişiyor mu?",
+                                                           "c) Meşgul müsünüz?",
+                                                           "d) Beni kim çağırıyor?"
+                                                       ]
+                                                       "answer": "d) Beni kim çağırıyor?"
+                                                   },
+                                                   {
+                                                       "question": "MAYDAY kelimesinin uluslararası alfabeye göre hecelenmesi ne şekilde yapılır?",
+                                                       "options": [
+                                                           "a) Mike - Alpha - Tosun - Delta - Alpha - Yunus",
+                                                           "b) Manisa - Aydın - Yankee - Delta - Afyon - Yunus",
+                                                           "c) Mike - Alpha - Yankee - Delta - Alpha - Yankee",
+                                                           "d) Manisa - Aydın - Yeliz - Demir - Aydın - Yeliz"
+                                                       ]
+                                                       "answer": "c) Mike - Alpha - Yankee - Delta - Alpha - Yankee"
+                                                   },
+                                                   {
+                                                       "question": "KEGM kelimesinin uluslararası alfabeye göre hecelenmesi ne şekilde yapılır?",
+                                                       "options": [
+                                                           "a) Kemal - Emin - Galip - Mehmet",
+                                                           "b) Kilo - Echo - Golf - Mike",
+                                                           "c) Kilo - Echo - Golf - Mehmet",
+                                                           "d) Kemal - Echo - Golf - Mike"
+                                                       ]
+                                                       "answer":  "b) Kilo - Echo - Golf - Mike"
+                                                   },
+                                                   {
+                                                       "question": "MEHMET kelimesinin ulusal fonetik alfabeye göre hecelenmesi nedir?",
+                                                       "options": [
+                                                           "a) Mehmet - Emin - Hasan - Mehmet - Emin - Turgut",
+                                                           "b) Mike - Echo - Hotel - Mike - Echo - Tango",
+                                                           "c) Manisa - Edirne - Hopa - Manisa - Edirne - Trabzon",
+                                                           "d) Mike - Edirne - Hotel - Mike - Edirne - Tango"
+                                                       ]
+                                                       "answer":  "c) Manisa - Edirne - Hopa - Manisa - Edirne - Trabzon"
+                                                   },
+                                                   {
+                                                       "question": "Herhangi bir istasyon çağrıldığında ve bağlantı kurulduğunda aşağıdakilerden hangisinin yapılması doğrudur?",
+                                                       "options": [
+                                                           "a) Her bağlantı sonunda çağrı işaretleri tekrarlanır",
+                                                           "b) Simplex kanalda görüşülüyorsa ve uzun süreli görüşülecekse boş bir simplex kanala geçmek",
+                                                           "c) Cümleler kısa net ve anlaşılır olmalı",
+                                                           "d) Hepsi"
+                                                       ]
+                                                       "answer":  "d) Hepsi"
+                                                   },
+                                                   {
+                                                       "question": "LZ çağrı işareti aşağıdaki ülkelerden hangisine aittir?",
+                                                       "options": [
+                                                           "a) Romanya",
+                                                           "b) Yunanistan",
+                                                           "c) Bulgaristan",
+                                                           "d) Yugoslavya"
+                                                       ]
+                                                       "answer": "c) Bulgaristan"
+                                                   },
+                                                   {
+                                                       "question": "Aşağıdaki kısaltmalardan hangisi Avrupa kıtasına aittir?",
+                                                       "options": [
+                                                           "a) AF",
+                                                           "b) EU",
+                                                           "c) AS",
+                                                           "d) AN"
+                                                       ]
+                                                       "answer":  "b) EU"
+                                                   },
+                                                   {
+                                                       "question": "Mors CW haberleşmesinde kullanılan kısalmalardan CFM kelimesinin anlamı nedir?",
+                                                       "options": [
+                                                           "a) Kontrol",
+                                                           "b) Genel çağrı",
+                                                           "c) Tasdik etmek",
+                                                           "d) Tekrar"
+                                                       ]
+                                                       "answer": "c) Tasdik etmek"
+                                                   },
+                                                   {
+                                                       "question": "Mors haberleşmesinde kullanılan TX kısalması neyi ifade eder?",
+                                                       "options": [
+                                                           "a) Alıcı",
+                                                           "b) Verici",
+                                                           "c) Teşekkür",
+                                                           "d) Hava raporu"
+                                                       ]
+                                                       "answer": "b) Verici"
+                                                   },
+                                                   {
+                                                       "question": "TELSIZ kelimesinin uluslararası fonetik alfabeye göre açılımı nedir?",
+                                                       "options": [
+                                                           "a) Tango - Echo - Lima - Sierra - India - Zulu",
+                                                           "b) Train - Echo - Local - South - India - Zulu",
+                                                           "c) Tourus - Emiter - Loop - Sierra - Inch - Zoom",
+                                                           "d) Tango - Echo - London - Source - Inter - Zaire"
+                                                       ]
+                                                       "answer": "a) Tango - Echo - Lima - Sierra - India - Zulu"
+                                                   },
+                                                   {
+                                                       "question": "QSY‟ nin açılımı nedir?",
+                                                       "options": [
+                                                           "a) Yayını başka frekansa değiştireyim mi?",
+                                                           "b) Bir daha ne zaman arayacaksın?",
+                                                           "c) Göndermeyi bırakayım mı?",
+                                                           "d) Beni kim arıyor?"
+                                                       ]
+                                                       "answer": "a) Yayını başka frekansa değiştireyim mi?"
+                                                   },
+                                                   {
+                                                       "question": " Amatör Telsizcilik Haberleşmesinde kullanılan BK kısaltması ne anlama gelir?",
+                                                       
+                                                       "options": [
+                                                           "a) Devam etmekte olan bir yayının kesilmesi için kullanılan sinyal",
+                                                           "b) Mesaj",
+                                                           "c) Alındı",
+                                                           "d) Alındı"
+                                                       ]
+                                                       "answer":  "a) Devam etmekte olan bir yayının kesilmesi için kullanılan sinyal"
+                                                   },
+                                                   {
+                                                         "question": "„UR‟ kısaltmasının anlamı nedir?",
+                                                         "options": [
+                                                             "a) Senin",
+                                                             "b) Alıcı",
+                                                             "c) Lütfen",
+                                                             "d) Verici"
+                                                         ]
+                                                         "answer":"a) Senin"
+                                                     },
+                                                     {
+                                                         "question": "A sınıfı belgeye sahip olan Amatör telsizcilerin 1810 - 1840 Khz band aralığındaki verici çıkış gücü ne olmalıdır?",
+                                                         "options": [
+                                                             "a) 1 W",
+                                                             "b) 9 W",
+                                                             "c) 75 W",
+                                                             "d) 100 W"
+                                                         ]
+                                                         "answer": "b) 9 W"
+                                                     },
+                                                     {
+                                                         "question": "A1A‟ nın anlamı nedir?",
+                                                         "options": [
+                                                             "a) Genlik Modülasyonlu, çift kenar band modüle edici alt taşıyıcı kullanmayan, sayısal bilgi ihtiva eden tek kanallı açık-kapalı şeklinde anahtarlama sistemi ile çalışan telgraf yayını",
+                                                             "b) Genlik Modülasyonlu, tek kenar band modüle edici alt taşıyıcı kullanmayan, bilgi ihtiva eden tek kanallı otomatik telgraf yayını",
+                                                             "c) Genlik Modülasyonlu, çift kenar band analog bilgi ihtiva eden tek kanallı faksimil",
+                                                             "d) Genlik Modülasyonlu, artık yan band analog bilgi ihtiva eden tek kanallı televizyon yayını"
+                                                         ]
+                                                         "answer": "a) Genlik Modülasyonlu, çift kenar band modüle edici alt taşıyıcı kullanmayan, sayısal bilgi ihtiva eden tek kanallı açık-kapalı şeklinde anahtarlama sistemi ile çalışan telgraf yayını"
+                                                     },
+                                                     {
+                                                         "question": "J3E‟ nin anlamı nedir?",
+                                                         "options": [
+                                                             "a) Genlik Modülasyonlu, tek kenar band, taşıyıcı bastırılmış, modüle edici alt taşıyıcı kullanan, sayısal bilgi ihtiva eden, tek kanallı otomatik telgraf yayını",
+                                                             "b) Genlik Modülasyonlu, tek kenar band, taşıyıcısı bastırılmış, analog bilgi ihtiva eden, tek kanallı faksimil",
+                                                             "c) Genlik Modülasyonlu, tek kenar band, taşıyıcısı bastırılmış, analog bilgi ihtiva eden, tek kanallı telefon yayını",
+                                                             "d) Genlik Modülasyonlu, tek kenar band, taşıyıcısı bastırılmış, analog bilgi ihtiva eden, tek kanallı televizyon yayını"
+                                                         ]
+                                                         "answer": "c) Genlik Modülasyonlu, tek kenar band, taşıyıcısı bastırılmış, analog bilgi ihtiva eden, tek kanallı telefon yayını"
+                                                     },
+                                                     {
+                                                         "question": "6 metre band içindeki frekans hangisidir?",
+                                                         "options": [
+                                                             "a) 49.00 Mhz",
+                                                             "b) 51.525 Mhz",
+                                                             "c) 28.50 Mhz",
+                                                             "d) 222.15 Mhz"
+                                                         ]
+                                                         "answer":"b) 51.525 Mhz"
+                                                     },
+                                                     {
+                                                         "question": "Bir alıcı – vericideki susturma kontrolünün amacı nedir?",
+                                                         "options": [
+                                                             "a) İstenilen sesin en yüksek seviyesini ayarlamak için kullanılır",
+                                                             "b) Alıcı – Verici güç düzeyini ayarlamak için kullanılır",
+                                                             "c) Anten polarizasyonunu ayarlamak için kullanılır",
+                                                             "d) Hiçbir sinyal alınmadığı zaman gürültüyü kesmek kullanılır"
+                                                         ]
+                                                         "answer": "d) Hiçbir sinyal alınmadığı zaman gürültüyü kesmek kullanılır"
+                                                     },
+                                                     {
+                                                         "question": "20 m bandında RTTY haberleşmesi hangi frekans aralığında yapılabilir?",
+                                                         "options": [
+                                                             "a) 14.075 - 14.100 Mhz",
+                                                             "b) 14.050 - 14.075 Mhz",
+                                                             "c) 14.200 - 14.250 Mhz",
+                                                             "d) 14.230 - 14.230 Khz"
+                                                         ]
+                                                         "answer": "a) 14.075 - 14.100 Mhz"
+                                                     },
+                                                     {
+                                                         "question": "Mors alfabesinde AZOT kelimesinin açılımı nedir?",
+                                                         "options": [
+                                                             "a) ∙− ∙− / − − ∙ − / − ∙ ∙ / ∙",
+                                                             "b) ∙− / − − − / ∙ ∙− − / −",
+                                                             "c) − ∙− / ∙ ∙− / ∙− ∙/ − − ∙−",
+                                                             "d) ∙− / − − ∙ ∙/ − − − / −"
+                                                         ]
+                                                         "answer": "d) ∙− / − − ∙ ∙/ − − − / −"
+                                                     },
+                                                     {
+                                                         "question": "Mors alfabesinde SAYI kelimesinin açılımı nedir?",
+                                                         "options": [
+                                                             "a) − ∙− − / ∙ ∙ ∙− / ∙− / − ∙ ∙",
+                                                             "b) − ∙ ∙− / ∙ ∙− / − ∙/ ∙−",
+                                                             "c) ∙ ∙ ∙/ ∙ − / ∙ ∙/ − ∙− −",
+                                                             "d) ∙ ∙ ∙/ ∙− / − ∙− − / ∙ ∙"
+                                                         ]
+                                                         "answer": "d) ∙ ∙ ∙/ ∙− / − ∙− − / ∙ ∙"
+                                                     },
+                                                     {
+                                                         "question": "Mors alfabesinde YENİ kelimesinin açılımı nedir?",
+                                                         "options": [
+                                                             "a) − ∙− − / ∙/ − ∙/ ∙ ∙",
+                                                             "b) ∙− / − ∙− / ∙ ∙− − / ∙ − ∙",
+                                                             "c) ∙ − ∙ ∙ /∙ ∙ ∙ − / ∙ − ∙ ∙ / ∙",
+                                                             "d) ∙− / − ∙− / ∙ ∙− − / ∙ − ∙"
+                                                         ]
+                                                         "answer":  "a) − ∙− − / ∙/ − ∙/ ∙ ∙"
+                                                     },
+                                                     {
+                                                         "question": "Mors alfabesinde NOTA kelimesinin açılımı nedir?",
+                                                         "options": [
+                                                             "a) ∙− / − − − / − ∙/ ∙ ∙",
+                                                             "b) − ∙/ − − − / − / ∙−",
+                                                             "c) ∙− ∙/ − − − / − / ∙",
+                                                             "d) ∙∙−/∙−−∙/∙∙∙/∙−"
+                                                         ]
+                                                         "answer": "b) − ∙/ − − − / − / ∙−"
+                                                     },
+                                                     {
+                                                         "question": "Mors alfabesinde GRUP kelimesinin açılımı nedir?",
+                                                         "options": [
+                                                             "a) ∙− − ∙/ − − ∙ ∙/ ∙ ∙/ ∙ ∙ ∙",
+                                                             "b) − − ∙/ ∙− ∙/ − − / ∙− − ∙",
+                                                             "c) − ∙− ∙/ − − ∙− / ∙ ∙ ∙ − / − ∙−",
+                                                             "d) − − ∙/ ∙− ∙/ ∙ ∙− / ∙− − ∙"
+                                                         ]
+                                                         "answer":"d) − − ∙/ ∙− ∙/ ∙ ∙− / ∙− − ∙"
+                                                     },
+                                                     {
+                                                         "question": "Mors alfabesinde FİLE kelimesinin açılımı nedir?",
+                                                         "options": [
+                                                             "a) ∙ ∙− ∙/ ∙ ∙/ ∙− ∙ ∙/ ∙",
+                                                             "b) ∙∙−∙/∙/∙−∙∙/∙∙",
+                                                             "c) ∙− ∙ ∙/ ∙ ∙/ ∙− ∙ ∙/ ∙",
+                                                             "d) ∙−∙∙/∙∙/−∙−∙/∙"
+                                                         ]
+                                                         "answer": "a) ∙ ∙− ∙/ ∙ ∙/ ∙− ∙ ∙/ ∙"
+                                                     },
+                                                     {
+                                                         "question": "Mors alfabesinde BARAJ kelimesinin açılımı nedir?",
+                                                         "options": [
+                                                             "a) ∙ ∙ ∙− / ∙− / ∙− ∙/ − ∙/ ∙− − −",
+                                                             "b) − ∙ ∙ / ∙− / ∙− ∙/ ∙− / ∙− −",
+                                                             "c) − ∙ ∙ ∙/ ∙− / − ∙/ ∙− / − − − ∙",
+                                                             "d) − ∙ ∙ ∙/ ∙− / ∙− ∙/ ∙− / ∙− − −"
+                                                         ]
+                                                         "answer":"d) − ∙ ∙ ∙/ ∙− / ∙− ∙/ ∙− / ∙− − −"
+                                                     },
+                                                     {
+                                                         "question": "Mors alfabesinde ONUR kelimesinin açılımı nedir?",
+                                                         "options": [
+                                                             "a) − − − / − ∙/ ∙ ∙− / ∙− ∙",
+                                                             "b) ∙ ∙ ∙/ ∙− / − − ∙/ − ∙−",
+                                                             "c) ∙ ∙ ∙/ ∙ − / ∙ ∙− / ∙− ∙",
+                                                             "d) − − − / − ∙/ ∙ ∙ ∙− / ∙ − ∙"
+                                                         ]
+                                                         "answer": "a) − − − / − ∙/ ∙ ∙− / ∙− ∙"
+                                                     },
+                                                     {
+                                                         "question": "Mors alfabesinde TAH kelimesinin açılımı nedir?",
+                                                         "options": [
+                                                             "a) ∙− − / ∙ ∙/ − −",
+                                                             "b) − / ∙− / ∙ ∙ ∙ ∙",
+                                                             "c) ∙ − / ∙ ∙ − / − −",
+                                                             "d) ∙ ∙/ ∙− / ∙ ∙ ∙"
+                                                         ]
+                                                         "answer": "b) − / ∙− / ∙ ∙ ∙ ∙"
+                                                     },
+                                                     {
+                                                         "question": "Mors alfabesinde ESKİ kelimesinin açılımı nedir?",
+                                                         "options": [
+                                                             "a) ∙ ∙/ − ∙/ ∙ ∙− / ∙− ∙",
+                                                             "b) ∙/ ∙ ∙ ∙/ − ∙− / ∙ ∙",
+                                                             "c) − ∙− / ∙ ∙ ∙/ ∙− ∙/ − −",
+                                                             "d) ∙− /∙∙/∙−∙/∙∙−∙"
+                                                         ]
+                                                         "answer": "b) ∙/ ∙ ∙ ∙/ − ∙− / ∙ ∙"
+                                                     },
+                                                     {
+                                                            "question": "Mors alfabesinde YAVUZ kelimesinin açılımı nedir?",
+                                                            "options": [
+                                                                "a) − − ∙ − / ∙ − / ∙ ∙ ∙ − / ∙ ∙ − / − − ∙ ∙",
+                                                                "b) − ∙ − − / − ∙ / − ∙ ∙ ∙ / ∙ ∙ − / − − ∙",
+                                                                "c) − ∙ − − / ∙ − / ∙ ∙ ∙ − / ∙ ∙ − / − − ∙ ∙",
+                                                                "d) − ∙ − − / ∙ − / − ∙ ∙ ∙ / ∙ ∙ − / − − ∙"
+                                                            ]
+                                                            "answer": "c) − ∙ − − / ∙ − / ∙ ∙ ∙ − / ∙ ∙ − / − − ∙ ∙"
+                                                        },
+                                                        {
+                                                            "question": "Mors alfabesinde AK kelimesinin açılımı nedir?",
+                                                            "options": [
+                                                                "a) ∙− − / ∙− ∙",
+                                                                "b) ∙− / − ∙−",
+                                                                "c) − ∙/ − ∙−",
+                                                                "d) ∙ ∙/ ∙− −"
+                                                            ]
+                                                            "answer": "b) ∙− / − ∙−"
+                                                        },
+                                                        {
+                                                            "question": "7000 – 7100 Khz Frekans bandı aşağıda yazılı bandlardan hangisinin içerisindedir?",
+                                                            "options": [
+                                                                "a) MF",
+                                                                "b) HF"
+                                                                "c) UHF""
+                                                                "d) VHF"
+                                                            ]
+                                                            
+                                                            "answer": "b) HF"
+                                                        },
+                                                        {
+                                                            "question": "VHF bandındaki frekans aralığı hangisidir?",
+                                                            "options": [
+                                                                "a) 3-30 Mhz",
+                                                                "b) 30-300 Mhz",
+                                                                "c) UHF",
+                                                                "d) VHF"
+                                                            ]
+                                                            "answer": "b) 30-300 Mhz"
+                                                        },
+                                                        {
+                                                            "question": "Telsiz cihazları arasında haberleşmeyi kolaylaştırmak amacıyla bir verici istasyonundan aldığı sinyalleri otomatik olarak başka bir frekansta alıcılara yayınlayan aktarıcılara ne ad verilir?",
+                                                            "options": [
+                                                                "a) Trafo",
+                                                                "b) Tekrarlayıcı",
+                                                                "c) El telsizi",
+                                                                "d) Mobil telsiz"
+                                                            ]
+                                                            "answer":"b) Tekrarlayıcı"
+                                                        },
+                                                        {
+                                                            "question": "Paket data gönderen amatör telsiz istasyonunda aşağıdakilerden hangisi kullanılmaz?",
+                                                            "options": [
+                                                                "a) Anten",
+                                                                "b) Güç Kaynağı",
+                                                                "c) Alıcı - Verici",
+                                                                "d) Mikrofon"
+                                                            ]
+                                                            "answer": "d) Mikrofon"
+                                                        },
+                                                        {
+                                                            "question": "Amatör Telsiz Hizmetinin beş amacından iki tanesi aşağıdakilerden hangisidir?",
+                                                            "options": [
+                                                                "a) Geçmiş telsiz verilerini korumak ve halkın telsiz geçmişini anlamasına yardımcı olmak",
+                                                                "b) Yabancı ülkelere telsiz haberleşmelerini geliştirmelerinde yardımcı olmak ve yabancı amatör telsizcilerin ziyaretlerini cesaretlendirmek",
+                                                                "c) Telsiz elektronik dizaynını modernize etmek ve şematik çizimleri geliştirmek",
+                                                                "d) Eğitimli telsiz operatörleri ile elektronik uzmanlarının sayısını artırmak ve uluslararası saygınlığı geliştirmek"
+                                                            ]
+                                                            "answer":"d) Eğitimli telsiz operatörleri ile elektronik uzmanlarının sayısını artırmak ve uluslararası saygınlığı geliştirmek"
+                                                        },
+                                                        {
+                                                            "question": "Hangi frekanslar 6 metre bandındadır?",
+                                                            "options": [
+                                                                "a) 49.00 Mhz",
+                                                                "b) 52.525 Mhz",
+                                                                "c) 28.50 Mhz",
+                                                                "d) 222.15 Mhz"
+                                                            ]
+                                                            "answer":"b) 52.525 Mhz"
+                                                        },
+                                                        {
+                                                            "question": "Diğer istasyonlardan parazit aldığınızı belirtmek için kullanılan “Q” sinyali hangisidir?",
+                                                            "options": [
+                                                                "a) QRM",
+                                                                "b) QRQ",
+                                                                "c) QTH",
+                                                                "d) QSB"
+                                                            ]
+                                                            "answer":   "a) QRM"
+                                                        },
+                                                        {
+                                                            "question": "3.5 Mhz‟de hangi amatör band kullanılır?",
+                                                            "options": [
+                                                                "a) 15 metre bandı",
+                                                                "b) 20 metre bandı",
+                                                                "c) 70 metre bandı",
+                                                                "d) 80 metre bandı"
+                                                            ]
+                                                            "answer": "d) 80 metre bandı"
+                                                        },
+                                                        {
+                                                            "question": "Aşağıdakilerden hangisi yasaklanmış amatör telsiz yayınıdır?",
+                                                            "options": [
+                                                                "a) Acil yardım almak için amatör telsiz kullanmak",
+                                                                "b) İş yürütmek için amatör telsiz kullanmak",
+                                                                "c) Bir taksi veya yiyecek siparişi için amatör bir telefon patch‟i kullanmak",
+                                                                "d) Eve geç geleceğinizi bildirmek için amatör bir telefon patch‟i kullanmak"
+                                                            ]
+                                                            "answer":"b) İş yürütmek için amatör telsiz kullanmak"
+                                                        },
+                                                        {
+                                                            "question": "Amatör istasyonunuzu ne zaman uçakta çalıştırabilirsiniz?",
+                                                            "options": [
+                                                                "a) Her zaman",
+                                                                "b) Uçak yalnızca yerde olduğunda",
+                                                                "c) Yalnızca uçağa komuta eden pilotun onayı ile ve uçağın telsiz teçhizatını kullanmadan",
+                                                                "d) Yalnızca hava yollarından yazılı izin aldığınızda ve yalnızca uçağın telsiz teçhizatını kullanarak"
+                                                            ]
+                                                            "answer": "c) Yalnızca uçağa komuta eden pilotun onayı ile ve uçağın telsiz teçhizatını kullanmadan"
+                                                        },
+                                                        {
+                                                            "question": "Gönderilecek frekansı seçerken, aşağıdakilerden hangisini yapmanız gerekir?",
+                                                            "options": [
+                                                                "a) Herhangi bir kişinin dinleyip dinlemediğini öğrenmek için CQ‟ yu ara",
+                                                                "b) Frekansın meşgul olup olmadığını belirlemek için dinle",
+                                                                "c) İşaretlerinizin duyulmasına olanak sağlayacak bir frekansta gönderim yapın",
+                                                                "d) Maksimum çıkış güç için kontrol yapın"
+                                                            ]
+                                                            "answer":"b) Frekansın meşgul olup olmadığını belirlemek için dinle"
+                                                        },
+                                                        {
+                                                            "question": "Herhangi bir istasyonla temas kurmak için arama yaptığınızı nasıl belli edersiniz?",
+                                                            "options": [
+                                                                "a) Sizin çağrı işaretinizi takiben CQ",
+                                                                "b) Sizin çağrı işaretinizi takiben RST",
+                                                                "c) Sizin çağrı işaretinizi takiben QST",
+                                                                "d) Sizin çağrı işaretinizi takiben SK"
+                                                            ]
+                                                            "answer": "a) Sizin çağrı işaretinizi takiben CQ"
+                                                        },
+                                                        {
+                                                            "question": "CQ‟ nun bir çağrısına cevap verirken neyi göndermelisiniz?",
+                                                            "options": [
+                                                                "a) Diğer istasyonun çağrı işaretini takiben kendi CQ‟nuzu",
+                                                                "b) Kendi çağrı işaretinizi takiben diğer istasyonunun çağrı işaretini",
+                                                                "c) Diğer istasyonun çağrı işaretini takiben kendi çağrı işaretinizi",
+                                                                "d) Kendi çağrı işaretinizi takiben bir işaret raporu"
+                                                            ]
+                                                            "answer":"c) Diğer istasyonun çağrı işaretini takiben kendi çağrı işaretinizi"
+                                                        },
+                                                        {
+                                                            "question": "50.0 – 50.1 Mhz‟ de sınırlandırılmış bantta hangi yayın modlarına izin verilir?",
+                                                            "options": [
+                                                                "a) Yalnızca CW",
+                                                                "b) CW ve RTTY",
+                                                                "c) Yalnızca SSB",
+                                                                "d) CW ve SSB"
+                                                            ]
+                                                            "answer": "a) Yalnızca CW"
+                                                        },
+                                                        {
+                                                            "question": "Frekansı kullanan iki istasyon arasındaki konuşmayı kesmenin uygun yolu aşağıdakilerden hangisidir?",
+                                                            "options": [
+                                                                "a) Onların gönderimleri arasında kendi çağrı işaretini söylemek",
+                                                                "b) Bitirmeleri için onları bekleyip sonrasında CQ‟ yu aramak",
+                                                                "c) Onların gönderimleri arasında “break-break” demek",
+                                                                "d) Konuşmaya müdahale etmesi için operatörlerden birisini telefona çağırmak"
+                                                            ]
+                                                            "answer": "a) Onların gönderimleri arasında kendi çağrı işaretini söylemek"
+                                                        },
+                                                        {
+                                                            "question": "PSK ne demektir?",
+                                                            "options": [
+                                                                "a) Darbe kaydırmalı anahtarlama",
+                                                                "b) Faz kaydırmalı anahtarlama",
+                                                                "c) Paket kısa anahtarlama",
+                                                                "d) Fazlı slayt anahtarlama"
+                                                            ]
+                                                            "answer": "b) Faz kaydırmalı anahtarlama"
+                                                        }
+
 ]
-
-
