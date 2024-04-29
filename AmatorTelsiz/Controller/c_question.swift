@@ -16,7 +16,7 @@ class c_questions: NSObject {
         super.init()
     }
 
-    func getABIsletmeQuestions() -> [Question] {
+    func getCIsletmeQuestions() -> [Question] {
         var questions = [Question]() // Diziyi saklamak için questions adında bir değişken tanımla
 
         guard let jsonData = QuestionManager.readJSONFromFile(filename: "c_isletme") else {
@@ -49,7 +49,7 @@ class c_questions: NSObject {
 
         return questions
     }
-    func getABTecnicQuestions() -> [Question] {
+    func getCTecQuestions() -> [Question] {
         var questions = [Question]() // Diziyi saklamak için questions adında bir değişken tanımla
 
         guard let jsonData = QuestionManager.readJSONFromFile(filename: "c_tec") else {
@@ -82,7 +82,7 @@ class c_questions: NSObject {
 
         return questions
     }
-    func getABIRQuestions() -> [Question] {
+    func getCIRQuestions() -> [Question] {
         var questions = [Question]() // Diziyi saklamak için questions adında bir değişken tanımla
 
         guard let jsonData = QuestionManager.readJSONFromFile(filename: "c_IR") else {

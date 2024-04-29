@@ -39,6 +39,11 @@
 		A573124E2BDC7FD0008A2955 /* MainQuestionBankFlowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A573124D2BDC7FD0008A2955 /* MainQuestionBankFlowCell.swift */; };
 		A5E6E19E2BE0188C001C7469 /* c_question.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E6E19D2BE0188C001C7469 /* c_question.swift */; };
 		A5E6E1A22BE021C7001C7469 /* AB_IExamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E6E1A12BE021C7001C7469 /* AB_IExamViewController.swift */; };
+		A5E6E1A42BE02285001C7469 /* AB_IRExamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E6E1A32BE02285001C7469 /* AB_IRExamViewController.swift */; };
+		A5E6E1A62BE0229A001C7469 /* AB_TecViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E6E1A52BE0229A001C7469 /* AB_TecViewController.swift */; };
+		A5E6E1A82BE022AF001C7469 /* C_IExamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E6E1A72BE022AF001C7469 /* C_IExamViewController.swift */; };
+		A5E6E1AA2BE022C6001C7469 /* C_IRExamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E6E1A92BE022C6001C7469 /* C_IRExamViewController.swift */; };
+		A5E6E1AC2BE022DE001C7469 /* C_TecViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E6E1AB2BE022DE001C7469 /* C_TecViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +102,11 @@
 		A5E6E19F2BE019E6001C7469 /* dot.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dot.mp3; sourceTree = "<group>"; };
 		A5E6E1A02BE019E9001C7469 /* dot.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = dot.mp3; path = ../../../../Downloads/dot.mp3; sourceTree = "<group>"; };
 		A5E6E1A12BE021C7001C7469 /* AB_IExamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AB_IExamViewController.swift; sourceTree = "<group>"; };
+		A5E6E1A32BE02285001C7469 /* AB_IRExamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AB_IRExamViewController.swift; sourceTree = "<group>"; };
+		A5E6E1A52BE0229A001C7469 /* AB_TecViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AB_TecViewController.swift; sourceTree = "<group>"; };
+		A5E6E1A72BE022AF001C7469 /* C_IExamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C_IExamViewController.swift; sourceTree = "<group>"; };
+		A5E6E1A92BE022C6001C7469 /* C_IRExamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C_IRExamViewController.swift; sourceTree = "<group>"; };
+		A5E6E1AB2BE022DE001C7469 /* C_TecViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C_TecViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -276,6 +286,11 @@
 			isa = PBXGroup;
 			children = (
 				A5E6E1A12BE021C7001C7469 /* AB_IExamViewController.swift */,
+				A5E6E1A32BE02285001C7469 /* AB_IRExamViewController.swift */,
+				A5E6E1A52BE0229A001C7469 /* AB_TecViewController.swift */,
+				A5E6E1A72BE022AF001C7469 /* C_IExamViewController.swift */,
+				A5E6E1A92BE022C6001C7469 /* C_IRExamViewController.swift */,
+				A5E6E1AB2BE022DE001C7469 /* C_TecViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -421,9 +436,11 @@
 			files = (
 				A55476AA2BDDAB0400D71E8D /* Question.swift in Sources */,
 				247EFE8C2BDD8A3D00AEB766 /* RoleViewController.swift in Sources */,
+				A5E6E1A62BE0229A001C7469 /* AB_TecViewController.swift in Sources */,
 				A573124A2BDC64C5008A2955 /* ToolsViewController.swift in Sources */,
 				A573124E2BDC7FD0008A2955 /* MainQuestionBankFlowCell.swift in Sources */,
 				244E5BA42BDC59C700E541D3 /* AppDelegate.swift in Sources */,
+				A5E6E1AA2BE022C6001C7469 /* C_IRExamViewController.swift in Sources */,
 				247EFE812BDD746300AEB766 /* CompassViewController.swift in Sources */,
 				A5E6E1A22BE021C7001C7469 /* AB_IExamViewController.swift in Sources */,
 				A55476AD2BDDACA700D71E8D /* ab_question.swift in Sources */,
@@ -431,12 +448,15 @@
 				247EFE892BDD7BD200AEB766 /* PhoneticMorseAlphabetViewController.swift in Sources */,
 				247EFE922BDEFCB300AEB766 /* DarkModeManager.swift in Sources */,
 				A5E6E19E2BE0188C001C7469 /* c_question.swift in Sources */,
+				A5E6E1AC2BE022DE001C7469 /* C_TecViewController.swift in Sources */,
 				A55476A82BDDA9F900D71E8D /* QuestionManager.swift in Sources */,
 				247EFE832BDD758100AEB766 /* MorseAlphabetViewController.swift in Sources */,
 				247EFE902BDD9A8B00AEB766 /* AprsViewController.swift in Sources */,
 				A57312442BDC6165008A2955 /* MainViewController.swift in Sources */,
 				A57312482BDC61BC008A2955 /* SettingViewController.swift in Sources */,
 				247EFE8E2BDD91B000AEB766 /* QCodeViewController.swift in Sources */,
+				A5E6E1A82BE022AF001C7469 /* C_IExamViewController.swift in Sources */,
+				A5E6E1A42BE02285001C7469 /* AB_IRExamViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -129,9 +129,34 @@ extension MainViewController: UICollectionViewDelegateFlowLayout, UICollectionVi
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let examVC = AB_IExamViewController()
-        examVC.examTitle = data[indexPath.item].title
-        navigationController?.pushViewController(examVC, animated: true)
+        switch indexPath.item {
+        case 0:
+            let examVC = AB_IExamViewController()
+            examVC.examTitle = data[indexPath.item].title
+            navigationController?.pushViewController(examVC, animated: true)
+        case 1:
+            let examVC = AB_TecExamViewController()
+            examVC.examTitle = data[indexPath.item].title
+            navigationController?.pushViewController(examVC, animated: true)
+        case 2:
+            let examVC = AB_IRExamViewController()
+            examVC.examTitle = data[indexPath.item].title
+            navigationController?.pushViewController(examVC, animated: true)
+        case 3:
+            let examVC = C_IExamViewController()
+            examVC.examTitle = data[indexPath.item].title
+            navigationController?.pushViewController(examVC, animated: true)
+        case 4:
+            let examVC = C_TecExamViewController()
+            examVC.examTitle = data[indexPath.item].title
+            navigationController?.pushViewController(examVC, animated: true)
+        case 5:
+            let examVC = C_IRExamViewController()
+            examVC.examTitle = data[indexPath.item].title
+            navigationController?.pushViewController(examVC, animated: true)
+        default:
+            print("switch case error")
+        }
     }
     
     @objc private func darkModeSwitchChanged(_ sender: UISwitch) {

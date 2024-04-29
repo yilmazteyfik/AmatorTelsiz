@@ -48,7 +48,7 @@ class ab_questions: NSObject {
 
         return questions
     }
-    func getABTecnicQuestions() -> [Question] {
+    func getABTecQuestions() -> [Question] {
         var questions = [Question]() // Diziyi saklamak için questions adında bir değişken tanımla
 
         guard let jsonData = QuestionManager.readJSONFromFile(filename: "ab_tec") else {
