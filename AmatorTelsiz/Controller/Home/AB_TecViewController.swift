@@ -10,6 +10,7 @@ import UIKit
 class AB_TecExamViewController: UIViewController {
     var examTitle: String?
     var currentQuestionIndex = 0
+    var isDeneme = false
 
     var questions = ab_questions().getABTecQuestions()
 

@@ -44,6 +44,7 @@
 		A5E6E1A82BE022AF001C7469 /* C_IExamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E6E1A72BE022AF001C7469 /* C_IExamViewController.swift */; };
 		A5E6E1AA2BE022C6001C7469 /* C_IRExamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E6E1A92BE022C6001C7469 /* C_IRExamViewController.swift */; };
 		A5E6E1AC2BE022DE001C7469 /* C_TecViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E6E1AB2BE022DE001C7469 /* C_TecViewController.swift */; };
+		A5E6E1AF2BE02E25001C7469 /* CustomCellBottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E6E1AE2BE02E25001C7469 /* CustomCellBottom.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,7 @@
 		A5E6E1A72BE022AF001C7469 /* C_IExamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C_IExamViewController.swift; sourceTree = "<group>"; };
 		A5E6E1A92BE022C6001C7469 /* C_IRExamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C_IRExamViewController.swift; sourceTree = "<group>"; };
 		A5E6E1AB2BE022DE001C7469 /* C_TecViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C_TecViewController.swift; sourceTree = "<group>"; };
+		A5E6E1AE2BE02E25001C7469 /* CustomCellBottom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellBottom.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				A573124D2BDC7FD0008A2955 /* MainQuestionBankFlowCell.swift */,
+				A5E6E1AE2BE02E25001C7469 /* CustomCellBottom.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -443,6 +446,7 @@
 				A5E6E1AA2BE022C6001C7469 /* C_IRExamViewController.swift in Sources */,
 				247EFE812BDD746300AEB766 /* CompassViewController.swift in Sources */,
 				A5E6E1A22BE021C7001C7469 /* AB_IExamViewController.swift in Sources */,
+				A5E6E1AF2BE02E25001C7469 /* CustomCellBottom.swift in Sources */,
 				A55476AD2BDDACA700D71E8D /* ab_question.swift in Sources */,
 				244E5BA62BDC59C700E541D3 /* SceneDelegate.swift in Sources */,
 				247EFE892BDD7BD200AEB766 /* PhoneticMorseAlphabetViewController.swift in Sources */,

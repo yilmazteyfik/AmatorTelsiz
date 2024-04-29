@@ -10,6 +10,7 @@ import UIKit
 class AB_IRExamViewController: UIViewController {
     var examTitle: String?
     var currentQuestionIndex = 0
+    var isDeneme = false
 
     var questions = ab_questions().getABIRQuestions()
 
@@ -23,6 +24,12 @@ class AB_IRExamViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
+        print(questions.count)
+        if(isDeneme == true){
+            questions = makeRandomTest()
+            print(questions.count)
+        }
+        
         
         // Title Label
         let titleLabel = UILabel()
@@ -113,5 +120,22 @@ class AB_IRExamViewController: UIViewController {
         currentQuestionIndex += 1
         displayQuestion()
         updateButtonStates()
+    }
+    func makeRandomTest() -> [Question]{
+        guard questions.count >= 20 else  {
+            return questions // Soru sayısı, istenilen sayıdan azsa nil döndür
+        }
+        var selectedQuestions: [Question] = []
+        
+        while selectedQuestions.count < 20 {
+            let randomIndex = Int.random(in: 0..<questions.count) // Dizide rastgele bir indeks seç
+            let randomQuestion = questions[randomIndex] // Rastgele seçilen soruyu al
+            
+            // Daha önce seçilmiş sorular arasında, aynı sorunun bulunmadığından emin olmak için özelleştirilmiş bir closure kullanılır
+            if !selectedQuestions.contains(where: { $0.question == randomQuestion.question }) {
+                selectedQuestions.append(randomQuestion) // Daha önce seçilmemişse diziye ekle
+            }
+        }
+        return selectedQuestions
     }
 }

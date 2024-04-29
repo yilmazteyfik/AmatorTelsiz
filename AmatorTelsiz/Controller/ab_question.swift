@@ -36,12 +36,8 @@ class ab_questions: NSObject {
                 questions.append(question)
             }
 
-            // Optional: Questions dizisini yazdırabilirsiniz
-            for (index, question) in questions.enumerated() {
-                print("Question \(index + 1): \(question.question)")
-                print("Options: \(question.options)")
-                print("Answer  \(question.answer)")
-            }
+           
+            
         } catch {
             fatalError("Error while parsing JSON: \(error.localizedDescription)")
         }
@@ -69,12 +65,7 @@ class ab_questions: NSObject {
                 questions.append(question)
             }
 
-            // Optional: Questions dizisini yazdırabilirsiniz
-            for (index, question) in questions.enumerated() {
-                print("Question \(index + 1): \(question.question)")
-                print("Options: \(question.options)")
-                print("Answer  \(question.answer)")
-            }
+            
         } catch {
             fatalError("Error while parsing JSON: \(error.localizedDescription)")
         }

@@ -3,6 +3,7 @@ import UIKit
 class AB_IExamViewController: UIViewController {
     var examTitle: String?
     var currentQuestionIndex = 0
+    var isDeneme = false
 
     var questions = ab_questions().getABIsletmeQuestions()
 

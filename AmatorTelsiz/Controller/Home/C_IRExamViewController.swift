@@ -10,6 +10,7 @@ import UIKit
 class C_IRExamViewController: UIViewController {
     var examTitle: String?
     var currentQuestionIndex = 0
+    var isDeneme = false
 
     var questions = c_questions().getCIRQuestions()
 
