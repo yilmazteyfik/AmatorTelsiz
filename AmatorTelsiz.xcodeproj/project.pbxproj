@@ -15,7 +15,6 @@
 		244E5BBB2BDC59C800E541D3 /* AmatorTelsizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244E5BBA2BDC59C800E541D3 /* AmatorTelsizTests.swift */; };
 		244E5BC52BDC59C800E541D3 /* AmatorTelsizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244E5BC42BDC59C800E541D3 /* AmatorTelsizUITests.swift */; };
 		244E5BC72BDC59C800E541D3 /* AmatorTelsizUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244E5BC62BDC59C800E541D3 /* AmatorTelsizUITestsLaunchTests.swift */; };
-		247EFE7B2BDD685100AEB766 /* ExamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247EFE7A2BDD685100AEB766 /* ExamViewController.swift */; };
 		247EFE812BDD746300AEB766 /* CompassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247EFE802BDD746300AEB766 /* CompassViewController.swift */; };
 		247EFE832BDD758100AEB766 /* MorseAlphabetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247EFE822BDD758100AEB766 /* MorseAlphabetViewController.swift */; };
 		247EFE852BDD773700AEB766 /* dot.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 247EFE842BDD773700AEB766 /* dot.mp3 */; };
@@ -39,6 +38,7 @@
 		A573124A2BDC64C5008A2955 /* ToolsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57312492BDC64C5008A2955 /* ToolsViewController.swift */; };
 		A573124E2BDC7FD0008A2955 /* MainQuestionBankFlowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A573124D2BDC7FD0008A2955 /* MainQuestionBankFlowCell.swift */; };
 		A5E6E19E2BE0188C001C7469 /* c_question.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E6E19D2BE0188C001C7469 /* c_question.swift */; };
+		A5E6E1A22BE021C7001C7469 /* AB_IExamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E6E1A12BE021C7001C7469 /* AB_IExamViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,7 +71,6 @@
 		244E5BC02BDC59C800E541D3 /* AmatorTelsizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmatorTelsizUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		244E5BC42BDC59C800E541D3 /* AmatorTelsizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmatorTelsizUITests.swift; sourceTree = "<group>"; };
 		244E5BC62BDC59C800E541D3 /* AmatorTelsizUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmatorTelsizUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		247EFE7A2BDD685100AEB766 /* ExamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamViewController.swift; sourceTree = "<group>"; };
 		247EFE802BDD746300AEB766 /* CompassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassViewController.swift; sourceTree = "<group>"; };
 		247EFE822BDD758100AEB766 /* MorseAlphabetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorseAlphabetViewController.swift; sourceTree = "<group>"; };
 		247EFE842BDD773700AEB766 /* dot.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = dot.mp3; path = ../../../../../Downloads/dot.mp3; sourceTree = "<group>"; };
@@ -97,6 +96,7 @@
 		A5E6E19D2BE0188C001C7469 /* c_question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = c_question.swift; path = AmatorTelsiz/Controller/c_question.swift; sourceTree = SOURCE_ROOT; };
 		A5E6E19F2BE019E6001C7469 /* dot.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dot.mp3; sourceTree = "<group>"; };
 		A5E6E1A02BE019E9001C7469 /* dot.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = dot.mp3; path = ../../../../Downloads/dot.mp3; sourceTree = "<group>"; };
+		A5E6E1A12BE021C7001C7469 /* AB_IExamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AB_IExamViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -275,7 +275,7 @@
 		A5E6E19C2BE017A8001C7469 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				247EFE7A2BDD685100AEB766 /* ExamViewController.swift */,
+				A5E6E1A12BE021C7001C7469 /* AB_IExamViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -425,9 +425,9 @@
 				A573124E2BDC7FD0008A2955 /* MainQuestionBankFlowCell.swift in Sources */,
 				244E5BA42BDC59C700E541D3 /* AppDelegate.swift in Sources */,
 				247EFE812BDD746300AEB766 /* CompassViewController.swift in Sources */,
+				A5E6E1A22BE021C7001C7469 /* AB_IExamViewController.swift in Sources */,
 				A55476AD2BDDACA700D71E8D /* ab_question.swift in Sources */,
 				244E5BA62BDC59C700E541D3 /* SceneDelegate.swift in Sources */,
-				247EFE7B2BDD685100AEB766 /* ExamViewController.swift in Sources */,
 				247EFE892BDD7BD200AEB766 /* PhoneticMorseAlphabetViewController.swift in Sources */,
 				247EFE922BDEFCB300AEB766 /* DarkModeManager.swift in Sources */,
 				A5E6E19E2BE0188C001C7469 /* c_question.swift in Sources */,
