@@ -6,7 +6,8 @@
             "b) Avrupa Telgraf Ofisi",
             "c) Avrupa Radyo Haberleşme Ofisi",
             "d) Avrupa Telefon Ofisi"
-        ]
+        ],
+        "answer": "c) Avrupa Radyo Haberleşme Ofisi"
     },
     {
         "question": "ITU’nun amacı nedir?",
@@ -15,7 +16,8 @@
             "b) Sadece Deniz Mobil hizmetlerinde frekans tahsisi yapar",
             "c) Çağrı işaretlerinin planlamasını yapar",
             "d) Sadece Hava araçlarına frekans tahsisi yapar"
-        ]
+        ],
+        "answer": "a) Frekans tahsislerinin yönetiminde yardımcı olur"
     },
     {
         "question": "CEPT yönetimleri tarafından çıkarılan ERC 32 raporu neyi düzenler?",
@@ -24,7 +26,8 @@
             "b) Amatör Telsizcilik Harec Sınıfı için yapılacak sınav müfredatını",
             "c) Amatör Telsizciliğe yeni başlayanlar için yapılacak sınav müfredatını",
             "d) Hiçbiri"
-        ]
+        ],
+        "answer":"a) Amatör Telsizcilik Çıraklık Sınıfı için yapılacak sınav müfredatını"
     },
     {
         "question": "Amatör Telsizcilik Belgesi hangi dillerde düzenlenmelidir?",
@@ -33,7 +36,8 @@
             "b) Yalnız İngilizce düzenlenmeli",
             "c) Yalnız Almanca düzenlenmeli",
             "d) Yalnız Fransızca düzenlenmeli"
-        ]
+        ],
+        "answer": "a) Belgenin düzenlendiği ülkeye ait dilin yanısıra İngilizce, Fransızca ve Almanca olarak düzenlenmeli"
     },
     {
         "question": "Amatör Telsizcilik Belgesinde hangi bilgiler aranmaz?",
@@ -42,7 +46,8 @@
             "b) Doğum Tarihi",
             "c) Adresi",
             "d) Anne adı"
-        ]
+        ],
+        "answer": "d) Anne adı"
     },
     {
         "question": "ITU’nun açılımı nedir?",
@@ -51,7 +56,8 @@
             "b) Uluslararası Telekomünikasyon Birliği",
             "c) Uluslararası Teknoloji Birliği",
             "d) Uluslararası Telekomünikasyon Örgütü"
-        ]
+        ],
+        "answer": "b) Uluslararası Telekomünikasyon Birliği"
     },
     {
         "question": "CEPT’in açılımı nedir?",
@@ -60,7 +66,8 @@
             "b) Posta Telekomünikasyon Birliği",
             "c) Avrupa Posta ve Telekomünikasyon İdareleri Birliği",
             "d) Posta İdareleri Birliği"
-        ]
+        ],
+        "answer": "c) Avrupa Posta ve Telekomünikasyon İdareleri Birliği"
     },
     {
         "question": "Amatör Radyo Planında aşağıdakilerden hangisi bulunmaz?",
@@ -69,8 +76,8 @@
             "b) Verici çıkış gücü",
             "c) Frekans bandı",
             "d) Çağrı işareti"
-        ]
-    },
+        ],
+        "answer":  "d) Çağrı işareti"
     {
         "question": "5809 sayılı Elektronik Haberleşme Kanunun 43. maddesi gereği Amatör Telsizcilik Sınavını yapma ve belge verme işlemleri hangi kuruluşa devredilmiştir?",
         "options": [
@@ -78,7 +85,8 @@
             "b) Posta ve Telgraf İdaresi",
             "c) Kıyı Emniyeti Genel Müdürlüğü",
             "d) Türkiye Radyo ve Televizyon Kurumu"
-        ]
+        ],
+        "answer": "c) Kıyı Emniyeti Genel Müdürlüğü"
     },
     {
         "question": "Hiçbir maddi, kişisel veya siyasi çıkar gözetmeden, sadece kendi istek ve çabası ile telsiz iletişim teknikleri alanında, kendini yetiştirmek amacıyla ulusal ve uluslararası amatör telsizcilik faaliyetinde bulunmak isteyenlere ne denir?",
@@ -87,8 +95,8 @@
             "b) Amatör Telsizci",
             "c) Geçici Amatör Telsizci",
             "d) Sorumlu Operatör"
-        ]
-    },
+        ],
+        "answer":"b) Amatör Telsizci"
     {
         "question": "Türkiye ile mütekabiliyet anlaşması bulunan ülkelerden alınmış amatör telsizcilik belgesine sahip olup, Türkiye’de üç aydan fazla faaliyette bulunmak isteyen amatör telsizcilere en çok bir yıla kadar verilen belgeye ne ad verilir?",
         "options": [
@@ -96,7 +104,8 @@
             "b) SWL Belgesi",
             "c) Amatör Telsizcilik Belgesi",
             "d) Geçici Amatör Telsizcilik Belgesi"
-        ]
+        ],
+        "answer": "d) Geçici Amatör Telsizcilik Belgesi"
     },
     {
         "question": "Amatör telsizcilik haberleşmesinde izin verilen çıkış gücü, emisyon, band genişliği ve frekansları gösteren plana ne ad verilir?",
@@ -105,7 +114,8 @@
             "b) Amatör Radyo Band Planı",
             "c) VHF Frekans Band Planı",
             "d) HF Teleks Frekans Planı"
-        ]
+        ],
+        "answer": "b) Amatör Radyo Band Planı"
     },
     {
         "question": "Amatör telsiz haberleşmesi kayıtlarının tutulması amacıyla kullanılan deftere ne denir?",
@@ -114,7 +124,8 @@
             "b) Haberleşme kayıt defteri",
             "c) Nöbet defteri",
             "d) Hiçbiri"
-        ]
+        ],
+        "answer": "b) Haberleşme kayıt defteri"
     },
     {
         "question": "Yürürlükteki yönetmeliğe göre sorumlu operatör kimdir?",
@@ -123,7 +134,8 @@
             "b) Organizasyonlar tarafından kurulan istasyonlardan sorumlu, B sınıfı belgeye sahip amatör telsizci",
             "c) Organizasyonlar tarafından kurulan istasyonlardan sorumlu, A sınıfı belgeye sahip amatör telsizci",
             "d) Hiçbiri"
-        ]
+        ],
+        "answer": "c) Organizasyonlar tarafından kurulan istasyonlardan sorumlu, A sınıfı belgeye sahip amatör telsizci"
     },
     {
         "question": "Aralarında fiziki bağlantı olmaksızın, elektromanyetik dalgalar yoluyla, açık, kodlu veya kriptolu ses ve veri almaya, vermeye veya yalnızca almaya ya da vermeye yarayan sistemlere ne denir?",
@@ -132,7 +144,8 @@
             "b) Telsiz Sistem",
             "c) Teleks Sistem",
             "d) Telgraf Sistem"
-        ]
+        ],
+        "answer":"b) Telsiz Sistem"
     },
     {
         "question": "Yürürlükteki yönetmeliğe göre, A sınıfı amatör telsizcilik belgesine sahip sorumlu operatörü bulunmak kaydıyla amatör telsiz istasyonu kuracak olan amatör telsiz dernekleri, eğitim ve öğretim kurumları, afet ve acil durum haberleşmesinde görev alan kuruluşlar, izcilik kuruluşları, araştırma kurumları ve benzerlerine ne ad verilir?",
@@ -141,7 +154,8 @@
             "b) Amatör Telsizci",
             "c) Amatör Telsiz İstasyonu",
             "d) Organizasyon"
-        ]
+        ],
+        "answer":   "d) Organizasyon"
     },
     {
         "question": "Yürürlükteki yönetmeliğe göre, Amatör Telsizcilere verilen çağrı işareti kaç bölümden oluşur?",
@@ -150,7 +164,8 @@
             "b) 2",
             "c) 3",
             "d) 4"
-        ]
+        ],
+        "answer": "c) 3"
     },
     {
         "question": "Yürürlükteki yönetmeliğe göre, Amatör Telsizcilerin çağrı işaretinde kullanılan bölge bölge sayısı kaçtır?",
@@ -159,7 +174,8 @@
             "b) 8",
             "c) 10",
             "d) 12"
-        ]
+        ],
+        "answer":  "c) 10"
     },
     {
            "question": "Yürürlükteki yönetmeliğe göre, Amatör Telsiz Dernekleri için verilen çağrı işaretinde son ekin ilk harfine hangi harf verilir?",
@@ -168,7 +184,8 @@
                "b) X",
                "c) E",
                "d) S"
-           ]
+           ],
+           "answer": "a) K"
        },
        {
            "question": "Yürürlükteki yönetmeliğe göre, Amatör Telsizcilere verilen çağrı işaretlerinde son ekin ilk harfinde hangi harf kullanılmaz?",
@@ -177,7 +194,8 @@
                "b) Z",
                "c) E",
                "d) X"
-           ]
+           ],
+           "answer": "a) Q"
        },
        {
            "question": "Yürürlükteki yönetmeliğe göre, ikamet adresi değişen amatör telsizciler ile organizasyonlar yeni adreslerini kaç ay içinde Kıyı Emniyeti Genel Müdürlüğüne bildirmek zorundadır?",
@@ -186,7 +204,8 @@
                "b) 2 ay",
                "c) 3 ay",
                "d) 4 ay"
-           ]
+           ],
+           "answer": "c) 3 ay"
        },
        {
            "question": "Yürürlükteki yönetmeliğe göre, Afet ve Acil durum haberleşmesinde görev alan kuruluşlara verilen çağrı işaretinin son ekin ilk harfi aşağıdakilerden hangisidir?",
@@ -195,7 +214,8 @@
                "b) X",
                "c) E",
                "d) S"
-           ]
+           ],
+           "answer":"c) E"
        },
        {
            "question": "Yürürlükteki yönetmeliğe göre, Amatör Telsizcilik Belgesinin yenilenmemesi, organizasyonun feshi, tasfiyesi veya yetkilisinin müracaatı üzerine iptal edilmesi, bölge değişikliği gibi durumlarda çağrı işareti kaç yıl süre ile tahsis edilemez?",
@@ -204,7 +224,8 @@
                "b) 10 yıl",
                "c) 15 yıl",
                "d) 20 yıl"
-           ]
+           ],
+           "answer":"b) 10 yıl"
        },
        {
            "question": "Yürürlükteki yönetmeliğe göre, Amatör Telsizcilerin özel etkinliklerinde kullanılmak üzere çağrı işareti kaç gün tahsis edilir?",
@@ -213,7 +234,8 @@
                "b) 30 gün",
                "c) 40 gün",
                "d) 60 gün"
-           ]
+           ],
+           "answer":  "d) 60 gün"
        },
        {
            "question": "Yürürlükteki yönetmeliğe göre, Amatör Telsizcilik Sınavına girme yaşı kaçtır?",
@@ -222,7 +244,8 @@
                "b) 12 yaş",
                "c) 16 yaş",
                "d) 18 yaş"
-           ]
+           ],
+           "answer": "b) 12 yaş"
        },
        {
            "question": "Yürürlükteki yönetmeliğe göre, Lisans düzeyinde hangi bölüm de okuyan adaylar teknik konulardan sınava tabi olurlar?",
@@ -231,7 +254,8 @@
                "b) Elektrik",
                "c) Haberleşme",
                "d) Kimya"
-           ]
+           ],
+           "answer":"d) Kimya"
        },
        {
            "question": "Amatör Telsiz İstasyonunun frekansını, gücünü ve emisyonunu gösteren ulusal yönetmelik hangisidir?",
@@ -240,7 +264,8 @@
                "b) Amatör Telsiz Yönetmeliği",
                "c) 2813 sayılı Telsiz Kanunu",
                "d) Spektrum Yönetimi Yönetmeliği"
-           ]
+           ],
+           "answer": "a) Özel Telsiz Sistemleri Yönetmeliği"
        },
        {
            "question": "Yürürlükteki yönetmeliğe göre, Amatör Telsizcilik Belgesi kimlere verilmez?",
@@ -249,7 +274,8 @@
                "b) Mütekabiliyet anlaşması olan ülkelerden Amatör Telsizcilik Belgesi olan T.C. vatandaşlarına",
                "c) Mütekabiliyet anlaşması olan ülkelerden Amatör Telsizcilik Belgesi olan yabancılara",
                "d) Kamu hizmetinden yasaklananlara"
-           ]
+           ],
+           "answer": "d) Kamu hizmetinden yasaklananlara"
        },
        {
            "question": "Yürürlükteki yönetmeliğe göre, Amatör Telsizcilik Belgesi almaya hak kazananlardan belge düzenlemesi sırasında aşağıdakilerden hangisi istenmez?",
@@ -258,7 +284,8 @@
                "b) T.C. kimlik numarası beyanı",
                "c) Sabıka kaydı olmadığına dair beyan",
                "d) Oturma belgesi"
-           ]
+           ],
+           "answer": "d) Oturma belgesi"
        },
        {
            "question": "Yürürlükteki yönetmeliğe göre, yönetmeliğin yayımı tarihinden önce alınmış ve geçerlilik süresi dolduğu halde yenilenmeyen amatör telsizcilik belgelerinin, yönetmeliğin yayımı tarihinden itibaren kaç ay içinde yenilenmesi zorunludur?",
@@ -267,7 +294,8 @@
                "b) 6 ay",
                "c) 9 ay",
                "d) 12 ay"
-           ]
+           ],
+           "answer":"a) 3 ay"
        },
        {
            "question": "Yürürlükteki yönetmeliğe göre, yabancılara geçici olarak tahsis edilen çağrı işaretinin süresi ne kadardır?",
@@ -276,7 +304,8 @@
                "b) 6 ay",
                "c) Oturma belge süresi kadar",
                "d) 9 ay"
-           ]
+           ],
+           "answer": "c) Oturma belge süresi kadar"
        },
        {
            "question": "Yürürlükteki yönetmeliğe göre, Amatör Telsizcilik Belgesinin süresinin dolması halinde yenilenmesi sırasında T.C. vatandaşlarından hangi belge istenmez?",
@@ -285,7 +314,8 @@
                "b) Fotoğraf",
                "c) Yenileme ücretinin ödendiğine dair belge aslı",
                "d) Oturma belgesi"
-           ]
+           ],
+           "answer":  "d) Oturma belgesi"
        },
        {
            "question": "Yürürlükteki yönetmeliğe göre, SWL belgesinin süresi ne kadardır?",
@@ -294,7 +324,8 @@
                "b) 5 yıl",
                "c) 10 yıl",
                "d) Süresiz"
-           ]
+           ],
+           "answer":  "d) Süresiz"
        },
        {
            "question": "Yürürlükteki yönetmeliğe göre, Amatör Telsizcilik Haberleşmesinde aşağıdakilerden hangisi yasaklanan uygulamalardan değildir?",
@@ -303,7 +334,8 @@
                "b) Amatörlere ayrılan frekans bandlarında radyo ve televizyon yayınlarının yapılması",
                "c) Üçüncü şahıs mesajların para, ücret, veya maddi çıkar karşılığında aktarılması",
                "d) İşletme kurallarına uyulması"
-           ]
+           ],
+           "answer": "d) İşletme kurallarına uyulması"
        },
        {
            "question": "Yürürlükteki yönetmeliğe göre, Türkiye’de 3 aydan fazla geçici amatör telsizcilik faaliyetinde bulunacak olan yabancılardan belge düzenlemesi sırasında aşağıdakilerden hangisi istenmez?",
@@ -312,7 +344,8 @@
                "b) Oturma belgesi",
                "c) Pasaport fotokopisi",
                "d) Fotoğraf"
-           ]
+           ],
+           "answer":"a) Vekâletname"
        },
        {
            "question": "Yürürlükteki yönetmeliğe göre, C sınıfı için oluşturulan 50 sorudan en az kaç puan alanlar C sınıfı Amatör Telsizcilik Belgesi almaya hak kazanır?",
@@ -321,7 +354,8 @@
                "b) 60 puan",
                "c) 55 puan",
                "d) 80 puan"
-           ]
+           ],
+           "answer": "b) 60 puan"
        },
        {
            "question": "Türkiye, ITU’ ya göre hangi bölge içinde yer almaktadır?",
@@ -330,7 +364,8 @@
                "b) 20",
                "c) 3",
                "d) 1"
-           ]
+           ],
+           "answer": "b) 20"
        },
        {
            "question": "Yürürlükteki yönetmeliğe göre, Amatör Telsizcilik sınavları yılda en az kaç kez yapılır?",
@@ -339,7 +374,8 @@
                "b) 2 kez",
                "c) 3 kez",
                "d) 4 kez"
-           ]
+           ],
+           "answer": "b) 2 kez"
        },
        {
            "question": "Yürürlükteki yönetmeliğe göre, Amatör Telsizcilik Belgesi kaç yılda bir yenilenir?",
@@ -348,7 +384,8 @@
                "b) 10 yıl",
                "c) 3 yıl",
                "d) Süresiz"
-           ]
+           ],
+           "answer":"b) 10 yıl"
        },
        {
            "question": "Yürürlükteki yönetmeliğe göre, aşağıdakilerden hangileri Amatör Telsizci olamazlar?",
@@ -357,7 +394,8 @@
                "b) Silahlı Kuvvetler personeli",
                "c) 12 yaşından küçük ve kamu hizmetlerinden yasaklı olanlar",
                "d) Telsiz ithalatçı ve imalatçı firma sahipleri"
-           ]
+           ],
+           "answer":  "c) 12 yaşından küçük ve kamu hizmetlerinden yasaklı olanlar"
        },
        {
            "question": "Yasa ve yönetmeliklere uygun olarak sağlanan her türlü haberleşme hizmetini engelleyen, haberleşmede kesinti doğuran veya kalitelerini bozan her türlü yayın veya elektromanyetik etkiye ne denir?",
@@ -366,7 +404,8 @@
                "b) Emisyon",
                "c) Enterferans",
                "d) Vibrasyon"
-           ]
+           ],
+           "answer":  "c) Enterferans"
        },
        {
            "question": "Amatör Telsizcilik sınavı, aşağıdaki konulardan hangisini kapsamaz?",
@@ -375,7 +414,8 @@
                "b) Q kodlarının anlam ve kullanımlarını",
                "c) Telsiz telefon ücret hesaplaması",
                "d) Telsiz işletme kuralları"
-           ]
+           ],
+           "answer": "c) Telsiz telefon ücret hesaplaması"
        },
        {
            "question": "Erzincan’da deprem afeti sırasında kurulan bir istasyonda hangi çağrı işareti kullanılmaz?",
@@ -384,7 +424,8 @@
                "b) TA7EQ",
                "c) TA7KA",
                "d) YM7EQ"
-           ]
+           ],
+           "answer": "a) TA9EQ"
        },
        {
            "question": "Geçici olarak Almanya’dan ülkemize gelen ve Antalya’da telsiz haberleşmesi yapmak isteyen DL5YCQ çağrı işaretli A sınıfı bir amatör telsizci, haberleşmesinde hangi çağrı işaretini kullanır?",
@@ -393,7 +434,8 @@
                "b) TA4 / DL5YCQ",
                "c) TA4YCQ",
                "d) YM4 / DL5YCQ"
-           ]
+           ],
+           "answer": "b) TA4 / DL5YCQ"
        },
        {
            "question": "Amatör Telsizcilik Sınavları hangi kuruluş tarafından yapılır?",
@@ -402,7 +444,8 @@
                "b) TRT Genel Müdürlüğü",
                "c) Kıyı Emniyeti Genel Müdürlüğü",
                "d) Radyo Televizyon Yüksek Kurulu"
-           ]
+           ],
+           "answer": "c) Kıyı Emniyeti Genel Müdürlüğü"
        },
        {
            "question": "ITU tarafından Türkiye’ye tahsis edilmiş ve amatör telsiz haberleşmesinde kullanılan çağrı işareti ön ekleri aşağıdakilerden hangisidir?",
@@ -411,7 +454,8 @@
                "b) TR - YL - TC",
                "c) YM - TA - TB - TC",
                "d) TU - YL - TR"
-           ]
+           ],
+           "answer": "c) YM - TA - TB - TC"
        },
        {
            "question": "Bir Amatör Telsiz İstasyonunda aşağıdaki faaliyetlerden hangisi yapılabilir?",
@@ -420,7 +464,8 @@
                "b) Radyo ve Televizyon yayınlarının doğrudan veya banttan yayınlanması",
                "c) Olağanüstü hallerde yanlış veya yanıltıcı yayın yapılması",
                "d) Amatör Telsiz Haberleşmesi"
-           ]
+           ],
+           "answer": "d) Amatör Telsiz Haberleşmesi"
        },
        {
            "question": "Yürürlükteki yönetmeliğe göre, amatör telsizcilik sınavında sınav görevlileri tarafından kopya çektiği tespit edilenlerin sınav kâğıtları iptal edilir. Kopya çekenler ne zaman tekrar sınava girebilir?",
@@ -429,7 +474,8 @@
                "b) 2 sınav dönemi sonra",
                "c) 3 sınav dönemi sonra",
                "d) 1 yıl sonra"
-           ]
+           ],
+           "answer": "a) 1 sınav dönemi sonra"
        },
        {
            "question": "AMPR aşağıdakilerden hangisini ifade eder?",
@@ -438,6 +484,7 @@
                "b) Uluslararası Telsiz Birliğini",
                "c) Hızlı Taramalı Televizyon Sistemini",
                "d) Yavaş Taramalı Televizyon Sistemini"
-           ]
+           ],
+           "answer": "a) Amatör Paket Radyo Sistemini"
        }
 ]

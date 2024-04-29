@@ -17,22 +17,22 @@
 		244E5BC72BDC59C800E541D3 /* AmatorTelsizUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244E5BC62BDC59C800E541D3 /* AmatorTelsizUITestsLaunchTests.swift */; };
 		247EFE812BDD746300AEB766 /* CompassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247EFE802BDD746300AEB766 /* CompassViewController.swift */; };
 		247EFE832BDD758100AEB766 /* MorseAlphabetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247EFE822BDD758100AEB766 /* MorseAlphabetViewController.swift */; };
-		247EFE852BDD773700AEB766 /* dot.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 247EFE842BDD773700AEB766 /* dot.mp3 */; };
-		247EFE872BDD777F00AEB766 /* dash.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 247EFE862BDD777F00AEB766 /* dash.mp3 */; };
 		247EFE892BDD7BD200AEB766 /* PhoneticMorseAlphabetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247EFE882BDD7BD200AEB766 /* PhoneticMorseAlphabetViewController.swift */; };
 		247EFE8C2BDD8A3D00AEB766 /* RoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247EFE8B2BDD8A3D00AEB766 /* RoleViewController.swift */; };
 		247EFE8E2BDD91B000AEB766 /* QCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247EFE8D2BDD91B000AEB766 /* QCodeViewController.swift */; };
 		247EFE902BDD9A8B00AEB766 /* AprsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247EFE8F2BDD9A8B00AEB766 /* AprsViewController.swift */; };
 		247EFE922BDEFCB300AEB766 /* DarkModeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247EFE912BDEFCB300AEB766 /* DarkModeManager.swift */; };
+		24DA49D02BE049EF002474CA /* dot.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 24DA49CF2BE049EF002474CA /* dot.mp3 */; };
+		24DA49D22BE049F4002474CA /* dash.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 24DA49D12BE049F4002474CA /* dash.mp3 */; };
+		24DA49E52BE04ADE002474CA /* ab_isletme.json in Resources */ = {isa = PBXBuildFile; fileRef = 24DA49DF2BE04ADE002474CA /* ab_isletme.json */; };
+		24DA49E62BE04ADE002474CA /* ab_tec.json in Resources */ = {isa = PBXBuildFile; fileRef = 24DA49E02BE04ADE002474CA /* ab_tec.json */; };
+		24DA49E72BE04ADE002474CA /* c_IR.json in Resources */ = {isa = PBXBuildFile; fileRef = 24DA49E12BE04ADE002474CA /* c_IR.json */; };
+		24DA49E82BE04ADE002474CA /* ab_IR.json in Resources */ = {isa = PBXBuildFile; fileRef = 24DA49E22BE04ADE002474CA /* ab_IR.json */; };
+		24DA49E92BE04ADE002474CA /* c_tec.json in Resources */ = {isa = PBXBuildFile; fileRef = 24DA49E32BE04ADE002474CA /* c_tec.json */; };
+		24DA49EA2BE04ADE002474CA /* c_isletme.json in Resources */ = {isa = PBXBuildFile; fileRef = 24DA49E42BE04ADE002474CA /* c_isletme.json */; };
 		A55476A82BDDA9F900D71E8D /* QuestionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55476A72BDDA9F900D71E8D /* QuestionManager.swift */; };
 		A55476AA2BDDAB0400D71E8D /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55476A92BDDAB0400D71E8D /* Question.swift */; };
 		A55476AD2BDDACA700D71E8D /* ab_question.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55476AC2BDDACA700D71E8D /* ab_question.swift */; };
-		A55476B42BDDAD0300D71E8D /* ab_tec.json in Resources */ = {isa = PBXBuildFile; fileRef = A55476AE2BDDAD0300D71E8D /* ab_tec.json */; };
-		A55476B52BDDAD0300D71E8D /* c_isletme.json in Resources */ = {isa = PBXBuildFile; fileRef = A55476AF2BDDAD0300D71E8D /* c_isletme.json */; };
-		A55476B62BDDAD0300D71E8D /* c_IR.json in Resources */ = {isa = PBXBuildFile; fileRef = A55476B02BDDAD0300D71E8D /* c_IR.json */; };
-		A55476B72BDDAD0300D71E8D /* c_tec.json in Resources */ = {isa = PBXBuildFile; fileRef = A55476B12BDDAD0300D71E8D /* c_tec.json */; };
-		A55476B82BDDAD0300D71E8D /* ab_IR.json in Resources */ = {isa = PBXBuildFile; fileRef = A55476B22BDDAD0300D71E8D /* ab_IR.json */; };
-		A55476B92BDDAD0300D71E8D /* ab_isletme.json in Resources */ = {isa = PBXBuildFile; fileRef = A55476B32BDDAD0300D71E8D /* ab_isletme.json */; };
 		A57312442BDC6165008A2955 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57312432BDC6165008A2955 /* MainViewController.swift */; };
 		A57312482BDC61BC008A2955 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57312472BDC61BC008A2955 /* SettingViewController.swift */; };
 		A573124A2BDC64C5008A2955 /* ToolsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57312492BDC64C5008A2955 /* ToolsViewController.swift */; };
@@ -79,29 +79,27 @@
 		244E5BC62BDC59C800E541D3 /* AmatorTelsizUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmatorTelsizUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		247EFE802BDD746300AEB766 /* CompassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassViewController.swift; sourceTree = "<group>"; };
 		247EFE822BDD758100AEB766 /* MorseAlphabetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorseAlphabetViewController.swift; sourceTree = "<group>"; };
-		247EFE842BDD773700AEB766 /* dot.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = dot.mp3; path = ../../../../../Downloads/dot.mp3; sourceTree = "<group>"; };
-		247EFE862BDD777F00AEB766 /* dash.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = dash.mp3; path = ../../../../../Downloads/dash.mp3; sourceTree = "<group>"; };
 		247EFE882BDD7BD200AEB766 /* PhoneticMorseAlphabetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneticMorseAlphabetViewController.swift; sourceTree = "<group>"; };
 		247EFE8B2BDD8A3D00AEB766 /* RoleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleViewController.swift; sourceTree = "<group>"; };
 		247EFE8D2BDD91B000AEB766 /* QCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QCodeViewController.swift; sourceTree = "<group>"; };
 		247EFE8F2BDD9A8B00AEB766 /* AprsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AprsViewController.swift; sourceTree = "<group>"; };
 		247EFE912BDEFCB300AEB766 /* DarkModeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModeManager.swift; sourceTree = "<group>"; };
+		24DA49CF2BE049EF002474CA /* dot.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = dot.mp3; path = ../../../../../Downloads/dot.mp3; sourceTree = "<group>"; };
+		24DA49D12BE049F4002474CA /* dash.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = dash.mp3; path = ../../../../../Downloads/dash.mp3; sourceTree = "<group>"; };
+		24DA49DF2BE04ADE002474CA /* ab_isletme.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ab_isletme.json; sourceTree = "<group>"; };
+		24DA49E02BE04ADE002474CA /* ab_tec.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ab_tec.json; sourceTree = "<group>"; };
+		24DA49E12BE04ADE002474CA /* c_IR.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = c_IR.json; sourceTree = "<group>"; };
+		24DA49E22BE04ADE002474CA /* ab_IR.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ab_IR.json; sourceTree = "<group>"; };
+		24DA49E32BE04ADE002474CA /* c_tec.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = c_tec.json; sourceTree = "<group>"; };
+		24DA49E42BE04ADE002474CA /* c_isletme.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = c_isletme.json; sourceTree = "<group>"; };
 		A55476A72BDDA9F900D71E8D /* QuestionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QuestionManager.swift; path = AmatorTelsiz/Controller/QuestionManager.swift; sourceTree = SOURCE_ROOT; };
 		A55476A92BDDAB0400D71E8D /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Question.swift; path = AmatorTelsiz/Controller/Question.swift; sourceTree = SOURCE_ROOT; };
 		A55476AC2BDDACA700D71E8D /* ab_question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ab_question.swift; path = AmatorTelsiz/Controller/ab_question.swift; sourceTree = SOURCE_ROOT; };
-		A55476AE2BDDAD0300D71E8D /* ab_tec.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ab_tec.json; sourceTree = "<group>"; };
-		A55476AF2BDDAD0300D71E8D /* c_isletme.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = c_isletme.json; sourceTree = "<group>"; };
-		A55476B02BDDAD0300D71E8D /* c_IR.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = c_IR.json; sourceTree = "<group>"; };
-		A55476B12BDDAD0300D71E8D /* c_tec.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = c_tec.json; sourceTree = "<group>"; };
-		A55476B22BDDAD0300D71E8D /* ab_IR.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ab_IR.json; sourceTree = "<group>"; };
-		A55476B32BDDAD0300D71E8D /* ab_isletme.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ab_isletme.json; sourceTree = "<group>"; };
 		A57312432BDC6165008A2955 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A57312472BDC61BC008A2955 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		A57312492BDC64C5008A2955 /* ToolsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsViewController.swift; sourceTree = "<group>"; };
 		A573124D2BDC7FD0008A2955 /* MainQuestionBankFlowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainQuestionBankFlowCell.swift; path = AmatorTelsiz/Controller/MainQuestionBankFlowCell.swift; sourceTree = SOURCE_ROOT; };
 		A5E6E19D2BE0188C001C7469 /* c_question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = c_question.swift; path = AmatorTelsiz/Controller/c_question.swift; sourceTree = SOURCE_ROOT; };
-		A5E6E19F2BE019E6001C7469 /* dot.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dot.mp3; sourceTree = "<group>"; };
-		A5E6E1A02BE019E9001C7469 /* dot.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = dot.mp3; path = ../../../../Downloads/dot.mp3; sourceTree = "<group>"; };
 		A5E6E1A12BE021C7001C7469 /* AB_IExamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AB_IExamViewController.swift; sourceTree = "<group>"; };
 		A5E6E1A32BE02285001C7469 /* AB_IRExamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AB_IRExamViewController.swift; sourceTree = "<group>"; };
 		A5E6E1A52BE0229A001C7469 /* AB_TecViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AB_TecViewController.swift; sourceTree = "<group>"; };
@@ -191,12 +189,12 @@
 		A55476AB2BDDAB3E00D71E8D /* Data Source */ = {
 			isa = PBXGroup;
 			children = (
-				A55476B22BDDAD0300D71E8D /* ab_IR.json */,
-				A55476B32BDDAD0300D71E8D /* ab_isletme.json */,
-				A55476AE2BDDAD0300D71E8D /* ab_tec.json */,
-				A55476B02BDDAD0300D71E8D /* c_IR.json */,
-				A55476AF2BDDAD0300D71E8D /* c_isletme.json */,
-				A55476B12BDDAD0300D71E8D /* c_tec.json */,
+				24DA49E22BE04ADE002474CA /* ab_IR.json */,
+				24DA49DF2BE04ADE002474CA /* ab_isletme.json */,
+				24DA49E02BE04ADE002474CA /* ab_tec.json */,
+				24DA49E12BE04ADE002474CA /* c_IR.json */,
+				24DA49E42BE04ADE002474CA /* c_isletme.json */,
+				24DA49E32BE04ADE002474CA /* c_tec.json */,
 			);
 			path = "Data Source";
 			sourceTree = "<group>";
@@ -223,8 +221,8 @@
 		A573123E2BDC5C43008A2955 /* Support */ = {
 			isa = PBXGroup;
 			children = (
-				A5E6E19F2BE019E6001C7469 /* dot.mp3 */,
-				A5E6E1A02BE019E9001C7469 /* dot.mp3 */,
+				24DA49CF2BE049EF002474CA /* dot.mp3 */,
+				24DA49D12BE049F4002474CA /* dash.mp3 */,
 				244E5BB12BDC59C800E541D3 /* Info.plist */,
 				244E5BAC2BDC59C800E541D3 /* Assets.xcassets */,
 				244E5BA52BDC59C700E541D3 /* SceneDelegate.swift */,
@@ -238,8 +236,6 @@
 			children = (
 				A5E6E19C2BE017A8001C7469 /* Home */,
 				A5E6E19B2BE01779001C7469 /* Tools */,
-				247EFE842BDD773700AEB766 /* dot.mp3 */,
-				247EFE862BDD777F00AEB766 /* dash.mp3 */,
 				A57312432BDC6165008A2955 /* MainViewController.swift */,
 				A57312472BDC61BC008A2955 /* SettingViewController.swift */,
 				A57312492BDC64C5008A2955 /* ToolsViewController.swift */,
@@ -402,17 +398,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A55476B52BDDAD0300D71E8D /* c_isletme.json in Resources */,
-				247EFE852BDD773700AEB766 /* dot.mp3 in Resources */,
-				247EFE872BDD777F00AEB766 /* dash.mp3 in Resources */,
-				A55476B72BDDAD0300D71E8D /* c_tec.json in Resources */,
 				244E5BB02BDC59C800E541D3 /* LaunchScreen.storyboard in Resources */,
-				A55476B42BDDAD0300D71E8D /* ab_tec.json in Resources */,
 				244E5BAD2BDC59C800E541D3 /* Assets.xcassets in Resources */,
-				A55476B62BDDAD0300D71E8D /* c_IR.json in Resources */,
-				A55476B92BDDAD0300D71E8D /* ab_isletme.json in Resources */,
+				24DA49E52BE04ADE002474CA /* ab_isletme.json in Resources */,
+				24DA49D22BE049F4002474CA /* dash.mp3 in Resources */,
 				244E5BAB2BDC59C700E541D3 /* Main.storyboard in Resources */,
-				A55476B82BDDAD0300D71E8D /* ab_IR.json in Resources */,
+				24DA49E62BE04ADE002474CA /* ab_tec.json in Resources */,
+				24DA49E92BE04ADE002474CA /* c_tec.json in Resources */,
+				24DA49EA2BE04ADE002474CA /* c_isletme.json in Resources */,
+				24DA49E82BE04ADE002474CA /* ab_IR.json in Resources */,
+				24DA49E72BE04ADE002474CA /* c_IR.json in Resources */,
+				24DA49D02BE049EF002474CA /* dot.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
