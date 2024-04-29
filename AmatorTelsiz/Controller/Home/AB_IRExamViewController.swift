@@ -24,7 +24,6 @@ class AB_IRExamViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        print(questions.count)
         if(isDeneme == true){
             questions = makeRandomTest()
             print(questions.count)
