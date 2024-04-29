@@ -133,4 +133,9 @@ extension MainViewController: UICollectionViewDelegateFlowLayout, UICollectionVi
         examVC.examTitle = data[indexPath.item].title
         navigationController?.pushViewController(examVC, animated: true)
     }
+    
+    @objc private func darkModeSwitchChanged(_ sender: UISwitch) {
+        DarkModeManager.shared.isDarkModeEnabled = sender.isOn
+    }
+
 }

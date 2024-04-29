@@ -24,6 +24,7 @@
 		247EFE8C2BDD8A3D00AEB766 /* RoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247EFE8B2BDD8A3D00AEB766 /* RoleViewController.swift */; };
 		247EFE8E2BDD91B000AEB766 /* QCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247EFE8D2BDD91B000AEB766 /* QCodeViewController.swift */; };
 		247EFE902BDD9A8B00AEB766 /* AprsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247EFE8F2BDD9A8B00AEB766 /* AprsViewController.swift */; };
+		247EFE922BDEFCB300AEB766 /* DarkModeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247EFE912BDEFCB300AEB766 /* DarkModeManager.swift */; };
 		A55476A82BDDA9F900D71E8D /* QuestionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55476A72BDDA9F900D71E8D /* QuestionManager.swift */; };
 		A55476AA2BDDAB0400D71E8D /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55476A92BDDAB0400D71E8D /* Question.swift */; };
 		A55476AD2BDDACA700D71E8D /* ab_question.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55476AC2BDDACA700D71E8D /* ab_question.swift */; };
@@ -79,6 +80,7 @@
 		247EFE8B2BDD8A3D00AEB766 /* RoleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleViewController.swift; sourceTree = "<group>"; };
 		247EFE8D2BDD91B000AEB766 /* QCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QCodeViewController.swift; sourceTree = "<group>"; };
 		247EFE8F2BDD9A8B00AEB766 /* AprsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AprsViewController.swift; sourceTree = "<group>"; };
+		247EFE912BDEFCB300AEB766 /* DarkModeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModeManager.swift; sourceTree = "<group>"; };
 		A55476A72BDDA9F900D71E8D /* QuestionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QuestionManager.swift; path = AmatorTelsiz/Controller/QuestionManager.swift; sourceTree = SOURCE_ROOT; };
 		A55476A92BDDAB0400D71E8D /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Question.swift; path = AmatorTelsiz/Controller/Question.swift; sourceTree = SOURCE_ROOT; };
 		A55476AC2BDDACA700D71E8D /* ab_question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ab_question.swift; path = AmatorTelsiz/Controller/ab_question.swift; sourceTree = SOURCE_ROOT; };
@@ -228,6 +230,7 @@
 				247EFE8B2BDD8A3D00AEB766 /* RoleViewController.swift */,
 				247EFE8D2BDD91B000AEB766 /* QCodeViewController.swift */,
 				247EFE8F2BDD9A8B00AEB766 /* AprsViewController.swift */,
+				247EFE912BDEFCB300AEB766 /* DarkModeManager.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -405,6 +408,7 @@
 				244E5BA62BDC59C700E541D3 /* SceneDelegate.swift in Sources */,
 				247EFE7B2BDD685100AEB766 /* ExamViewController.swift in Sources */,
 				247EFE892BDD7BD200AEB766 /* PhoneticMorseAlphabetViewController.swift in Sources */,
+				247EFE922BDEFCB300AEB766 /* DarkModeManager.swift in Sources */,
 				A55476A82BDDA9F900D71E8D /* QuestionManager.swift in Sources */,
 				247EFE832BDD758100AEB766 /* MorseAlphabetViewController.swift in Sources */,
 				247EFE902BDD9A8B00AEB766 /* AprsViewController.swift in Sources */,
