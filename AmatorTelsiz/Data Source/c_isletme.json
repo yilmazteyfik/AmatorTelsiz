@@ -6,8 +6,7 @@
             "b) Aydın",
             "c) Adana",
             "d) Artvin"
-        ]
-        ,
+        ],
         "answer": "a) Ankara"
     },
     {
@@ -58,7 +57,7 @@
             "c) QRT",
             "d) QRZ"
         ],
-        "answer": "b) QRV
+        "answer": "b) QRV"
     },
     {
         "question": "QRS kodunun anlamı nedir?",
@@ -485,18 +484,19 @@
             "options": [
                 "a) Eğitim",
                 "b) Deneme",
-               " c) Test",
-               " d) Tatbikat
+                "c) Test",
+                "d) Tatbikat"
             ],
             "answer": " c) Test"
         },
         {
             "question": "90 derece batı boylamında yerel saat 14:10 iken 30 derece batı boylamında saat kaç olur?",
             "options": [
-                "a) 20:10"
-                "b) 19:10"
-               " c) 10:10"
+                "a) 20:10",
+                "b) 19:10",
+               " c) 10:10",
                 "d) 18:10"
+             ],
             "answer": " c) 10:10"
         },
         {

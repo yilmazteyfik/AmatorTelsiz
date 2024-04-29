@@ -77,7 +77,8 @@
             "c) Frekans bandı",
             "d) Çağrı işareti"
         ],
-        "answer":  "d) Çağrı işareti"
+        "answer": "d) Çağrı işareti"
+    },
     {
         "question": "5809 sayılı Elektronik Haberleşme Kanunun 43. maddesi gereği Amatör Telsizcilik Sınavını yapma ve belge verme işlemleri hangi kuruluşa devredilmiştir?",
         "options": [
@@ -97,6 +98,7 @@
             "d) Sorumlu Operatör"
         ],
         "answer":"b) Amatör Telsizci"
+     },
     {
         "question": "Türkiye ile mütekabiliyet anlaşması bulunan ülkelerden alınmış amatör telsizcilik belgesine sahip olup, Türkiye’de üç aydan fazla faaliyette bulunmak isteyen amatör telsizcilere en çok bir yıla kadar verilen belgeye ne ad verilir?",
         "options": [
@@ -488,3 +490,4 @@
            "answer": "a) Amatör Paket Radyo Sistemini"
        }
 ]
+
