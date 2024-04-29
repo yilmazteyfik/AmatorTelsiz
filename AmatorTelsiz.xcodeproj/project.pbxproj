@@ -38,6 +38,7 @@
 		A57312482BDC61BC008A2955 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57312472BDC61BC008A2955 /* SettingViewController.swift */; };
 		A573124A2BDC64C5008A2955 /* ToolsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57312492BDC64C5008A2955 /* ToolsViewController.swift */; };
 		A573124E2BDC7FD0008A2955 /* MainQuestionBankFlowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A573124D2BDC7FD0008A2955 /* MainQuestionBankFlowCell.swift */; };
+		A5E6E19E2BE0188C001C7469 /* c_question.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E6E19D2BE0188C001C7469 /* c_question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,9 @@
 		A57312472BDC61BC008A2955 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		A57312492BDC64C5008A2955 /* ToolsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsViewController.swift; sourceTree = "<group>"; };
 		A573124D2BDC7FD0008A2955 /* MainQuestionBankFlowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainQuestionBankFlowCell.swift; path = AmatorTelsiz/Controller/MainQuestionBankFlowCell.swift; sourceTree = SOURCE_ROOT; };
+		A5E6E19D2BE0188C001C7469 /* c_question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = c_question.swift; path = AmatorTelsiz/Controller/c_question.swift; sourceTree = SOURCE_ROOT; };
+		A5E6E19F2BE019E6001C7469 /* dot.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dot.mp3; sourceTree = "<group>"; };
+		A5E6E1A02BE019E9001C7469 /* dot.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = dot.mp3; path = ../../../../Downloads/dot.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +195,7 @@
 			children = (
 				A55476A92BDDAB0400D71E8D /* Question.swift */,
 				A55476AC2BDDACA700D71E8D /* ab_question.swift */,
+				A5E6E19D2BE0188C001C7469 /* c_question.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -206,6 +211,8 @@
 		A573123E2BDC5C43008A2955 /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				A5E6E19F2BE019E6001C7469 /* dot.mp3 */,
+				A5E6E1A02BE019E9001C7469 /* dot.mp3 */,
 				244E5BB12BDC59C800E541D3 /* Info.plist */,
 				244E5BAC2BDC59C800E541D3 /* Assets.xcassets */,
 				244E5BA52BDC59C700E541D3 /* SceneDelegate.swift */,
@@ -217,20 +224,14 @@
 		A573123F2BDC5C4C008A2955 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A5E6E19C2BE017A8001C7469 /* Home */,
+				A5E6E19B2BE01779001C7469 /* Tools */,
 				247EFE842BDD773700AEB766 /* dot.mp3 */,
 				247EFE862BDD777F00AEB766 /* dash.mp3 */,
 				A57312432BDC6165008A2955 /* MainViewController.swift */,
 				A57312472BDC61BC008A2955 /* SettingViewController.swift */,
 				A57312492BDC64C5008A2955 /* ToolsViewController.swift */,
-				247EFE7A2BDD685100AEB766 /* ExamViewController.swift */,
-				247EFE802BDD746300AEB766 /* CompassViewController.swift */,
-				247EFE822BDD758100AEB766 /* MorseAlphabetViewController.swift */,
-				247EFE882BDD7BD200AEB766 /* PhoneticMorseAlphabetViewController.swift */,
 				247EFE8A2BDD7EE000AEB766 /* question.geojson */,
-				247EFE8B2BDD8A3D00AEB766 /* RoleViewController.swift */,
-				247EFE8D2BDD91B000AEB766 /* QCodeViewController.swift */,
-				247EFE8F2BDD9A8B00AEB766 /* AprsViewController.swift */,
-				247EFE912BDEFCB300AEB766 /* DarkModeManager.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -245,6 +246,7 @@
 		A57312412BDC5C65008A2955 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				247EFE912BDEFCB300AEB766 /* DarkModeManager.swift */,
 				A55476A72BDDA9F900D71E8D /* QuestionManager.swift */,
 			);
 			path = Services;
@@ -257,6 +259,27 @@
 				244E5BAE2BDC59C800E541D3 /* LaunchScreen.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		A5E6E19B2BE01779001C7469 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				247EFE882BDD7BD200AEB766 /* PhoneticMorseAlphabetViewController.swift */,
+				247EFE8F2BDD9A8B00AEB766 /* AprsViewController.swift */,
+				247EFE8D2BDD91B000AEB766 /* QCodeViewController.swift */,
+				247EFE822BDD758100AEB766 /* MorseAlphabetViewController.swift */,
+				247EFE802BDD746300AEB766 /* CompassViewController.swift */,
+				247EFE8B2BDD8A3D00AEB766 /* RoleViewController.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		A5E6E19C2BE017A8001C7469 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				247EFE7A2BDD685100AEB766 /* ExamViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -409,6 +432,7 @@
 				247EFE7B2BDD685100AEB766 /* ExamViewController.swift in Sources */,
 				247EFE892BDD7BD200AEB766 /* PhoneticMorseAlphabetViewController.swift in Sources */,
 				247EFE922BDEFCB300AEB766 /* DarkModeManager.swift in Sources */,
+				A5E6E19E2BE0188C001C7469 /* c_question.swift in Sources */,
 				A55476A82BDDA9F900D71E8D /* QuestionManager.swift in Sources */,
 				247EFE832BDD758100AEB766 /* MorseAlphabetViewController.swift in Sources */,
 				247EFE902BDD9A8B00AEB766 /* AprsViewController.swift in Sources */,

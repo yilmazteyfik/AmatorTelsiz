@@ -1,13 +1,14 @@
 //
-//  ab_question.swift
+//  c_question.swift
 //  AmatorTelsiz
 //
-//  Created by Teyfik Yılmaz on 28.04.2024.
+//  Created by Teyfik Yılmaz on 29.04.2024.
 //
 
 import Foundation
 
-class ab_questions: NSObject {
+
+class c_questions: NSObject {
 
     var questionManager = QuestionManager()
 
@@ -18,7 +19,7 @@ class ab_questions: NSObject {
     func getABIsletmeQuestions() -> [Question] {
         var questions = [Question]() // Diziyi saklamak için questions adında bir değişken tanımla
 
-        guard let jsonData = QuestionManager.readJSONFromFile(filename: "ab_isletme") else {
+        guard let jsonData = QuestionManager.readJSONFromFile(filename: "c_isletme") else {
             fatalError("Failed to read JSON file.")
         }
         do {
@@ -48,7 +49,7 @@ class ab_questions: NSObject {
     func getABTecnicQuestions() -> [Question] {
         var questions = [Question]() // Diziyi saklamak için questions adında bir değişken tanımla
 
-        guard let jsonData = QuestionManager.readJSONFromFile(filename: "ab_tec") else {
+        guard let jsonData = QuestionManager.readJSONFromFile(filename: "c_tec") else {
             fatalError("Failed to read JSON file.")
         }
         do {
@@ -78,7 +79,7 @@ class ab_questions: NSObject {
     func getABIRQuestions() -> [Question] {
         var questions = [Question]() // Diziyi saklamak için questions adında bir değişken tanımla
 
-        guard let jsonData = QuestionManager.readJSONFromFile(filename: "ab_IR") else {
+        guard let jsonData = QuestionManager.readJSONFromFile(filename: "c_IR") else {
             fatalError("Failed to read JSON file.")
         }
         do {
