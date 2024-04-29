@@ -39,7 +39,7 @@ class CustomCellBottom: UICollectionViewCell {
 
   private let titleLabel: UILabel = {
     let label = UILabel()
-    label.font = UIFont.systemFont(ofSize: 16)
+    label.font = UIFont.boldSystemFont(ofSize: 16)
     label.textColor = .black
       
     label.translatesAutoresizingMaskIntoConstraints = false
@@ -75,10 +75,6 @@ class CustomCellBottom: UICollectionViewCell {
       titleLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -15),
       titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
       titleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20),
-      
-
-      
-      
       
     ])
 

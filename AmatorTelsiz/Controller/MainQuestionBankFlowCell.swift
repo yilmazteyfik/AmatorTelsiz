@@ -37,9 +37,9 @@ class CustomCell: UICollectionViewCell {
 
   private let titleLabel: UILabel = {
     let label = UILabel()
-    label.font = UIFont.systemFont(ofSize: 16)
+    label.font = UIFont.boldSystemFont(ofSize: 16 )
     label.textColor = .black
-      
+
     label.translatesAutoresizingMaskIntoConstraints = false
     return label
   }()
@@ -68,16 +68,12 @@ class CustomCell: UICollectionViewCell {
       imageView.topAnchor.constraint(equalTo: contentView.topAnchor),
       imageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
       imageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
-      imageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -100),
+      imageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -60),
 
-      titleLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -60),
+      titleLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -20),
       titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
       titleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20),
-      
-
-      
-      
-      
+  
     ])
 
     contentView.layer.cornerRadius = 15 // Set corner radius here
