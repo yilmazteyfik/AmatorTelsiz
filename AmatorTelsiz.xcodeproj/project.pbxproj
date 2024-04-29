@@ -28,6 +28,10 @@
 		24DA49E82BE04ADE002474CA /* ab_IR.json in Resources */ = {isa = PBXBuildFile; fileRef = 24DA49E22BE04ADE002474CA /* ab_IR.json */; };
 		24DA49E92BE04ADE002474CA /* c_tec.json in Resources */ = {isa = PBXBuildFile; fileRef = 24DA49E32BE04ADE002474CA /* c_tec.json */; };
 		24DA49EA2BE04ADE002474CA /* c_isletme.json in Resources */ = {isa = PBXBuildFile; fileRef = 24DA49E42BE04ADE002474CA /* c_isletme.json */; };
+		24DA49EC2BE04E5C002474CA /* dash.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 24DA49EB2BE04E5C002474CA /* dash.mp3 */; };
+		24DA49EE2BE04E65002474CA /* dot.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 24DA49ED2BE04E65002474CA /* dot.mp3 */; };
+		24DA49F02BE05DF8002474CA /* QuestionCardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DA49EF2BE05DF8002474CA /* QuestionCardViewCell.swift */; };
+		24DA49F22BE05E7B002474CA /* AnswerCardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DA49F12BE05E7B002474CA /* AnswerCardViewCell.swift */; };
 		A55476A82BDDA9F900D71E8D /* QuestionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55476A72BDDA9F900D71E8D /* QuestionManager.swift */; };
 		A55476AA2BDDAB0400D71E8D /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55476A92BDDAB0400D71E8D /* Question.swift */; };
 		A55476AD2BDDACA700D71E8D /* ab_question.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55476AC2BDDACA700D71E8D /* ab_question.swift */; };
@@ -43,8 +47,6 @@
 		A5E6E1AA2BE022C6001C7469 /* C_IRExamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E6E1A92BE022C6001C7469 /* C_IRExamViewController.swift */; };
 		A5E6E1AC2BE022DE001C7469 /* C_TecViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E6E1AB2BE022DE001C7469 /* C_TecViewController.swift */; };
 		A5E6E1AF2BE02E25001C7469 /* CustomCellBottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E6E1AE2BE02E25001C7469 /* CustomCellBottom.swift */; };
-		A5E6E1B22BE04CB6001C7469 /* dash.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A5E6E1B02BE04CB6001C7469 /* dash.mp3 */; };
-		A5E6E1B32BE04CB6001C7469 /* dot.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A5E6E1B12BE04CB6001C7469 /* dot.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +92,10 @@
 		24DA49E22BE04ADE002474CA /* ab_IR.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ab_IR.json; sourceTree = "<group>"; };
 		24DA49E32BE04ADE002474CA /* c_tec.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = c_tec.json; sourceTree = "<group>"; };
 		24DA49E42BE04ADE002474CA /* c_isletme.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = c_isletme.json; sourceTree = "<group>"; };
+		24DA49EB2BE04E5C002474CA /* dash.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = dash.mp3; path = ../../../../../Downloads/dash.mp3; sourceTree = "<group>"; };
+		24DA49ED2BE04E65002474CA /* dot.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = dot.mp3; path = ../../../../../Downloads/dot.mp3; sourceTree = "<group>"; };
+		24DA49EF2BE05DF8002474CA /* QuestionCardViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCardViewCell.swift; sourceTree = "<group>"; };
+		24DA49F12BE05E7B002474CA /* AnswerCardViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerCardViewCell.swift; sourceTree = "<group>"; };
 		A55476A72BDDA9F900D71E8D /* QuestionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QuestionManager.swift; path = AmatorTelsiz/Controller/QuestionManager.swift; sourceTree = SOURCE_ROOT; };
 		A55476A92BDDAB0400D71E8D /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Question.swift; path = AmatorTelsiz/Controller/Question.swift; sourceTree = SOURCE_ROOT; };
 		A55476AC2BDDACA700D71E8D /* ab_question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ab_question.swift; path = AmatorTelsiz/Controller/ab_question.swift; sourceTree = SOURCE_ROOT; };
@@ -105,8 +111,6 @@
 		A5E6E1A92BE022C6001C7469 /* C_IRExamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C_IRExamViewController.swift; sourceTree = "<group>"; };
 		A5E6E1AB2BE022DE001C7469 /* C_TecViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C_TecViewController.swift; sourceTree = "<group>"; };
 		A5E6E1AE2BE02E25001C7469 /* CustomCellBottom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellBottom.swift; sourceTree = "<group>"; };
-		A5E6E1B02BE04CB6001C7469 /* dash.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = dash.mp3; path = ../../../../Desktop/dash.mp3; sourceTree = "<group>"; };
-		A5E6E1B12BE04CB6001C7469 /* dot.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = dot.mp3; path = ../../../../Desktop/dot.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +218,8 @@
 			children = (
 				A573124D2BDC7FD0008A2955 /* MainQuestionBankFlowCell.swift */,
 				A5E6E1AE2BE02E25001C7469 /* CustomCellBottom.swift */,
+				24DA49EF2BE05DF8002474CA /* QuestionCardViewCell.swift */,
+				24DA49F12BE05E7B002474CA /* AnswerCardViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -221,8 +227,8 @@
 		A573123E2BDC5C43008A2955 /* Support */ = {
 			isa = PBXGroup;
 			children = (
-				A5E6E1B02BE04CB6001C7469 /* dash.mp3 */,
-				A5E6E1B12BE04CB6001C7469 /* dot.mp3 */,
+				24DA49ED2BE04E65002474CA /* dot.mp3 */,
+				24DA49EB2BE04E5C002474CA /* dash.mp3 */,
 				244E5BB12BDC59C800E541D3 /* Info.plist */,
 				244E5BAC2BDC59C800E541D3 /* Assets.xcassets */,
 				244E5BA52BDC59C700E541D3 /* SceneDelegate.swift */,
@@ -400,12 +406,12 @@
 			files = (
 				244E5BB02BDC59C800E541D3 /* LaunchScreen.storyboard in Resources */,
 				244E5BAD2BDC59C800E541D3 /* Assets.xcassets in Resources */,
+				24DA49EE2BE04E65002474CA /* dot.mp3 in Resources */,
+				24DA49EC2BE04E5C002474CA /* dash.mp3 in Resources */,
 				24DA49E52BE04ADE002474CA /* ab_isletme.json in Resources */,
-				A5E6E1B32BE04CB6001C7469 /* dot.mp3 in Resources */,
 				244E5BAB2BDC59C700E541D3 /* Main.storyboard in Resources */,
 				24DA49E62BE04ADE002474CA /* ab_tec.json in Resources */,
 				24DA49E92BE04ADE002474CA /* c_tec.json in Resources */,
-				A5E6E1B22BE04CB6001C7469 /* dash.mp3 in Resources */,
 				24DA49EA2BE04ADE002474CA /* c_isletme.json in Resources */,
 				24DA49E82BE04ADE002474CA /* ab_IR.json in Resources */,
 				24DA49E72BE04ADE002474CA /* c_IR.json in Resources */,
@@ -452,6 +458,8 @@
 				A55476A82BDDA9F900D71E8D /* QuestionManager.swift in Sources */,
 				247EFE832BDD758100AEB766 /* MorseAlphabetViewController.swift in Sources */,
 				247EFE902BDD9A8B00AEB766 /* AprsViewController.swift in Sources */,
+				24DA49F02BE05DF8002474CA /* QuestionCardViewCell.swift in Sources */,
+				24DA49F22BE05E7B002474CA /* AnswerCardViewCell.swift in Sources */,
 				A57312442BDC6165008A2955 /* MainViewController.swift in Sources */,
 				A57312482BDC61BC008A2955 /* SettingViewController.swift in Sources */,
 				247EFE8E2BDD91B000AEB766 /* QCodeViewController.swift in Sources */,
