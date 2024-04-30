@@ -55,6 +55,6 @@ import UIKit
     override func awakeFromNib() {
         super.awakeFromNib()
         // Set unselected item color to black
-        self.unselectedItemTintColor = UIColor.lightGray
+        self.unselectedItemTintColor = UIColor.lightText
     }
 }
