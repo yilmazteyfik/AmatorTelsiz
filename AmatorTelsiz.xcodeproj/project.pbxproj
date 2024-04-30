@@ -32,6 +32,8 @@
 		24DA49EE2BE04E65002474CA /* dot.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 24DA49ED2BE04E65002474CA /* dot.mp3 */; };
 		24DA49F02BE05DF8002474CA /* QuestionCardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DA49EF2BE05DF8002474CA /* QuestionCardViewCell.swift */; };
 		24DA49F22BE05E7B002474CA /* AnswerCardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DA49F12BE05E7B002474CA /* AnswerCardViewCell.swift */; };
+		24DA49F92BE12F8F002474CA /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DA49F82BE12F8F002474CA /* TabbarController.swift */; };
+		24DA49FB2BE12FFF002474CA /* TabBarWithCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DA49FA2BE12FFF002474CA /* TabBarWithCorners.swift */; };
 		A55476A82BDDA9F900D71E8D /* QuestionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55476A72BDDA9F900D71E8D /* QuestionManager.swift */; };
 		A55476AA2BDDAB0400D71E8D /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55476A92BDDAB0400D71E8D /* Question.swift */; };
 		A55476AD2BDDACA700D71E8D /* ab_question.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55476AC2BDDACA700D71E8D /* ab_question.swift */; };
@@ -96,6 +98,8 @@
 		24DA49ED2BE04E65002474CA /* dot.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = dot.mp3; path = ../../../../../Downloads/dot.mp3; sourceTree = "<group>"; };
 		24DA49EF2BE05DF8002474CA /* QuestionCardViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCardViewCell.swift; sourceTree = "<group>"; };
 		24DA49F12BE05E7B002474CA /* AnswerCardViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerCardViewCell.swift; sourceTree = "<group>"; };
+		24DA49F82BE12F8F002474CA /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
+		24DA49FA2BE12FFF002474CA /* TabBarWithCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarWithCorners.swift; sourceTree = "<group>"; };
 		A55476A72BDDA9F900D71E8D /* QuestionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QuestionManager.swift; path = AmatorTelsiz/Controller/QuestionManager.swift; sourceTree = SOURCE_ROOT; };
 		A55476A92BDDAB0400D71E8D /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Question.swift; path = AmatorTelsiz/Controller/Question.swift; sourceTree = SOURCE_ROOT; };
 		A55476AC2BDDACA700D71E8D /* ab_question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ab_question.swift; path = AmatorTelsiz/Controller/ab_question.swift; sourceTree = SOURCE_ROOT; };
@@ -270,6 +274,8 @@
 			children = (
 				244E5BA92BDC59C700E541D3 /* Main.storyboard */,
 				244E5BAE2BDC59C800E541D3 /* LaunchScreen.storyboard */,
+				24DA49F82BE12F8F002474CA /* TabbarController.swift */,
+				24DA49FA2BE12FFF002474CA /* TabBarWithCorners.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -439,6 +445,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24DA49FB2BE12FFF002474CA /* TabBarWithCorners.swift in Sources */,
 				A55476AA2BDDAB0400D71E8D /* Question.swift in Sources */,
 				247EFE8C2BDD8A3D00AEB766 /* RoleViewController.swift in Sources */,
 				A5E6E1A62BE0229A001C7469 /* AB_TecViewController.swift in Sources */,
@@ -451,6 +458,7 @@
 				A5E6E1AF2BE02E25001C7469 /* CustomCellBottom.swift in Sources */,
 				A55476AD2BDDACA700D71E8D /* ab_question.swift in Sources */,
 				244E5BA62BDC59C700E541D3 /* SceneDelegate.swift in Sources */,
+				24DA49F92BE12F8F002474CA /* TabbarController.swift in Sources */,
 				247EFE892BDD7BD200AEB766 /* PhoneticMorseAlphabetViewController.swift in Sources */,
 				247EFE922BDEFCB300AEB766 /* DarkModeManager.swift in Sources */,
 				A5E6E19E2BE0188C001C7469 /* c_question.swift in Sources */,

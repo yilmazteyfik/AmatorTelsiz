@@ -59,30 +59,40 @@ class CustomCell: UICollectionViewCell {
         contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 0))
     }
 
-  private func configureCell() {
-    contentView.addSubview(imageView)
-    contentView.addSubview(titleLabel)
-      titleLabel.textColor = .black
+    private func configureCell() {
+        contentView.addSubview(imageView)
+        contentView.addSubview(titleLabel)
+        titleLabel.textColor = .black
 
-    NSLayoutConstraint.activate([
-      imageView.topAnchor.constraint(equalTo: contentView.topAnchor),
-      imageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
-      imageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
-      imageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -60),
+        NSLayoutConstraint.activate([
+            imageView.topAnchor.constraint(equalTo: contentView.topAnchor),
+            imageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+            imageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
+            imageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -60),
 
-      titleLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -20),
-      titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
-      titleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20),
-  
-    ])
+            titleLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -20),
+            titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
+            titleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20),
+        ])
 
-    contentView.layer.cornerRadius = 15 // Set corner radius here
-    contentView.layer.masksToBounds = true // Clip content to rounded corners
-      contentView.backgroundColor = .white
-    // Add shadow
-    contentView.layer.shadowRadius = 3.0
-    contentView.layer.shadowOffset = CGSize(width: 2, height: 2)
-    contentView.layer.shadowOpacity = 1
+        contentView.layer.cornerRadius = 15
+        contentView.layer.masksToBounds = true
+        contentView.backgroundColor = .white
 
-  }
-}
+        // Add shadow
+        contentView.layer.shadowColor = UIColor.black.cgColor
+        contentView.layer.shadowRadius = 3.0
+        contentView.layer.shadowOffset = CGSize(width: 2, height: 2)
+        contentView.layer.shadowOpacity = 0 // Initial opacity set to 0
+
+        // Animate shadow opacity
+        let animation = CABasicAnimation(keyPath: #keyPath(CALayer.shadowOpacity))
+        animation.fromValue = 0 // Start with shadow hidden
+        animation.toValue = 1 // Shadow fully visible
+        animation.duration = 1.5 // Animation duration
+        animation.autoreverses = true // Animate back and forth
+        animation.repeatCount = .infinity // Repeat indefinitely
+        contentView.layer.add(animation, forKey: "shadowOpacityAnimation")
+    }
+    }
+

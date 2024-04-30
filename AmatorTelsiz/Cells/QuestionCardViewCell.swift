@@ -21,7 +21,7 @@ class QuestionCardViewCell: UIView {
     private let questionNumberLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 16)
-        label.textColor = .red
+        label.textColor = UIColor(red: 188/255, green: 23/255, blue: 49/255, alpha: 1.0)
         label.textAlignment = .left
         return label
     }()

@@ -86,5 +86,7 @@ class CustomCellBottom: UICollectionViewCell {
     contentView.layer.shadowOffset = CGSize(width: 2, height: 2)
     contentView.layer.shadowOpacity = 1
 
+      
+      
   }
 }

@@ -30,6 +30,7 @@ class SettingViewController: UIViewController, UIImagePickerControllerDelegate &
         view.addSubview(settingsTitleLabel)
         title = "Ayarlar"
         navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(red: 0xBC/255, green: 0x17/255, blue: 0x31/255, alpha: 1.0)]
         
         // Avatar Image View
         avatarImageView = UIImageView(image: UIImage(systemName: "person.circle.fill"))

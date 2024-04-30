@@ -20,7 +20,8 @@ class ToolsViewController: UIViewController, CLLocationManagerDelegate {
     private func layoutTools() {
         title = "Araçlar"
         navigationController?.navigationBar.prefersLargeTitles = true
-        
+        navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(red: 0xBC/255, green: 0x17/255, blue: 0x31/255, alpha: 1.0)]
+
         let toolNames = ["Pusula", "Mors Alfabesi", "Fonetik Alfabe", "Röle Bilgileri", "Q Kodları", "Aprs-Fi"]
         
         var previousTool: UIView?
@@ -47,7 +48,9 @@ class ToolsViewController: UIViewController, CLLocationManagerDelegate {
             button.translatesAutoresizingMaskIntoConstraints = false
             
             let iconImageView = UIImageView()
-            iconImageView.image = toolIcons[index]
+            iconImageView.image = toolIcons[index].withRenderingMode(.alwaysTemplate)
+            iconImageView.tintColor = UIColor(red: 188/255, green: 23/255, blue: 49/255, alpha: 1.0)
+
             iconImageView.contentMode = .scaleAspectFit
             cardView.addSubview(iconImageView)
             iconImageView.translatesAutoresizingMaskIntoConstraints = false

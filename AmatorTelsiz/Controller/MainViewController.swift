@@ -65,6 +65,7 @@ extension MainViewController {
     private func layout() {
         let titleLabel = UILabel()
         titleLabel.text = "Soru Bankaları"
+        titleLabel.textColor = UIColor(red: 0xBC/255, green: 0x17/255, blue: 0x31/255, alpha: 1.0)
         titleLabel.textAlignment = .left
         titleLabel.font = UIFont.systemFont(ofSize: 30, weight: .bold)
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -82,6 +83,7 @@ extension MainViewController {
 
         let titleLabel1 = UILabel()
         titleLabel1.text = "Deneme Sınavları"
+        titleLabel1.textColor = UIColor(red: 0xBC/255, green: 0x17/255, blue: 0x31/255, alpha: 1.0)
         titleLabel1.textAlignment = .left
         titleLabel1.font = UIFont.systemFont(ofSize: 30, weight: .bold)
         titleLabel1.translatesAutoresizingMaskIntoConstraints = false
@@ -94,7 +96,7 @@ extension MainViewController {
         secondCollectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0).isActive = true
         secondCollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0).isActive = true
         secondCollectionView.topAnchor.constraint(equalTo: firstCollectionView.bottomAnchor, constant: view.frame.height * 0.04).isActive = true
-        secondCollectionView.heightAnchor.constraint(equalToConstant: 200).isActive = true
+        secondCollectionView.heightAnchor.constraint(equalToConstant: 210).isActive = true
     }
 }
 
@@ -115,7 +117,7 @@ extension MainViewController: UICollectionViewDelegateFlowLayout, UICollectionVi
             cell.data = data[indexPath.item]
             cell.contentView.layer.cornerRadius = 15
             cell.contentView.layer.masksToBounds = true
-            cell.layer.shadowColor = UIColor.black.cgColor
+            cell.layer.shadowColor = UIColor(red: 0xBC/255, green: 0x17/255, blue: 0x31/255, alpha: 1.0).cgColor
             cell.layer.shadowOffset = CGSize(width: 1, height: 10)
             cell.layer.shadowOpacity = 0.2
             cell.layer.shadowRadius = 4
@@ -123,7 +125,7 @@ extension MainViewController: UICollectionViewDelegateFlowLayout, UICollectionVi
         } else if collectionView == secondCollectionView {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell2", for: indexPath) as! CustomCellBottom
             cell.data = data[indexPath.item]
-            cell.layer.shadowColor = UIColor.black.cgColor
+            cell.layer.shadowColor = UIColor(red: 0xBC/255, green: 0x17/255, blue: 0x31/255, alpha: 1.0).cgColor
             cell.layer.shadowOffset = CGSize(width: 1, height: 10)
             cell.layer.shadowOpacity = 0.2
             cell.layer.shadowRadius = 4
