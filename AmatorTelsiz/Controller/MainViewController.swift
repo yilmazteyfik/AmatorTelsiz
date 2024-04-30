@@ -41,8 +41,9 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         style()
         layout()
-        
+
     }
+    
 }
 
 // MARK: - Helpers
