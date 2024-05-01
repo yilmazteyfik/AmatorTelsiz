@@ -43,6 +43,24 @@ class MainViewController: UIViewController {
         layout()
 
     }
+    override func viewWillAppear(_ animated: Bool) {
+           super.viewWillAppear(animated)
+           startPulseAnimations()
+       }
+
+       private func startPulseAnimations() {
+           // Start pulse animations for both collection views
+           if let visibleFirstCells = firstCollectionView.visibleCells as? [CustomCell] {
+               for cell in visibleFirstCells {
+                   cell.startPulseAnimation()
+               }
+           }
+           if let visibleSecondCells = secondCollectionView.visibleCells as? [CustomCellBottom] {
+               for cell in visibleSecondCells {
+                   cell.startPulseAnimation()
+               }
+           }
+       }
     
 }
 
@@ -118,17 +136,19 @@ extension MainViewController: UICollectionViewDelegateFlowLayout, UICollectionVi
             cell.contentView.layer.cornerRadius = 15
             cell.contentView.layer.masksToBounds = true
             cell.layer.shadowColor = UIColor(red: 0xBC/255, green: 0x17/255, blue: 0x31/255, alpha: 1.0).cgColor
-            cell.layer.shadowOffset = CGSize(width: 1, height: 10)
+            cell.layer.shadowOffset = CGSize(width: 5, height: 10)
             cell.layer.shadowOpacity = 0.2
             cell.layer.shadowRadius = 4
+            cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: cell.contentView.layer.cornerRadius).cgPath
             return cell
         } else if collectionView == secondCollectionView {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell2", for: indexPath) as! CustomCellBottom
             cell.data = data[indexPath.item]
             cell.layer.shadowColor = UIColor(red: 0xBC/255, green: 0x17/255, blue: 0x31/255, alpha: 1.0).cgColor
-            cell.layer.shadowOffset = CGSize(width: 1, height: 10)
+            cell.layer.shadowOffset = CGSize(width: 5, height: 10)
             cell.layer.shadowOpacity = 0.2
             cell.layer.shadowRadius = 4
+            
             return cell
         }
         return UICollectionViewCell()
@@ -211,3 +231,4 @@ extension MainViewController: UICollectionViewDelegateFlowLayout, UICollectionVi
     }
 
 }
+

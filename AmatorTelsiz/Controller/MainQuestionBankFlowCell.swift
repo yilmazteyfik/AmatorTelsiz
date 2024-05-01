@@ -58,6 +58,23 @@ class CustomCell: UICollectionViewCell {
             // Content view'un kenar boşluklarını ayarlama
         contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 0))
     }
+    override func prepareForReuse() {
+            super.prepareForReuse()
+
+            // Restart pulse animation for the image view
+        startPulseAnimation()
+        }
+    internal func startPulseAnimation() {
+           let pulseAnimation = CABasicAnimation(keyPath: "transform.scale")
+           pulseAnimation.duration = 1.5 // Animation duration
+           pulseAnimation.autoreverses = true // Animate back and forth
+           pulseAnimation.repeatCount = .infinity // Repeat indefinitely
+           pulseAnimation.fromValue = 1.0 // Start scale value
+           pulseAnimation.toValue = 1.1 // End scale value (slightly larger)
+           imageView.layer.add(pulseAnimation, forKey: "pulseAnimation")
+       }
+    
+    
 
     private func configureCell() {
         contentView.addSubview(imageView)
@@ -86,13 +103,22 @@ class CustomCell: UICollectionViewCell {
         contentView.layer.shadowOpacity = 0 // Initial opacity set to 0
 
         // Animate shadow opacity
-        let animation = CABasicAnimation(keyPath: #keyPath(CALayer.shadowOpacity))
-        animation.fromValue = 0 // Start with shadow hidden
-        animation.toValue = 1 // Shadow fully visible
-        animation.duration = 1.5 // Animation duration
-        animation.autoreverses = true // Animate back and forth
-        animation.repeatCount = .infinity // Repeat indefinitely
-        contentView.layer.add(animation, forKey: "shadowOpacityAnimation")
+        let shadowAnimation = CABasicAnimation(keyPath: #keyPath(CALayer.shadowOpacity))
+        shadowAnimation.fromValue = 0 // Start with shadow hidden
+        shadowAnimation.toValue = 1 // Shadow fully visible
+        shadowAnimation.duration = 1.5 // Animation duration
+        shadowAnimation.autoreverses = true // Animate back and forth
+        shadowAnimation.repeatCount = .infinity // Repeat indefinitely
+        contentView.layer.add(shadowAnimation, forKey: "shadowOpacityAnimation")
+
+        // Add pulse effect to the image
+        let pulseAnimation = CABasicAnimation(keyPath: "transform.scale")
+        pulseAnimation.duration = 1.5 // Animation duration
+        pulseAnimation.autoreverses = true // Animate back and forth
+        pulseAnimation.repeatCount = .infinity // Repeat indefinitely
+        pulseAnimation.fromValue = 1.0 // Start scale value
+        pulseAnimation.toValue = 1.1 // End scale value (slightly larger)
+        imageView.layer.add(pulseAnimation, forKey: "pulseAnimation")
     }
     }
 

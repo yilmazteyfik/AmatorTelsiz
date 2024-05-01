@@ -60,6 +60,21 @@ class CustomCellBottom: UICollectionViewCell {
             // Content view'un kenar boşluklarını ayarlama
         contentView.frame = CGRect(x: 10, y: 30, width: frame.width - 10 , height: frame.height * 0.75)
     }
+    
+    override func prepareForReuse() {
+           super.prepareForReuse()
+           startPulseAnimation()
+       }
+
+       internal func startPulseAnimation() {
+           let pulseAnimation = CABasicAnimation(keyPath: "transform.scale")
+           pulseAnimation.duration = 1.5 // Animation duration
+           pulseAnimation.autoreverses = true // Animate back and forth
+           pulseAnimation.repeatCount = .infinity // Repeat indefinitely
+           pulseAnimation.fromValue = 1.0 // Start scale value
+           pulseAnimation.toValue = 1.1 // End scale value (slightly larger)
+           imageView.layer.add(pulseAnimation, forKey: "pulseAnimation")
+       }
 
   private func configureCell() {
     contentView.addSubview(imageView)
@@ -87,6 +102,12 @@ class CustomCellBottom: UICollectionViewCell {
     contentView.layer.shadowOpacity = 1
 
       
-      
+      let pulseAnimation = CABasicAnimation(keyPath: "transform.scale")
+      pulseAnimation.duration = 1 // Animation duration
+      pulseAnimation.autoreverses = true // Animate back and forth
+      pulseAnimation.repeatCount = .infinity // Repeat indefinitely
+      pulseAnimation.fromValue = 1.0 // Start scale value
+      pulseAnimation.toValue = 1.05 // End scale value (slightly larger)
+      imageView.layer.add(pulseAnimation, forKey: "pulseAnimation")
   }
 }

@@ -35,7 +35,7 @@ class SettingViewController: UIViewController, UIImagePickerControllerDelegate &
         // Avatar Image View
         avatarImageView = UIImageView(image: UIImage(systemName: "person.circle.fill"))
         avatarImageView.translatesAutoresizingMaskIntoConstraints = false
-        avatarImageView.tintColor = .black
+        avatarImageView.tintColor = UIColor(red: 0xBC/255, green: 0x17/255, blue: 0x31/255, alpha: 1.0)
         avatarImageView.contentMode = .scaleAspectFill
         avatarImageView.layer.cornerRadius = 40 // Half of the width/height to make it round
         avatarImageView.clipsToBounds = true
@@ -76,7 +76,7 @@ class SettingViewController: UIViewController, UIImagePickerControllerDelegate &
         // Account Icon
         let accountIconImageView = UIImageView(image: UIImage(systemName: "person.circle.fill"))
         accountIconImageView.translatesAutoresizingMaskIntoConstraints = false
-        accountIconImageView.tintColor = .black
+        accountIconImageView.tintColor = UIColor(red: 0xBC/255, green: 0x17/255, blue: 0x31/255, alpha: 1.0)
         accountCardView.addSubview(accountIconImageView)
         
         // Memberships Card View
@@ -100,7 +100,7 @@ class SettingViewController: UIViewController, UIImagePickerControllerDelegate &
         // Memberships Icon
         let membershipsIconImageView = UIImageView(image: UIImage(systemName: "person.3.fill"))
         membershipsIconImageView.translatesAutoresizingMaskIntoConstraints = false
-        membershipsIconImageView.tintColor = .black
+        membershipsIconImageView.tintColor = UIColor(red: 0xBC/255, green: 0x17/255, blue: 0x31/255, alpha: 1.0)
         membershipsCardView.addSubview(membershipsIconImageView)
         
         // Dark Mode Card View
@@ -124,7 +124,7 @@ class SettingViewController: UIViewController, UIImagePickerControllerDelegate &
         // Dark Mode Icon
         let darkModeIconImageView = UIImageView(image: UIImage(systemName: "moon.fill"))
         darkModeIconImageView.translatesAutoresizingMaskIntoConstraints = false
-        darkModeIconImageView.tintColor = .black
+        darkModeIconImageView.tintColor = UIColor(red: 0xBC/255, green: 0x17/255, blue: 0x31/255, alpha: 1.0)
         darkModeCardView.addSubview(darkModeIconImageView)
         
         // Dark Mode Switch
