@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		244B7AB02BE2CDE3006EBB90 /* dot.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 244B7AAE2BE2CDE3006EBB90 /* dot.mp3 */; };
+		244B7AB12BE2CDE3006EBB90 /* dash.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 244B7AAF2BE2CDE3006EBB90 /* dash.mp3 */; };
 		244E5BA42BDC59C700E541D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244E5BA32BDC59C700E541D3 /* AppDelegate.swift */; };
 		244E5BA62BDC59C700E541D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244E5BA52BDC59C700E541D3 /* SceneDelegate.swift */; };
 		244E5BAB2BDC59C700E541D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 244E5BA92BDC59C700E541D3 /* Main.storyboard */; };
@@ -28,8 +30,6 @@
 		24DA49E82BE04ADE002474CA /* ab_IR.json in Resources */ = {isa = PBXBuildFile; fileRef = 24DA49E22BE04ADE002474CA /* ab_IR.json */; };
 		24DA49E92BE04ADE002474CA /* c_tec.json in Resources */ = {isa = PBXBuildFile; fileRef = 24DA49E32BE04ADE002474CA /* c_tec.json */; };
 		24DA49EA2BE04ADE002474CA /* c_isletme.json in Resources */ = {isa = PBXBuildFile; fileRef = 24DA49E42BE04ADE002474CA /* c_isletme.json */; };
-		24DA49EC2BE04E5C002474CA /* dash.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 24DA49EB2BE04E5C002474CA /* dash.mp3 */; };
-		24DA49EE2BE04E65002474CA /* dot.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 24DA49ED2BE04E65002474CA /* dot.mp3 */; };
 		24DA49F02BE05DF8002474CA /* QuestionCardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DA49EF2BE05DF8002474CA /* QuestionCardViewCell.swift */; };
 		24DA49F22BE05E7B002474CA /* AnswerCardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DA49F12BE05E7B002474CA /* AnswerCardViewCell.swift */; };
 		24DA49F92BE12F8F002474CA /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DA49F82BE12F8F002474CA /* TabbarController.swift */; };
@@ -69,6 +69,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		244B7AAE2BE2CDE3006EBB90 /* dot.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = dot.mp3; path = ../../../../dot.mp3; sourceTree = "<group>"; };
+		244B7AAF2BE2CDE3006EBB90 /* dash.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = dash.mp3; path = ../../../../dash.mp3; sourceTree = "<group>"; };
 		244E5BA02BDC59C700E541D3 /* AmatorTelsiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmatorTelsiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		244E5BA32BDC59C700E541D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		244E5BA52BDC59C700E541D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,8 +96,6 @@
 		24DA49E22BE04ADE002474CA /* ab_IR.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ab_IR.json; sourceTree = "<group>"; };
 		24DA49E32BE04ADE002474CA /* c_tec.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = c_tec.json; sourceTree = "<group>"; };
 		24DA49E42BE04ADE002474CA /* c_isletme.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = c_isletme.json; sourceTree = "<group>"; };
-		24DA49EB2BE04E5C002474CA /* dash.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = dash.mp3; path = ../../../../../Downloads/dash.mp3; sourceTree = "<group>"; };
-		24DA49ED2BE04E65002474CA /* dot.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = dot.mp3; path = ../../../../../Downloads/dot.mp3; sourceTree = "<group>"; };
 		24DA49EF2BE05DF8002474CA /* QuestionCardViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCardViewCell.swift; sourceTree = "<group>"; };
 		24DA49F12BE05E7B002474CA /* AnswerCardViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerCardViewCell.swift; sourceTree = "<group>"; };
 		24DA49F82BE12F8F002474CA /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
@@ -231,8 +231,8 @@
 		A573123E2BDC5C43008A2955 /* Support */ = {
 			isa = PBXGroup;
 			children = (
-				24DA49ED2BE04E65002474CA /* dot.mp3 */,
-				24DA49EB2BE04E5C002474CA /* dash.mp3 */,
+				244B7AAF2BE2CDE3006EBB90 /* dash.mp3 */,
+				244B7AAE2BE2CDE3006EBB90 /* dot.mp3 */,
 				244E5BB12BDC59C800E541D3 /* Info.plist */,
 				244E5BAC2BDC59C800E541D3 /* Assets.xcassets */,
 				244E5BA52BDC59C700E541D3 /* SceneDelegate.swift */,
@@ -412,14 +412,14 @@
 			files = (
 				244E5BB02BDC59C800E541D3 /* LaunchScreen.storyboard in Resources */,
 				244E5BAD2BDC59C800E541D3 /* Assets.xcassets in Resources */,
-				24DA49EE2BE04E65002474CA /* dot.mp3 in Resources */,
-				24DA49EC2BE04E5C002474CA /* dash.mp3 in Resources */,
 				24DA49E52BE04ADE002474CA /* ab_isletme.json in Resources */,
 				244E5BAB2BDC59C700E541D3 /* Main.storyboard in Resources */,
 				24DA49E62BE04ADE002474CA /* ab_tec.json in Resources */,
+				244B7AB12BE2CDE3006EBB90 /* dash.mp3 in Resources */,
 				24DA49E92BE04ADE002474CA /* c_tec.json in Resources */,
 				24DA49EA2BE04ADE002474CA /* c_isletme.json in Resources */,
 				24DA49E82BE04ADE002474CA /* ab_IR.json in Resources */,
+				244B7AB02BE2CDE3006EBB90 /* dot.mp3 in Resources */,
 				24DA49E72BE04ADE002474CA /* c_IR.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

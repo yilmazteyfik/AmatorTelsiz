@@ -225,10 +225,7 @@ extension MainViewController: UICollectionViewDelegateFlowLayout, UICollectionVi
         
         
     }
-    
-    @objc private func darkModeSwitchChanged(_ sender: UISwitch) {
-        DarkModeManager.shared.isDarkModeEnabled = sender.isOn
-    }
+
 
 }
 

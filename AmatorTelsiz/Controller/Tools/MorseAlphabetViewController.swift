@@ -96,25 +96,26 @@ class MorseAlphabetViewController: UIViewController {
     // MARK: - Button Actions
     @objc private func letterButtonTapped(_ sender: UIButton) {
         guard let title = sender.titleLabel?.text else { return }
-        let letter = title.split(separator: ":").first ?? ""
-        if let morseCode = morseAlphabet[String(letter)] {
-            vibrator.vibrate(morseCode: morseCode)
-            for character in morseCode {
-                switch character {
-                case ".":
-                    flasher.flashDot()
-                    player.playDot()
-                case "-":
-                    flasher.flashDash()
-                    player.playDash()
-                default:
-                    break
-                }
-                Thread.sleep(forTimeInterval: 0.5) // Adjust timing as needed
+        let parts = title.split(separator: ":")
+        guard let letter = parts.first, let morseCode = morseAlphabet[String(letter)] else { return }
+        
+        vibrator.vibrate(morseCode: morseCode)
+        for character in morseCode {
+            switch character {
+            case ".":
+                flasher.flashDot()
+                player.playDot()
+            case "-":
+                flasher.flashDash()
+                player.playDash()
+            default:
+                break
             }
+            Thread.sleep(forTimeInterval: 0.3) // Adjust timing as needed
         }
     }
 }
+
 
 // MARK: - Helper Classes
 class MorseVibrator {
@@ -144,7 +145,7 @@ class MorseVibrator {
             default:
                 break
             }
-            Thread.sleep(forTimeInterval: 0.5) // Adjust timing as needed
+            Thread.sleep(forTimeInterval: 0.3) // Adjust timing as needed
         }
     }
 }
@@ -182,29 +183,24 @@ class MorsePlayer {
     let dotSoundURL = Bundle.main.url(forResource: "dot", withExtension: "mp3")!
     let dashSoundURL = Bundle.main.url(forResource: "dash", withExtension: "mp3")!
     
-    var dotPlayer: AVAudioPlayer!
-    var dashPlayer: AVAudioPlayer!
-    
-    init() {
-        do {
-            dotPlayer = try AVAudioPlayer(contentsOf: dotSoundURL)
-            dashPlayer = try AVAudioPlayer(contentsOf: dashSoundURL)
-        } catch {
-            print("Error initializing audio players: \(error)")
-        }
-    }
+    var dotPlayer: AVAudioPlayer?
+    var dashPlayer: AVAudioPlayer?
     
     func playDot() {
-        dotPlayer.play()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-            self.dotPlayer.stop()
+        do {
+            dotPlayer = try AVAudioPlayer(contentsOf: dotSoundURL)
+            dotPlayer?.play()
+        } catch {
+            print("Error playing dot sound: \(error)")
         }
     }
     
     func playDash() {
-        dashPlayer.play()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-            self.dashPlayer.stop()
+        do {
+            dashPlayer = try AVAudioPlayer(contentsOf: dashSoundURL)
+            dashPlayer?.play()
+        } catch {
+            print("Error playing dash sound: \(error)")
         }
     }
 }

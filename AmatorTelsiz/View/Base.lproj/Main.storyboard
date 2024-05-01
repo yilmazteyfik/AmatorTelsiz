@@ -106,6 +106,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="i69-Na-RkU">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.6784313917" green="0.1725490093" blue="0.20784312490000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </navigationBar>
                     <connections>
                         <segue destination="OkG-AD-IxI" kind="relationship" relationship="rootViewController" id="4Nn-aZ-gzm"/>
@@ -123,6 +124,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1fe-QH-85t">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.6784313917" green="0.1725490093" blue="0.20784312490000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </navigationBar>
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="c9x-Bz-ra2">
                         <autoresizingMask key="autoresizingMask"/>
