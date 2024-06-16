@@ -1,19 +1,51 @@
 import UIKit
+import Combine
 
 class AB_IExamViewController: UIViewController {
+    //MARK: - Properties
     var examTitle: String?
+    var answerIndex = 0
     var currentQuestionIndex = 0
     var isDeneme = false
+    
+    var checkAnswerTimer: Timer?
     let transitionDelay: TimeInterval = 0.5 // Geçiş gecikmesi süresi (1 saniye olarak ayarlanmıştır)
-
     var questions = ab_questions().getABIsletmeQuestions()
 
-
-    private var questionCardView: QuestionCardViewCell!
+    private var cancellables: Set<AnyCancellable> = []
     private var answerCardViews: [AnswerCardViewCell] = []
-    private var previousButton: UIButton!
-    private var nextButton: UIButton!
 
+    let titleLabel : UILabel = {
+        let titleLabel = UILabel()
+        titleLabel.font = UIFont.systemFont(ofSize: 24, weight: .bold)
+        titleLabel.translatesAutoresizingMaskIntoConstraints = false
+        titleLabel.text = "NONE"
+        return titleLabel
+    }()
+    private var questionCardView: QuestionCardViewCell = {
+        let view = QuestionCardViewCell(frame: .zero)
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    private var previousButton: UIButton = {
+        let previousButton = UIButton(type: .system)
+        let previousButtonImage = UIImage(systemName: "arrow.left.circle.fill")
+        previousButton.setImage(previousButtonImage, for: .normal)
+        previousButton.tintColor = UIColor(red: 188/255, green: 23/255, blue: 49/255, alpha: 1.0)
+        previousButton.addTarget(self, action: #selector(previousButtonTapped(_:)), for: .touchUpInside)
+        previousButton.translatesAutoresizingMaskIntoConstraints = false
+        return previousButton
+    }()
+    private var nextButton: UIButton = {
+        let nextButton = UIButton(type: .system)
+        let nextButtonImage = UIImage(systemName: "arrow.right.circle.fill")
+        nextButton.setImage(nextButtonImage, for: .normal)
+        nextButton.tintColor = UIColor(red: 188/255, green: 23/255, blue: 49/255, alpha: 1.0)
+        nextButton.addTarget(self, action: #selector(nextButtonTapped(_:)), for: .touchUpInside)
+        nextButton.translatesAutoresizingMaskIntoConstraints = false
+        return nextButton
+    }()
+    //MARK: Lifecycles
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -21,22 +53,21 @@ class AB_IExamViewController: UIViewController {
             questions = makeRandomTest()
             print(questions.count)
         }
-
-        // Title Label
-        let titleLabel = UILabel()
+        style()
+        layout()
+        displayQuestion()
+        updateButtonStates()
+        startCheckingAnswers()
+    }
+}
+//MARK: - Helpers
+extension AB_IExamViewController{
+    private func style(){
         titleLabel.text = examTitle
-        titleLabel.font = UIFont.systemFont(ofSize: 24, weight: .bold)
-        titleLabel.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(titleLabel)
-
-        titleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
-        titleLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20).isActive = true
-
-        // Initialize Question CardView
-        questionCardView = QuestionCardViewCell(frame: .zero)
-        questionCardView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(questionCardView)
-
+        view.addSubview(previousButton)
+        view.addSubview(nextButton)
         // Initialize Answer CardViews
         for _ in 0..<4 {
             let answerCardView = AnswerCardViewCell(frame: .zero)
@@ -44,29 +75,6 @@ class AB_IExamViewController: UIViewController {
             view.addSubview(answerCardView)
             answerCardViews.append(answerCardView)
         }
-
-        // Previous Button
-        previousButton = UIButton(type: .system)
-        let previousButtonImage = UIImage(systemName: "arrow.left.circle.fill")
-        previousButton.setImage(previousButtonImage, for: .normal)
-        previousButton.tintColor = UIColor(red: 188/255, green: 23/255, blue: 49/255, alpha: 1.0)
-        previousButton.addTarget(self, action: #selector(previousButtonTapped(_:)), for: .touchUpInside)
-        previousButton.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(previousButton)
-
-        previousButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
-        previousButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20).isActive = true
-
-        // Next Button
-        nextButton = UIButton(type: .system)
-        let nextButtonImage = UIImage(systemName: "arrow.right.circle.fill")
-        nextButton.setImage(nextButtonImage, for: .normal)
-        nextButton.tintColor = UIColor(red: 188/255, green: 23/255, blue: 49/255, alpha: 1.0)
-        nextButton.addTarget(self, action: #selector(nextButtonTapped(_:)), for: .touchUpInside)
-        nextButton.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(nextButton)
-
-        // Swipe Gesture Recognizer
         let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(swiped(_:)))
         swipeRight.direction = .right
         view.addGestureRecognizer(swipeRight)
@@ -74,12 +82,15 @@ class AB_IExamViewController: UIViewController {
         let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(swiped(_:)))
         swipeLeft.direction = .left
         view.addGestureRecognizer(swipeLeft)
+    }
+    private func layout(){
+        titleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
+        titleLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20).isActive = true
+        
+        previousButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
+        previousButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20).isActive = true
 
-        // Display first question
-        displayQuestion()
-        updateButtonStates()
-
-        // Layout Constraints
+        
         NSLayoutConstraint.activate([
             questionCardView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 20),
             questionCardView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
@@ -103,23 +114,27 @@ class AB_IExamViewController: UIViewController {
 
             nextButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             nextButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20)
+            
         ])
+        
     }
-
-    func displayQuestion() {
-        let currentQuestion = questions[currentQuestionIndex].question
-        let currentAnswers = questions[currentQuestionIndex].options
-        questionCardView.configure(withQuestion: currentQuestion, number: currentQuestionIndex + 1)
-        for (index, answer) in currentAnswers.enumerated() {
-            answerCardViews[index].configure(withAnswer: answer)
+}
+//MARK: - Buttons
+extension AB_IExamViewController{
+    @objc func checkTappedAnswer() {
+        for answerCardView in answerCardViews {
+            if answerCardView.isTapped && answerCardView.isThisAnswer {
+                answerCardView.backgroundColor = correct_color
+                answerCardView.answerButton.setTitleColor(.white, for: .normal)
+                disableOtherAnswers()
+            } else if answerCardView.isTapped {
+                answerCardView.backgroundColor = false_color
+                answerCardView.answerButton.setTitleColor(.white, for: .normal)
+                showCorrectOption()
+                disableOtherAnswers()
+            }
         }
     }
-
-    func updateButtonStates() {
-        previousButton.isEnabled = currentQuestionIndex > 0
-        nextButton.isEnabled = currentQuestionIndex < questions.count - 1
-    }
-
     @objc func previousButtonTapped(_ sender: UIButton) {
         currentQuestionIndex -= 1
         displayQuestionWithDelay()
@@ -128,6 +143,7 @@ class AB_IExamViewController: UIViewController {
     @objc func nextButtonTapped(_ sender: UIButton) {
         currentQuestionIndex += 1
         displayQuestionWithDelay()
+
     }
 
     @objc func swiped(_ gesture: UISwipeGestureRecognizer) {
@@ -137,10 +153,67 @@ class AB_IExamViewController: UIViewController {
             previousQuestion()
         }
     }
+}
+//MARK: - Utilities
+extension AB_IExamViewController{
+    func showCorrectOption(){
+        for answerCardView in answerCardViews {
+            if answerCardView.isThisAnswer {
+                answerCardView.backgroundColor = correct_color
+                answerCardView.answerButton.setTitleColor(.white, for: .normal)
+            }
+        }
+    }
+    private func disableOtherAnswers() {
+        for answerCardView in answerCardViews {
+            answerCardView.isUserInteractionEnabled = false
+        }
+    }
+    private func enableOtherAnswers() {
+        for answerCardView in answerCardViews {
+            answerCardView.isUserInteractionEnabled = true
+            answerCardView.answerButton.setTitleColor(.black, for: .normal)
 
+        }
+    }
+    func displayQuestion() {
+        enableOtherAnswers()
+        let currentQuestion = questions[currentQuestionIndex].question
+        let currentAnswers = questions[currentQuestionIndex].options
+        let ans = questions[currentQuestionIndex].answer
+        questionCardView.configure(withQuestion: currentQuestion, number: currentQuestionIndex + 1)
+        for (index, answer) in currentAnswers.enumerated() {
+            if answer == ans{
+                answerCardViews[index].configure(withAnswer: answer)
+                answerCardViews[index].isThisAnswer = true
+                answerCardViews[index].backgroundColor = .white
+                answerCardViews[index].isTapped = false
+                answerIndex = index
+            }
+            else {
+                answerCardViews[index].configure(withAnswer: answer)
+                answerCardViews[index].backgroundColor = .white
+                answerCardViews[index].isThisAnswer = false
+                answerCardViews[index].isTapped = false
+            }
+            answerCardViews[index].$isTapped
+                .sink { [weak self] isTapped in
+                    if isTapped {
+                        self?.checkTappedAnswer()
+                    }
+                }
+                .store(in: &cancellables)
+        }
+    }
+    func updateButtonStates() {
+        previousButton.isEnabled = currentQuestionIndex > 0
+        nextButton.isEnabled = currentQuestionIndex < questions.count - 1
+        
+    }
     func nextQuestion() {
         guard currentQuestionIndex < questions.count - 1 else { return }
         currentQuestionIndex += 1
+       
         displayQuestionWithDelay()
     }
 
@@ -172,5 +245,9 @@ class AB_IExamViewController: UIViewController {
             self.displayQuestion()
             self.updateButtonStates()
         }
+    }
+
+    func startCheckingAnswers() {
+        checkAnswerTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(checkTappedAnswer), userInfo: nil, repeats: true)
     }
 }

@@ -70,5 +70,8 @@ class QuestionCardViewCell: UIView {
         questionNumberLabel.text = "\(number)."
         questionLabel.text = question
     }
+    func setBackgroundColor(_ color: UIColor) {
+        backgroundColor = color
+        }
 }
 

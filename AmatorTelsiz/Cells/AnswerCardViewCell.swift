@@ -8,9 +8,12 @@
 import Foundation
 import UIKit
 
+
+
 class AnswerCardViewCell: UIView {
-    // UI Element
-    private let answerButton: UIButton = {
+
+
+    let answerButton: UIButton = {
         let button = UIButton(type: .system)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 16)
         button.titleLabel?.numberOfLines = 0
@@ -19,6 +22,9 @@ class AnswerCardViewCell: UIView {
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
+    
+    var isThisAnswer = false
+    @Published var isTapped = false
     
     // Properties
     var answerTappedAction: (() -> Void)?
@@ -77,8 +83,11 @@ class AnswerCardViewCell: UIView {
     
     // Button Action
     @objc private func answerButtonTapped() {
+        isTapped = true
+
         answerTappedAction?()
     }
 }
+
 
 
