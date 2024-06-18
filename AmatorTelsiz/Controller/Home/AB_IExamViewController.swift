@@ -45,6 +45,18 @@ class AB_IExamViewController: UIViewController {
         nextButton.translatesAutoresizingMaskIntoConstraints = false
         return nextButton
     }()
+
+    private var saveButton: UIButton = {
+        let button = UIButton(type: .system)
+        let buttonImage = UIImage(systemName: "star")
+        button.setImage(buttonImage, for: .normal)
+        button.tintColor = UIColor.red
+        button.addTarget(self, action: #selector(saveButtonTapped(_:)), for: .touchUpInside)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+    
+    
     //MARK: Lifecycles
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,6 +70,9 @@ class AB_IExamViewController: UIViewController {
         displayQuestion()
         updateButtonStates()
         startCheckingAnswers()
+        
+        
+    
     }
 }
 //MARK: - Helpers
@@ -68,6 +83,7 @@ extension AB_IExamViewController{
         view.addSubview(questionCardView)
         view.addSubview(previousButton)
         view.addSubview(nextButton)
+        view.addSubview(saveButton)
         // Initialize Answer CardViews
         for _ in 0..<4 {
             let answerCardView = AnswerCardViewCell(frame: .zero)
@@ -82,10 +98,17 @@ extension AB_IExamViewController{
         let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(swiped(_:)))
         swipeLeft.direction = .left
         view.addGestureRecognizer(swipeLeft)
+        
+
+
     }
     private func layout(){
         titleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
         titleLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20).isActive = true
+        
+        saveButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20).isActive = true
+        saveButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
+        
         
         previousButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
         previousButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20).isActive = true
@@ -143,6 +166,7 @@ extension AB_IExamViewController{
     @objc func nextButtonTapped(_ sender: UIButton) {
         currentQuestionIndex += 1
         displayQuestionWithDelay()
+        print("lolo")
 
     }
 
@@ -152,6 +176,16 @@ extension AB_IExamViewController{
         } else if gesture.direction == .right {
             previousQuestion()
         }
+    }
+    @objc func saveButtonTapped(_ sender: UIButton) {
+        if sender.isSelected {
+            sender.setImage(UIImage(systemName: "star"), for: .normal)
+
+        } else {
+            sender.setImage(UIImage(systemName: "star"), for: .normal)
+
+        }
+        sender.isSelected.toggle()
     }
 }
 //MARK: - Utilities
