@@ -6,21 +6,30 @@
 //
 
 import Foundation
+import RealmSwift
 
 
-struct Question {
-    let question : String
-    let options : [String]
-    let answer : String
-    func hash(into hasher: inout Hasher) {
-        hasher.combine(question)
-        hasher.combine(options)
-        hasher.combine(answer)
-    }
+class Question : Object{
+    @objc dynamic var question = ""
+    var options = List<String>()
+    @objc dynamic var answer = ""
     
-    static func == (lhs: Question, rhs: Question) -> Bool {
-        return lhs.question == rhs.question && lhs.options == rhs.options &&
-        lhs.answer == rhs.answer
+    convenience init(question: String, options: [String], answer: String) {
+        self.init()
+        self.question = question
+        self.options.append(objectsIn: options)
+        self.answer = answer
     }
                
+}
+
+func deleteQuestion(question: Question) {
+    let realm = try! Realm()
+    try! realm.write {
+        realm.delete(question)
+    }
+}
+func convertResultsToArray(results: Results<Question>?) -> [Question] {
+    guard let results = results else { return [] }
+    return Array(results)
 }

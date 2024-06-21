@@ -6,6 +6,10 @@
 //
 
 import UIKit
+import RealmSwift
+
+
 
 let correct_color = UIColor(hex: "2EC912")
 let false_color = UIColor(hex: "DA1E12")
+

@@ -3,18 +3,20 @@ import Combine
 import CoreData
 import RealmSwift
 
-class AB_IExamViewController: UIViewController {
+class SavedQuestions: UIViewController {
     //MARK: - Properties
     let realm  = try! Realm()
     var examTitle: String?
     var answerIndex = 0
     var currentQuestionIndex = 0
     var isDeneme = false
-    var isSaved = false
+    var isSaved = true
+
     
     var checkAnswerTimer: Timer?
     let transitionDelay: TimeInterval = 0.5 // Geçiş gecikmesi süresi (1 saniye olarak ayarlanmıştır)
-    var questions = ab_questions().getABIsletmeQuestions()
+    var que: Results<Question>?
+    var questions = [Question]()
 
     private var cancellables: Set<AnyCancellable> = []
     private var answerCardViews: [AnswerCardViewCell] = []
@@ -52,11 +54,12 @@ class AB_IExamViewController: UIViewController {
 
     private var saveButton: UIButton = {
         let button = UIButton(type: .system)
-        let buttonImage = UIImage(systemName: "star")
+        let buttonImage = UIImage(systemName: "star.fill")
         button.setImage(buttonImage, for: .normal)
         button.tintColor = UIColor.red
-        button.addTarget(self, action: #selector(saveButtonTapped(_:)), for: .touchUpInside)
+        button.addTarget(self, action: #selector(deleteButtonTapped(_:)), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
+
         return button
     }()
     
@@ -65,25 +68,29 @@ class AB_IExamViewController: UIViewController {
     //MARK: Lifecycles
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.prefersLargeTitles = false
+
         view.backgroundColor = .white
-        if isDeneme {
-            questions = makeRandomTest()
-            print(questions.count)
-        }
+        que = realm.objects(Question.self)
+        questions = convertResultsToArray(results: que)
         style()
         layout()
         displayQuestion()
         updateButtonStates()
         startCheckingAnswers()
+        navigationController?.navigationBar.titleTextAttributes = [
+                .font: UIFont.systemFont(ofSize: 14) // Küçük bir yazı tipi boyutu
+            ]
         
         
- 
+
+        
         
     
     }
 }
 //MARK: - Helpers
-extension AB_IExamViewController{
+extension SavedQuestions{
     private func style(){
         titleLabel.text = examTitle
         view.addSubview(titleLabel)
@@ -151,7 +158,7 @@ extension AB_IExamViewController{
     }
 }
 //MARK: - Buttons
-extension AB_IExamViewController{
+extension SavedQuestions{
     @objc func checkTappedAnswer() {
         for answerCardView in answerCardViews {
             if answerCardView.isTapped && answerCardView.isThisAnswer {
@@ -174,8 +181,6 @@ extension AB_IExamViewController{
     @objc func nextButtonTapped(_ sender: UIButton) {
         currentQuestionIndex += 1
         displayQuestionWithDelay()
-        saveButton.setImage(UIImage(systemName: "star"), for: .normal)
-        isSaved = false
         print("lolo")
 
     }
@@ -187,43 +192,37 @@ extension AB_IExamViewController{
             previousQuestion()
         }
     }
-    @objc func saveButtonTapped(_ sender: UIButton) {
-        isSaved.toggle()
-        
+    @objc func deleteButtonTapped(_ sender: UIButton) {
         let currentQuestion = questions[currentQuestionIndex]
+        let ques = try! realm.objects(Question.self)
+
         
-        if isSaved {
-            sender.setImage(UIImage(systemName: "star.fill"), for: .normal)
-            
-            var addingObject = Question()
-            addingObject.question = currentQuestion.question
-            addingObject.options = currentQuestion.options
-            addingObject.answer = currentQuestion .answer
-            
+        // Sorunun mevcut olup olmadığını kontrol edin
+        if let deleteObject = realm.objects(Question.self).filter("question == %@", currentQuestion.question).first {
             realm.beginWrite()
-            realm.add(addingObject)
+            realm.delete(deleteObject)
             try! realm.commitWrite()
             
-            print("Saved")
-            
-        } else {
             sender.setImage(UIImage(systemName: "star"), for: .normal)
-            
-            if let deleteObject = realm.objects(Question.self).filter("question == %@", currentQuestion.question).first {
-                realm.beginWrite()
-                realm.delete(deleteObject)
-                try! realm.commitWrite()
-                
-                print("Deleted")
-            }
+            print("Deleted")
         }
-        
-        let ques = try! realm.objects(Question.self)
+        if ques.count == 0 {
+            let vc = NoQuestionViewController()
+            navigationController?.pushViewController(vc, animated: true)
+
+        } else {
+            sender.setImage(UIImage(systemName: "star.fill"), for: .normal)
+            currentQuestionIndex += 1
+            displayQuestionWithDelay()
+        }
         print("que count :\(ques.count)")
+
+
+        
     }
 }
 //MARK: - Utilities
-extension AB_IExamViewController{
+extension SavedQuestions{
     func showCorrectOption(){
         for answerCardView in answerCardViews {
             if answerCardView.isThisAnswer {
@@ -281,10 +280,10 @@ extension AB_IExamViewController{
     func nextQuestion() {
         guard currentQuestionIndex < questions.count - 1 else { return }
         currentQuestionIndex += 1
+        if currentQuestionIndex + 1 <= questions.count {
+            displayQuestionWithDelay()
+        }
         
-        
-       
-        displayQuestionWithDelay()
     }
 
     func previousQuestion() {
@@ -293,22 +292,7 @@ extension AB_IExamViewController{
         displayQuestionWithDelay()
     }
 
-    func makeRandomTest() -> [Question] {
-        guard questions.count >= 20 else  {
-            return questions
-        }
-        var selectedQuestions: [Question] = []
-
-        while selectedQuestions.count < 20 {
-            let randomIndex = Int.random(in: 0..<questions.count)
-            let randomQuestion = questions[randomIndex]
-
-            if !selectedQuestions.contains(where: { $0.question == randomQuestion.question }) {
-                selectedQuestions.append(randomQuestion)
-            }
-        }
-        return selectedQuestions
-    }
+    
 
     func displayQuestionWithDelay() {
         DispatchQueue.main.asyncAfter(deadline: .now() + transitionDelay) {

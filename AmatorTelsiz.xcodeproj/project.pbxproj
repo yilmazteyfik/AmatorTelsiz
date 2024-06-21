@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21181893697483A1709EE0CB /* Pods_AmatorTelsiz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06EC31ADBD3427DD89A49F88 /* Pods_AmatorTelsiz.framework */; };
 		244E5BA42BDC59C700E541D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244E5BA32BDC59C700E541D3 /* AppDelegate.swift */; };
 		244E5BA62BDC59C700E541D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244E5BA52BDC59C700E541D3 /* SceneDelegate.swift */; };
 		244E5BAB2BDC59C700E541D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 244E5BA92BDC59C700E541D3 /* Main.storyboard */; };
@@ -49,6 +50,12 @@
 		A5E6E1AF2BE02E25001C7469 /* CustomCellBottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E6E1AE2BE02E25001C7469 /* CustomCellBottom.swift */; };
 		A5F3903C2C1F42F9006C8674 /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F3903B2C1F42F9006C8674 /* extension.swift */; };
 		A5F3903E2C1F4322006C8674 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F3903D2C1F4322006C8674 /* constants.swift */; };
+		A5F390412C223840006C8674 /* dash.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A5F3903F2C223840006C8674 /* dash.mp3 */; };
+		A5F390422C223840006C8674 /* dot.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A5F390402C223840006C8674 /* dot.mp3 */; };
+		A5F390442C2242E1006C8674 /* SavedQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F390432C2242E1006C8674 /* SavedQuestions.swift */; };
+		A5F390462C24C035006C8674 /* NoQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F390452C24C035006C8674 /* NoQuestionViewController.swift */; };
+		D077CD358D1300D3DB9712F7 /* Pods_AmatorTelsizTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F35907AAE08C1A63457E551 /* Pods_AmatorTelsizTests.framework */; };
+		F527EC8E2F9E0B65E8B8DB02 /* Pods_AmatorTelsiz_AmatorTelsizUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A6F3CF4BFB8BFDD55903233 /* Pods_AmatorTelsiz_AmatorTelsizUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +76,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06EC31ADBD3427DD89A49F88 /* Pods_AmatorTelsiz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmatorTelsiz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		181CF3589CD3C1E23E69C152 /* Pods-AmatorTelsiz-AmatorTelsizUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmatorTelsiz-AmatorTelsizUITests.release.xcconfig"; path = "Target Support Files/Pods-AmatorTelsiz-AmatorTelsizUITests/Pods-AmatorTelsiz-AmatorTelsizUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1D3ABAEF29C08C2A4EAACE5C /* Pods-AmatorTelsiz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmatorTelsiz.debug.xcconfig"; path = "Target Support Files/Pods-AmatorTelsiz/Pods-AmatorTelsiz.debug.xcconfig"; sourceTree = "<group>"; };
 		244E5BA02BDC59C700E541D3 /* AmatorTelsiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmatorTelsiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		244E5BA32BDC59C700E541D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		244E5BA52BDC59C700E541D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +108,11 @@
 		24DA49F12BE05E7B002474CA /* AnswerCardViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerCardViewCell.swift; sourceTree = "<group>"; };
 		24DA49F82BE12F8F002474CA /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
 		24DA49FA2BE12FFF002474CA /* TabBarWithCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarWithCorners.swift; sourceTree = "<group>"; };
+		392968079B75619F567BC71E /* Pods-AmatorTelsiz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmatorTelsiz.release.xcconfig"; path = "Target Support Files/Pods-AmatorTelsiz/Pods-AmatorTelsiz.release.xcconfig"; sourceTree = "<group>"; };
+		3CCF48287AAFA3348FCEEB84 /* Pods-AmatorTelsizTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmatorTelsizTests.debug.xcconfig"; path = "Target Support Files/Pods-AmatorTelsizTests/Pods-AmatorTelsizTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6F35907AAE08C1A63457E551 /* Pods_AmatorTelsizTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmatorTelsizTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8998F968F71A1C7D4534F4B0 /* Pods-AmatorTelsiz-AmatorTelsizUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmatorTelsiz-AmatorTelsizUITests.debug.xcconfig"; path = "Target Support Files/Pods-AmatorTelsiz-AmatorTelsizUITests/Pods-AmatorTelsiz-AmatorTelsizUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8A6F3CF4BFB8BFDD55903233 /* Pods_AmatorTelsiz_AmatorTelsizUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmatorTelsiz_AmatorTelsizUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A55476A72BDDA9F900D71E8D /* QuestionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QuestionManager.swift; path = AmatorTelsiz/Controller/QuestionManager.swift; sourceTree = SOURCE_ROOT; };
 		A55476A92BDDAB0400D71E8D /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Question.swift; path = AmatorTelsiz/Controller/Question.swift; sourceTree = SOURCE_ROOT; };
 		A55476AC2BDDACA700D71E8D /* ab_question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ab_question.swift; path = AmatorTelsiz/Controller/ab_question.swift; sourceTree = SOURCE_ROOT; };
@@ -115,6 +130,11 @@
 		A5E6E1AE2BE02E25001C7469 /* CustomCellBottom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellBottom.swift; sourceTree = "<group>"; };
 		A5F3903B2C1F42F9006C8674 /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
 		A5F3903D2C1F4322006C8674 /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = constants.swift; path = AmatorTelsiz/extensions/constants.swift; sourceTree = SOURCE_ROOT; };
+		A5F3903F2C223840006C8674 /* dash.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = dash.mp3; path = ../../../Desktop/dash.mp3; sourceTree = "<group>"; };
+		A5F390402C223840006C8674 /* dot.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = dot.mp3; path = ../../../Desktop/dot.mp3; sourceTree = "<group>"; };
+		A5F390432C2242E1006C8674 /* SavedQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedQuestions.swift; sourceTree = "<group>"; };
+		A5F390452C24C035006C8674 /* NoQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoQuestionViewController.swift; sourceTree = "<group>"; };
+		DBC1DB19B8EBE3A4424914AC /* Pods-AmatorTelsizTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmatorTelsizTests.release.xcconfig"; path = "Target Support Files/Pods-AmatorTelsizTests/Pods-AmatorTelsizTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +142,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21181893697483A1709EE0CB /* Pods_AmatorTelsiz.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +150,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D077CD358D1300D3DB9712F7 /* Pods_AmatorTelsizTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +158,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F527EC8E2F9E0B65E8B8DB02 /* Pods_AmatorTelsiz_AmatorTelsizUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +172,8 @@
 				244E5BB92BDC59C800E541D3 /* AmatorTelsizTests */,
 				244E5BC32BDC59C800E541D3 /* AmatorTelsizUITests */,
 				244E5BA12BDC59C700E541D3 /* Products */,
+				4B8B687976EC539C73FDF44D /* Pods */,
+				4256CD8FA4B05C91C0107CBF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -194,6 +219,29 @@
 			path = AmatorTelsizUITests;
 			sourceTree = "<group>";
 		};
+		4256CD8FA4B05C91C0107CBF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06EC31ADBD3427DD89A49F88 /* Pods_AmatorTelsiz.framework */,
+				8A6F3CF4BFB8BFDD55903233 /* Pods_AmatorTelsiz_AmatorTelsizUITests.framework */,
+				6F35907AAE08C1A63457E551 /* Pods_AmatorTelsizTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4B8B687976EC539C73FDF44D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1D3ABAEF29C08C2A4EAACE5C /* Pods-AmatorTelsiz.debug.xcconfig */,
+				392968079B75619F567BC71E /* Pods-AmatorTelsiz.release.xcconfig */,
+				8998F968F71A1C7D4534F4B0 /* Pods-AmatorTelsiz-AmatorTelsizUITests.debug.xcconfig */,
+				181CF3589CD3C1E23E69C152 /* Pods-AmatorTelsiz-AmatorTelsizUITests.release.xcconfig */,
+				3CCF48287AAFA3348FCEEB84 /* Pods-AmatorTelsizTests.debug.xcconfig */,
+				DBC1DB19B8EBE3A4424914AC /* Pods-AmatorTelsizTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A55476AB2BDDAB3E00D71E8D /* Data Source */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,6 +281,8 @@
 			isa = PBXGroup;
 			children = (
 				244E5BB12BDC59C800E541D3 /* Info.plist */,
+				A5F3903F2C223840006C8674 /* dash.mp3 */,
+				A5F390402C223840006C8674 /* dot.mp3 */,
 				244E5BAC2BDC59C800E541D3 /* Assets.xcassets */,
 				244E5BA52BDC59C700E541D3 /* SceneDelegate.swift */,
 				244E5BA32BDC59C700E541D3 /* AppDelegate.swift */,
@@ -281,6 +331,8 @@
 				247EFE822BDD758100AEB766 /* MorseAlphabetViewController.swift */,
 				247EFE802BDD746300AEB766 /* CompassViewController.swift */,
 				247EFE8B2BDD8A3D00AEB766 /* RoleViewController.swift */,
+				A5F390432C2242E1006C8674 /* SavedQuestions.swift */,
+				A5F390452C24C035006C8674 /* NoQuestionViewController.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -313,9 +365,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 244E5BCA2BDC59C800E541D3 /* Build configuration list for PBXNativeTarget "AmatorTelsiz" */;
 			buildPhases = (
+				1B08E09FC26F444003C21141 /* [CP] Check Pods Manifest.lock */,
 				244E5B9C2BDC59C700E541D3 /* Sources */,
 				244E5B9D2BDC59C700E541D3 /* Frameworks */,
 				244E5B9E2BDC59C700E541D3 /* Resources */,
+				ED45AE33B84A3B4505158AE6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -330,6 +384,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 244E5BCD2BDC59C800E541D3 /* Build configuration list for PBXNativeTarget "AmatorTelsizTests" */;
 			buildPhases = (
+				DAA34CC49CB0F6C37728C6EE /* [CP] Check Pods Manifest.lock */,
 				244E5BB22BDC59C800E541D3 /* Sources */,
 				244E5BB32BDC59C800E541D3 /* Frameworks */,
 				244E5BB42BDC59C800E541D3 /* Resources */,
@@ -348,9 +403,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 244E5BD02BDC59C800E541D3 /* Build configuration list for PBXNativeTarget "AmatorTelsizUITests" */;
 			buildPhases = (
+				8FFBD7F8A09E8676D0D4A7FF /* [CP] Check Pods Manifest.lock */,
 				244E5BBC2BDC59C800E541D3 /* Sources */,
 				244E5BBD2BDC59C800E541D3 /* Frameworks */,
 				244E5BBE2BDC59C800E541D3 /* Resources */,
+				80A6215C5AC9797D97C75B53 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -413,9 +470,11 @@
 				244E5BB02BDC59C800E541D3 /* LaunchScreen.storyboard in Resources */,
 				244E5BAD2BDC59C800E541D3 /* Assets.xcassets in Resources */,
 				24DA49E52BE04ADE002474CA /* ab_isletme.json in Resources */,
+				A5F390422C223840006C8674 /* dot.mp3 in Resources */,
 				244E5BAB2BDC59C700E541D3 /* Main.storyboard in Resources */,
 				24DA49E62BE04ADE002474CA /* ab_tec.json in Resources */,
 				24DA49E92BE04ADE002474CA /* c_tec.json in Resources */,
+				A5F390412C223840006C8674 /* dash.mp3 in Resources */,
 				24DA49EA2BE04ADE002474CA /* c_isletme.json in Resources */,
 				24DA49E82BE04ADE002474CA /* ab_IR.json in Resources */,
 				24DA49E72BE04ADE002474CA /* c_IR.json in Resources */,
@@ -438,6 +497,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1B08E09FC26F444003C21141 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AmatorTelsiz-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80A6215C5AC9797D97C75B53 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AmatorTelsiz-AmatorTelsizUITests/Pods-AmatorTelsiz-AmatorTelsizUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AmatorTelsiz-AmatorTelsizUITests/Pods-AmatorTelsiz-AmatorTelsizUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AmatorTelsiz-AmatorTelsizUITests/Pods-AmatorTelsiz-AmatorTelsizUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FFBD7F8A09E8676D0D4A7FF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AmatorTelsiz-AmatorTelsizUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAA34CC49CB0F6C37728C6EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AmatorTelsizTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED45AE33B84A3B4505158AE6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AmatorTelsiz/Pods-AmatorTelsiz-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AmatorTelsiz/Pods-AmatorTelsiz-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AmatorTelsiz/Pods-AmatorTelsiz-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		244E5B9C2BDC59C700E541D3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -456,6 +618,7 @@
 				A5E6E1AF2BE02E25001C7469 /* CustomCellBottom.swift in Sources */,
 				A55476AD2BDDACA700D71E8D /* ab_question.swift in Sources */,
 				244E5BA62BDC59C700E541D3 /* SceneDelegate.swift in Sources */,
+				A5F390462C24C035006C8674 /* NoQuestionViewController.swift in Sources */,
 				24DA49F92BE12F8F002474CA /* TabbarController.swift in Sources */,
 				247EFE892BDD7BD200AEB766 /* PhoneticMorseAlphabetViewController.swift in Sources */,
 				A5F3903C2C1F42F9006C8674 /* extension.swift in Sources */,
@@ -468,6 +631,7 @@
 				24DA49F02BE05DF8002474CA /* QuestionCardViewCell.swift in Sources */,
 				A5F3903E2C1F4322006C8674 /* constants.swift in Sources */,
 				24DA49F22BE05E7B002474CA /* AnswerCardViewCell.swift in Sources */,
+				A5F390442C2242E1006C8674 /* SavedQuestions.swift in Sources */,
 				A57312442BDC6165008A2955 /* MainViewController.swift in Sources */,
 				A57312482BDC61BC008A2955 /* SettingViewController.swift in Sources */,
 				247EFE8E2BDD91B000AEB766 /* QCodeViewController.swift in Sources */,
@@ -564,7 +728,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -625,7 +789,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -646,12 +810,13 @@
 		};
 		244E5BCB2BDC59C800E541D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D3ABAEF29C08C2A4EAACE5C /* Pods-AmatorTelsiz.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = L39V7KLTL6;
+				DEVELOPMENT_TEAM = 24499S849C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AmatorTelsiz/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -675,12 +840,13 @@
 		};
 		244E5BCC2BDC59C800E541D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 392968079B75619F567BC71E /* Pods-AmatorTelsiz.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = L39V7KLTL6;
+				DEVELOPMENT_TEAM = 24499S849C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AmatorTelsiz/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -704,6 +870,7 @@
 		};
 		244E5BCE2BDC59C800E541D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CCF48287AAFA3348FCEEB84 /* Pods-AmatorTelsizTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -724,6 +891,7 @@
 		};
 		244E5BCF2BDC59C800E541D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBC1DB19B8EBE3A4424914AC /* Pods-AmatorTelsizTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -744,6 +912,7 @@
 		};
 		244E5BD12BDC59C800E541D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8998F968F71A1C7D4534F4B0 /* Pods-AmatorTelsiz-AmatorTelsizUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -762,6 +931,7 @@
 		};
 		244E5BD22BDC59C800E541D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 181CF3589CD3C1E23E69C152 /* Pods-AmatorTelsiz-AmatorTelsizUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
