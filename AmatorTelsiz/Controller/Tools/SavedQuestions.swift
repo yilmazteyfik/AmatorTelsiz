@@ -195,13 +195,12 @@ extension SavedQuestions{
     @objc func deleteButtonTapped(_ sender: UIButton) {
         let currentQuestion = questions[currentQuestionIndex]
         let ques = try! realm.objects(Question.self)
-
-        
         // Sorunun mevcut olup olmadığını kontrol edin
         if let deleteObject = realm.objects(Question.self).filter("question == %@", currentQuestion.question).first {
             realm.beginWrite()
             realm.delete(deleteObject)
             try! realm.commitWrite()
+            questions = convertResultsToArray(results: que)
             
             sender.setImage(UIImage(systemName: "star"), for: .normal)
             print("Deleted")
@@ -209,17 +208,28 @@ extension SavedQuestions{
         if ques.count == 0 {
             let vc = NoQuestionViewController()
             navigationController?.pushViewController(vc, animated: true)
+            print("print 1")
 
-        } else {
+        } else if currentQuestionIndex == questions.count {
+            sender.setImage(UIImage(systemName: "star.fill"), for: .normal)
+            currentQuestionIndex -= 1
+            displayQuestionWithDelay()
+            print("print 2")
+
+        }else {
             sender.setImage(UIImage(systemName: "star.fill"), for: .normal)
             currentQuestionIndex += 1
             displayQuestionWithDelay()
+            print("print 3")
+
         }
         print("que count :\(ques.count)")
+        print("question count :\(questions.count)")
+        print("index count :\(currentQuestionIndex)")
 
-
-        
     }
+    
+    
 }
 //MARK: - Utilities
 extension SavedQuestions{

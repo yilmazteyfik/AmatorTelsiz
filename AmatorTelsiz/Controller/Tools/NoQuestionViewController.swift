@@ -5,26 +5,29 @@ class NoQuestionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // View arka plan rengini beyaz yapalım
+        // Hide the navigation bar for this view controller
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+        
+        // View background color
         view.backgroundColor = .white
         
-        // UILabel oluşturma
+        // Create UILabel
         let noQuestionLabel = UILabel()
         noQuestionLabel.text = "There is no question"
         noQuestionLabel.textColor = .black
         noQuestionLabel.textAlignment = .center
         noQuestionLabel.translatesAutoresizingMaskIntoConstraints = false
         
-        // UILabel'i view'e ekleyelim
+        // Add UILabel to the view
         view.addSubview(noQuestionLabel)
         
-        // UILabel'in ortalanması için constraint'ler ekleyelim
+        // Add constraints to center the UILabel
         NSLayoutConstraint.activate([
             noQuestionLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             noQuestionLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor)
         ])
         
-        // Tap gesture recognizer ekleyelim
+        // Add tap gesture recognizer
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(viewTapped))
         view.addGestureRecognizer(tapGesture)
     }
@@ -32,5 +35,11 @@ class NoQuestionViewController: UIViewController {
     @objc func viewTapped() {
         let toolsViewController = ToolsViewController()
         navigationController?.pushViewController(toolsViewController, animated: true)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        // Show the navigation bar again when this view controller is about to disappear
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
     }
 }

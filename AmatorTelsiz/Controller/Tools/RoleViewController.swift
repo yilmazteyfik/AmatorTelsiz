@@ -7,6 +7,7 @@ class RoleViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.prefersLargeTitles = false
 
         // Arka plan UIView oluşturma ve beyaz arka plan rengi
         let backgroundView = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 400))
