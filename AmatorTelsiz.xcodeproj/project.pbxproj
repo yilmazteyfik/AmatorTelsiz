@@ -40,6 +40,8 @@
 		A57312482BDC61BC008A2955 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57312472BDC61BC008A2955 /* SettingViewController.swift */; };
 		A573124A2BDC64C5008A2955 /* ToolsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57312492BDC64C5008A2955 /* ToolsViewController.swift */; };
 		A573124E2BDC7FD0008A2955 /* MainQuestionBankFlowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A573124D2BDC7FD0008A2955 /* MainQuestionBankFlowCell.swift */; };
+		A598F04B2C84864800586A23 /* dot.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A598F04A2C84864800586A23 /* dot.mp3 */; };
+		A598F04D2C84864C00586A23 /* dash.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A598F04C2C84864C00586A23 /* dash.mp3 */; };
 		A5E6E19E2BE0188C001C7469 /* c_question.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E6E19D2BE0188C001C7469 /* c_question.swift */; };
 		A5E6E1A22BE021C7001C7469 /* AB_IExamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E6E1A12BE021C7001C7469 /* AB_IExamViewController.swift */; };
 		A5E6E1A42BE02285001C7469 /* AB_IRExamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E6E1A32BE02285001C7469 /* AB_IRExamViewController.swift */; };
@@ -50,8 +52,6 @@
 		A5E6E1AF2BE02E25001C7469 /* CustomCellBottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E6E1AE2BE02E25001C7469 /* CustomCellBottom.swift */; };
 		A5F3903C2C1F42F9006C8674 /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F3903B2C1F42F9006C8674 /* extension.swift */; };
 		A5F3903E2C1F4322006C8674 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F3903D2C1F4322006C8674 /* constants.swift */; };
-		A5F390412C223840006C8674 /* dash.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A5F3903F2C223840006C8674 /* dash.mp3 */; };
-		A5F390422C223840006C8674 /* dot.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A5F390402C223840006C8674 /* dot.mp3 */; };
 		A5F390442C2242E1006C8674 /* SavedQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F390432C2242E1006C8674 /* SavedQuestions.swift */; };
 		A5F390462C24C035006C8674 /* NoQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F390452C24C035006C8674 /* NoQuestionViewController.swift */; };
 		D077CD358D1300D3DB9712F7 /* Pods_AmatorTelsizTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F35907AAE08C1A63457E551 /* Pods_AmatorTelsizTests.framework */; };
@@ -120,6 +120,8 @@
 		A57312472BDC61BC008A2955 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		A57312492BDC64C5008A2955 /* ToolsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsViewController.swift; sourceTree = "<group>"; };
 		A573124D2BDC7FD0008A2955 /* MainQuestionBankFlowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainQuestionBankFlowCell.swift; path = AmatorTelsiz/Controller/MainQuestionBankFlowCell.swift; sourceTree = SOURCE_ROOT; };
+		A598F04A2C84864800586A23 /* dot.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = dot.mp3; path = ../../../Desktop/dot.mp3; sourceTree = "<group>"; };
+		A598F04C2C84864C00586A23 /* dash.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = dash.mp3; path = ../../../Desktop/dash.mp3; sourceTree = "<group>"; };
 		A5E6E19D2BE0188C001C7469 /* c_question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = c_question.swift; path = AmatorTelsiz/Controller/c_question.swift; sourceTree = SOURCE_ROOT; };
 		A5E6E1A12BE021C7001C7469 /* AB_IExamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AB_IExamViewController.swift; sourceTree = "<group>"; };
 		A5E6E1A32BE02285001C7469 /* AB_IRExamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AB_IRExamViewController.swift; sourceTree = "<group>"; };
@@ -130,8 +132,6 @@
 		A5E6E1AE2BE02E25001C7469 /* CustomCellBottom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellBottom.swift; sourceTree = "<group>"; };
 		A5F3903B2C1F42F9006C8674 /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
 		A5F3903D2C1F4322006C8674 /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = constants.swift; path = AmatorTelsiz/extensions/constants.swift; sourceTree = SOURCE_ROOT; };
-		A5F3903F2C223840006C8674 /* dash.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = dash.mp3; path = ../../../Desktop/dash.mp3; sourceTree = "<group>"; };
-		A5F390402C223840006C8674 /* dot.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = dot.mp3; path = ../../../Desktop/dot.mp3; sourceTree = "<group>"; };
 		A5F390432C2242E1006C8674 /* SavedQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedQuestions.swift; sourceTree = "<group>"; };
 		A5F390452C24C035006C8674 /* NoQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoQuestionViewController.swift; sourceTree = "<group>"; };
 		DBC1DB19B8EBE3A4424914AC /* Pods-AmatorTelsizTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmatorTelsizTests.release.xcconfig"; path = "Target Support Files/Pods-AmatorTelsizTests/Pods-AmatorTelsizTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -280,9 +280,9 @@
 		A573123E2BDC5C43008A2955 /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				A598F04C2C84864C00586A23 /* dash.mp3 */,
+				A598F04A2C84864800586A23 /* dot.mp3 */,
 				244E5BB12BDC59C800E541D3 /* Info.plist */,
-				A5F3903F2C223840006C8674 /* dash.mp3 */,
-				A5F390402C223840006C8674 /* dot.mp3 */,
 				244E5BAC2BDC59C800E541D3 /* Assets.xcassets */,
 				244E5BA52BDC59C700E541D3 /* SceneDelegate.swift */,
 				244E5BA32BDC59C700E541D3 /* AppDelegate.swift */,
@@ -470,13 +470,13 @@
 				244E5BB02BDC59C800E541D3 /* LaunchScreen.storyboard in Resources */,
 				244E5BAD2BDC59C800E541D3 /* Assets.xcassets in Resources */,
 				24DA49E52BE04ADE002474CA /* ab_isletme.json in Resources */,
-				A5F390422C223840006C8674 /* dot.mp3 in Resources */,
 				244E5BAB2BDC59C700E541D3 /* Main.storyboard in Resources */,
 				24DA49E62BE04ADE002474CA /* ab_tec.json in Resources */,
+				A598F04D2C84864C00586A23 /* dash.mp3 in Resources */,
 				24DA49E92BE04ADE002474CA /* c_tec.json in Resources */,
-				A5F390412C223840006C8674 /* dash.mp3 in Resources */,
 				24DA49EA2BE04ADE002474CA /* c_isletme.json in Resources */,
 				24DA49E82BE04ADE002474CA /* ab_IR.json in Resources */,
+				A598F04B2C84864800586A23 /* dot.mp3 in Resources */,
 				24DA49E72BE04ADE002474CA /* c_IR.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

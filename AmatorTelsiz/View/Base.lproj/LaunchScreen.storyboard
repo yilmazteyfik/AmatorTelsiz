@@ -17,16 +17,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="JdE-53-eNC">
-                                <rect key="frame" x="0.0" y="289" width="393" height="275"/>
+                                <rect key="frame" x="-67" y="252" width="526" height="348"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.73673254249999998" green="0.13181740049999999" blue="0.18836441640000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="JdE-53-eNC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="230" id="8cS-2V-vdI"/>
-                            <constraint firstItem="JdE-53-eNC" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="YQx-NK-V88"/>
-                            <constraint firstItem="JdE-53-eNC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kgm-XJ-daB"/>
-                            <constraint firstItem="JdE-53-eNC" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="w6K-Oo-URh"/>
+                            <constraint firstItem="JdE-53-eNC" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="6Lh-U2-NSY"/>
+                            <constraint firstItem="JdE-53-eNC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="193" id="MN3-RU-Pfi"/>
+                            <constraint firstItem="JdE-53-eNC" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-83" id="U1b-aH-9O2"/>
+                            <constraint firstItem="JdE-53-eNC" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="XDI-QY-Hsx"/>
                         </constraints>
                     </view>
                 </viewController>
